@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thelogotype.com.EXE - Win95</title>
+    <!-- Подключаем страшные шрифты (Nosifer для английского названия, Rubik Glitch для русского текста) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="photo_2026-05-02_15-19-39-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Экран инициализации аудио -->
+    <div id="init-overlay" onclick="startAudioEngine()">НАЖМИТЕ ЗДЕСЬ ДЛЯ ЗАПУСКА СИСТЕМЫ</div>
+
+    <!-- Слой перехода -->
+    <div id="transition-overlay"></div>
+
+    <!-- ГЛАВНОЕ МЕНЮ ИГРЫ -->
+    <div id="main-menu">
+        <div class="menu-title">LOGOTYPE.COM.EXE : REMAKE</div>
+
+        <div class="menu-buttons-container">
+            <button id="menu-play-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); startGameFromMenu()">Играть</button>
+            <button id="menu-settings-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', true)">Настройки</button>
+            <button id="menu-credits-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', true)">Авторы</button>
+        </div>
+
+        <!-- Подменю Настройки -->
+        <div id="settings-menu" class="submenu-panel">
+            <h2 id="settings-title">Настройки</h2>
+            <p style="display: flex; justify-content: space-between; align-items: center;">
+                <span id="settings-vol-label">Громкость</span>: <input type="range" id="volume-slider" min="0" max="100" value="100"
+                    style="width: 150px; accent-color: red;" oninput="audioEngine.setVolume(this.value);">
+            </p>
+            <p style="display: flex; flex-direction: column; gap: 5px;">
+                <span id="settings-lang-label">Язык</span>: 
+                <span style="display: flex; gap: 10px; justify-content: center;">
+                    <span class="lang-btn" onclick="setLanguage('ru')">Русский</span>
+                    <span class="lang-btn" onclick="setLanguage('ua')">Українська</span>
+                    <span class="lang-btn" onclick="setLanguage('en')">English</span>
+                </span>
+            </p>
+            <button id="settings-back-btn" class="menu-btn" style="font-size: 1.5rem; margin-top: 20px; padding: 5px 20px;"
+                onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', false)">Назад</button>
+        </div>
+
+        <!-- Подменю Авторы -->
+        <div id="credits-menu" class="submenu-panel">
+            <h2 id="credits-title">Авторы</h2>
+            <p id="credits-designer">Дизайнер: Игорь</p>
+            <p id="credits-ideas">Идеи: Игорь</p>
+            <p id="credits-programmer">Программист: Gemini AI</p>
+            <p id="credits-realization">Воплощение: Gemini AI</p>
+            <button id="credits-back-btn" class="menu-btn" style="font-size: 1.5rem; margin-top: 20px; padding: 5px 20px;"
+                onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', false)">Назад</button>
+        </div>
+    </div>
+
+    <div id="desktop">
+        <!-- Иконка Мой Компьютер -->
+        <div class="icon-container" tabindex="0" ondblclick="alert('Отказано в доступе.')"
+            style="top: 10px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="28" height="20" fill="#c0c0c0" stroke="black" stroke-width="2" />
+                <rect x="4" y="6" width="24" height="14" fill="#008080" stroke="black" stroke-width="2" />
+                <rect x="10" y="24" width="12" height="4" fill="#c0c0c0" stroke="black" stroke-width="2" />
+            </svg>
+            <span id="desktop-pc-text" class="icon-text">Мой компьютер</span>
+        </div>
+
+        <!-- Иконка Корзины -->
+        <div class="icon-container" tabindex="0" style="top: 90px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 8H26V28H6V8Z" fill="#c0c0c0" stroke="black" stroke-width="2" />
+                <path d="M10 4H22V8H10V4Z" fill="#c0c0c0" stroke="black" stroke-width="2" />
+                <line x1="12" y1="12" x2="12" y2="24" stroke="black" stroke-width="2" />
+                <line x1="16" y1="12" x2="16" y2="24" stroke="black" stroke-width="2" />
+                <line x1="20" y1="12" x2="20" y2="24" stroke="black" stroke-width="2" />
+            </svg>
+            <span id="desktop-trash-text" class="icon-text">Корзина</span>
+        </div>
+
+        <!-- Иконка Браузера -->
+        <div class="icon-container" tabindex="0" ondblclick="openBrowser()" style="top: 170px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="14" fill="#000080" stroke="black" stroke-width="2" />
+                <ellipse cx="16" cy="16" rx="6" ry="14" fill="transparent" stroke="#00ffff" stroke-width="2" />
+                <line x1="2" y1="16" x2="30" y2="16" stroke="#00ffff" stroke-width="2" />
+            </svg>
+            <span id="desktop-internet-text" class="icon-text">Internet</span>
+        </div>
+    </div>
+
+    <!-- Окно Браузера -->
+    <div id="browser-window" class="window" style="width: 500px; height: 350px;">
+        <div class="title-bar active" id="browser-title-bar">
+            <span>Internet Explorer</span>
+            <div id="browser-window-btns" style="display: flex; gap: 2px;">
+                <div class="window-btn" onclick="minimizeBrowser()">_</div>
+                <div class="window-btn" onclick="maximizeBrowser()">□</div>
+                <div class="window-btn" onclick="closeBrowser()">X</div>
+            </div>
+        </div>
+        <div class="address-bar">
+            <span id="browser-addr-label">Address:</span>
+            <input type="text" id="url-input" value="http://">
+            <button id="browser-go-btn" class="go-btn" onclick="navigate()">Go</button>
+        </div>
+        <div class="window-content" id="browser-content"
+            style="height: calc(100% - 70px); margin: 0; border: none; padding: 0;">
+            <div style="padding: 20px; font-family: 'Times New Roman', serif;">
+                <h2>Welcome to Internet</h2>
+                <p>Type an address in the bar above to begin surfing the web.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Всплывающее рекламное окно -->
+    <div id="ad-popup" class="window" style="width: 320px; height: auto; top: 180px; left: 450px; z-index: 200;">
+        <div class="title-bar active" id="ad-title-bar">
+            <span>Message</span>
+            <div class="window-btn" onclick="closeAdPopup(event)">X</div>
+        </div>
+        <div class="window-content"
+            style="text-align: center; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-weight: bold; padding: 15px; height: auto; cursor: pointer; background-color: #ffffcc;"
+            onclick="clickAd()">
+            <p style="color: #000080; font-size: 14px; margin-top: 0;">ХОЧЕШЬ ПРОТЕСТИТЬ СВОЮ ПАМЯТЬ?</p>
+            <p style="color: red; font-size: 13px;">НАСКОЛЬКО ХОРОШО ТЫ ЗНАЕШЬ БРЕНДЫ?</p>
+            <p style="color: blue; text-decoration: underline; margin-bottom: 0;">ПРОВЕРЬ СВОЮ ПАМЯТЬ!</p>
+        </div>
+    </div>
+
+    <!-- Стартовое меню -->
+    <div id="start-menu" class="start-menu">
+        <div class="start-menu-inner">
+            <div class="start-sidebar">
+                <span style="display: inline-block; transform: rotate(90deg); margin-bottom: 30px;">Windows 95</span>
+            </div>
+            <div class="start-items">
+                <div id="start-programs" class="start-item" onclick="systemAlert('programsUnavailable')">Программы</div>
+                <div id="start-docs" class="start-item" onclick="systemAlert('docsEmpty')">Документы</div>
+                <div id="start-settings-item" class="start-item" onclick="systemAlert('settingsLocked')">Настройки</div>
+                <div class="start-separator"></div>
+                <div id="start-shutdown" class="start-item" onclick="systemAlert('cannotShutdown')">Завершение работы...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хоррор элементы для кнопки Пуск -->
+    <svg id="creepy-hand" viewBox="0 0 100 100"
+        style="position: fixed; bottom: -150px; left: -10px; width: 80px; height: 100px; z-index: 9999; transition: bottom 0.15s cubic-bezier(0.1, 0.9, 0.2, 1); pointer-events: none; fill: black;">
+        <path
+            d="M10,100 L10,40 Q15,20 25,30 L30,60 L35,20 Q40,0 50,20 L55,60 L60,10 Q65,-10 75,10 L80,60 L85,30 Q90,10 95,30 L90,100 Z" />
+    </svg>
+
+    <div id="no-escape-msg"
+        style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: red; font-family: 'Courier New', monospace; font-size: 3rem; z-index: 10000; display: none; text-shadow: 2px 2px 0 #000; text-align: center; font-weight: bold; width: 100%;">
+        ТЫ НИКУДА НЕ ПОЙДЁШЬ.</div>
+
+    <!-- Панель задач -->
+    <div class="taskbar">
+        <div class="start-btn" onclick="toggleStartMenu()">
+            <svg class="start-logo" viewBox="0 0 16 16">
+                <rect x="0" y="0" width="7" height="7" fill="#ff3333" />
+                <rect x="8" y="0" width="7" height="7" fill="#33cc33" />
+                <rect x="0" y="8" width="7" height="7" fill="#3333ff" />
+                <rect x="8" y="8" width="7" height="7" fill="#ffff33" />
+            </svg>
+            <span id="taskbar-start-text">Пуск</span>
+        </div>
+        <div class="taskbar-items-container">
+            <div class="taskbar-item" id="taskbar-browser" onclick="toggleBrowserTaskbar()">
+                <svg viewBox="0 0 32 32" style="width: 14px; height: 14px; margin-right: 4px;" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" fill="#000080" stroke="black" stroke-width="2" />
+                    <ellipse cx="16" cy="16" rx="6" ry="14" fill="transparent" stroke="#00ffff" stroke-width="2" />
+                    <line x1="2" y1="16" x2="30" y2="16" stroke="#00ffff" stroke-width="2" />
+                </svg>
+                Internet
+            </div>
+        </div>
+        <div class="clock" id="clock">12:00 PM</div>
+    </div>
+
+    <!-- Загрузочный экран (изначально скрыт) -->
+    <div id="boot-screen" style="display: none;">
+        <div style="font-size: 24px; color: #a0a0a0; margin-bottom: 10px;">Microsoft</div>
+        <div style="font-size: 64px; font-weight: bold; display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 100 100" width="80" height="80">
+                <rect x="10" y="10" width="35" height="35" fill="#F25022" />
+                <rect x="50" y="10" width="35" height="35" fill="#7FBA00" />
+                <rect x="10" y="50" width="35" height="35" fill="#00A4EF" />
+                <rect x="50" y="50" width="35" height="35" fill="#FFB900" />
+            </svg>
+            Windows 95
+        </div>
+        <div class="boot-loading">
+            <div class="boot-loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Экран BSOD (изначально скрыт) -->
+    <div id="bsod-screen" class="bsod" style="display: none;">
+        <span style="background: #AAAAAA; color: #0000AA; padding: 2px 10px; font-weight: bold;">Windows</span>
+        <br><br>
+        <div>
+            A fatal exception 0E has occurred at 0028:C0011E36 in VXD VMM(01) +<br>
+            00010E36. The current application will be terminated.<br><br>
+            * Press any key to terminate the current application.<br>
+            * Press CTRL+ALT+DEL again to restart your computer. You will<br>
+            lose any unsaved information in all applications.<br><br>
+            <div style="text-align: center; margin-top: 30px; animation: blink 1s infinite;">
+                Press any key to continue _
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
