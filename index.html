@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,72 +13,261 @@
 
 <body>
 
-    <!-- Экран инициализации аудио -->
-    <div id="init-overlay" onclick="startAudioEngine()">НАЖМИТЕ ЗДЕСЬ ДЛЯ ЗАПУСКА СИСТЕМЫ</div>
+    <!-- Экран дисклеймера (показывается до начала игры) -->
+    <div id="disclaimer-overlay" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: #0a0000; color: #e0e0e0; padding: 30px; box-sizing: border-box; overflow-y: auto;">
+        <div style="max-width: 680px; width: 100%; font-family: 'MS Sans Serif', Tahoma, sans-serif;">
+            <div style="text-align: center; margin-bottom: 15px;">
+                <img src="Gemini_Generated_Image_hizbcqhizbcqhizb-removebg-preview.png" alt="LOGOTYPE.COM.EXE :REMAKE" class="menu-logo-img" style="max-height: 180px;">
+            </div>
+            <div id="disclaimer-header" style="color: #888; text-align: center; font-size: 0.85rem; margin-bottom: 15px; letter-spacing: 2px;">— ДИСКЛЕЙМЕР —</div>
+
+            <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 20px;">
+                <button class="lang-btn" data-lang="ru" onclick="setLanguage('ru')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">Русский</button>
+                <button class="lang-btn" data-lang="ua" onclick="setLanguage('ua')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">Українська</button>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">English</button>
+            </div>
+
+            <div style="background: #110000; border: 1px solid #440000; border-radius: 4px; padding: 22px 26px; line-height: 1.85; font-size: 0.97rem; color: #c8c8c8;">
+                <p id="disclaimer-p1" style="margin: 0 0 14px;">This game is <b style="color:#ff4444;">not hand-made</b>, but created using <b style="color:#ff4444;">Artificial Intelligence</b>.</p>
+                <p id="disclaimer-p2" style="margin: 0 0 14px;">If you are interested in this game — do not expect high quality, since AI can make mistakes, but the developer monitors it and regularly updates it. Also, AI can make mistakes, so you may encounter bugs in this game. If you find them, feel free to contact the developer.</p>
+                <p id="disclaimer-p3" style="margin: 0 0 14px;"><b style="color:#ff4444;">This game is NOT recommended for the faint of heart and epileptics</b>, as it contains:</p>
+                <ul style="margin: 0 0 14px; padding-left: 22px; color: #ff8888;">
+                    <li id="disclaimer-li1">Loud sounds</li>
+                    <li id="disclaimer-li2">Flashes</li>
+                    <li id="disclaimer-li3">Scary faces</li>
+                </ul>
+                <p id="disclaimer-p4" style="margin: 0 0 14px;">The developer is <b>not responsible</b> for the consequences if the player has not checked if they have epilepsy or weakness of heart.</p>
+                <p id="disclaimer-p5" style="margin: 0; color: #aaffaa; font-style: italic;">The developer wishes you a good game and exciting emotions. 🎮</p>
+            </div>
+
+            <label id="disclaimer-checkbox-label" style="display: flex; align-items: center; gap: 14px; margin: 28px 0 24px; cursor: pointer; user-select: none; font-size: 0.95rem; color: #d0d0d0;">
+                <div id="disclaimer-checkbox-box" style="width: 22px; height: 22px; border: 2px solid #cc0000; background: #1a0000; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 2px; transition: background 0.2s;">
+                    <svg id="disclaimer-checkmark" viewBox="0 0 14 14" width="14" height="14" style="display:none;">
+                        <polyline points="2,7 5,11 12,3" fill="none" stroke="#ff3333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span id="disclaimer-checkbox-text">I am not faint-hearted or epileptic, and I accept all warnings.</span>
+            </label>
+
+            <div style="text-align: center;">
+                <button id="disclaimer-continue-btn"
+                    onclick="disclaimerContinue()"
+                    style="padding: 12px 50px; font-size: 1.2rem; font-family: 'MS Sans Serif', Tahoma, sans-serif; cursor: not-allowed; background: #2a2a2a; color: #666; border: 2px solid #444; letter-spacing: 1px; transition: background 0.3s, color 0.3s, border-color 0.3s; box-shadow: none;"
+                    disabled>Continue</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Слой перехода -->
     <div id="transition-overlay"></div>
 
     <!-- ГЛАВНОЕ МЕНЮ ИГРЫ -->
     <div id="main-menu">
-        <div class="menu-title">LOGOTYPE.COM.EXE : REMAKE</div>
+
+        <!-- Кровавые подтёки сверху -->
+        <svg id="menu-drips" viewBox="0 0 1200 80" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="dripGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#880000" stop-opacity="1"/>
+                    <stop offset="100%" stop-color="#440000" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <!-- Капли разной ширины и длины -->
+            <path d="M60,0 Q65,35 62,50 Q59,60 62,80" stroke="url(#dripGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M180,0 Q183,20 181,38 Q179,48 183,60" stroke="url(#dripGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M340,0 Q346,40 342,65 Q339,75 344,80" stroke="url(#dripGrad)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M490,0 Q494,28 491,44 Q488,54 492,68" stroke="url(#dripGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M620,0 Q623,15 621,28" stroke="url(#dripGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M720,0 Q726,45 722,70 Q719,80 724,80" stroke="url(#dripGrad)" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M870,0 Q874,30 871,50 Q868,62 873,72" stroke="url(#dripGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M980,0 Q984,22 981,38" stroke="url(#dripGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M1100,0 Q1105,38 1101,60 Q1098,72 1103,80" stroke="url(#dripGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+
+        <!-- Вертикальная разделительная линия -->
+        <div id="menu-divider"></div>
+
+        <!-- Декоративная правая панель с глазом -->
+        <div id="menu-right-panel">
+            <svg id="menu-eye-deco" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="menuEyeClip">
+                        <path d="M10,100 C50,20 150,20 190,100 C150,180 50,180 10,100 Z"/>
+                    </clipPath>
+                    <radialGradient id="menuIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#cc0000"/>
+                        <stop offset="60%" stop-color="#6b0000"/>
+                        <stop offset="100%" stop-color="#2a0000"/>
+                    </radialGradient>
+                    <filter id="menuEyeGlow">
+                        <feGaussianBlur stdDeviation="3" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <!-- Склера -->
+                <path d="M10,100 C50,20 150,20 190,100 C150,180 50,180 10,100 Z" fill="#f0e8e8" stroke="#880000" stroke-width="3"/>
+                <!-- Капилляры в склере -->
+                <g clip-path="url(#menuEyeClip)" opacity="0.7">
+                    <path d="M30,85 Q55,78 80,90" stroke="#cc0000" stroke-width="1" fill="none"/>
+                    <path d="M30,105 Q50,112 70,105 Q85,100 95,108" stroke="#cc0000" stroke-width="0.8" fill="none"/>
+                    <path d="M140,82 Q160,75 175,88" stroke="#cc0000" stroke-width="1" fill="none"/>
+                    <path d="M145,112 Q162,120 178,110" stroke="#cc0000" stroke-width="0.8" fill="none"/>
+                    <path d="M25,95 Q40,88 55,100 Q65,108 60,115" stroke="#990000" stroke-width="0.7" fill="none"/>
+                    <path d="M165,95 Q152,88 140,98 Q132,106 138,118" stroke="#990000" stroke-width="0.7" fill="none"/>
+                </g>
+                <!-- Ирис -->
+                <g clip-path="url(#menuEyeClip)" filter="url(#menuEyeGlow)">
+                    <g id="menu-eye-movable" style="transition: transform 0.22s cubic-bezier(0.25, 1, 0.5, 1); transform: translate(var(--eye-x, -25px), var(--eye-y, 0px));">
+                        <circle cx="100" cy="100" r="48" fill="url(#menuIrisGrad)"/>
+                        <!-- Зрачок-кошка (вертикальный эллипс) -->
+                        <ellipse cx="100" cy="100" rx="14" ry="34" fill="#000"/>
+                        <!-- Блик -->
+                        <ellipse cx="108" cy="88" rx="5" ry="8" fill="rgba(255,255,255,0.35)" transform="rotate(-15,108,88)"/>
+                    </g>
+                </g>
+                <!-- Контур глаза -->
+                <path d="M10,100 C50,20 150,20 190,100" fill="none" stroke="#440000" stroke-width="2"/>
+                <path d="M10,100 C50,180 150,180 190,100" fill="none" stroke="#220000" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <div class="menu-title">
+            <img src="Gemini_Generated_Image_hizbcqhizbcqhizb-removebg-preview.png" alt="LOGOTYPE.COM.EXE :REMAKE" class="menu-logo-img">
+        </div>
 
         <div class="menu-buttons-container">
             <button id="menu-play-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
-                onclick="audioEngine.playClick(); startGameFromMenu()">Играть</button>
+                onclick="audioEngine.playClick(); toggleSubmenu('chapters-menu', true)">
+                Play
+                <span id="menu-play-sub" class="btn-sub">Start Adventure</span>
+            </button>
             <button id="menu-settings-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
-                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', true)">Настройки</button>
+                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', true)">
+                Settings
+                <span id="menu-settings-sub" class="btn-sub">Sound & Language</span>
+            </button>
             <button id="menu-credits-btn" class="menu-btn" onmouseenter="audioEngine.playHover()"
-                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', true)">Авторы</button>
+                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', true)">
+                Credits
+                <span id="menu-credits-sub" class="btn-sub">Who created this</span>
+            </button>
         </div>
 
         <!-- Подменю Настройки -->
         <div id="settings-menu" class="submenu-panel">
-            <h2 id="settings-title">Настройки</h2>
-            <p style="display: flex; justify-content: space-between; align-items: center;">
-                <span id="settings-vol-label">Громкость</span>: <input type="range" id="volume-slider" min="0" max="100" value="100"
-                    style="width: 150px; accent-color: red;" oninput="audioEngine.setVolume(this.value);">
+            <div class="submenu-scanlines"></div>
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <h2 id="settings-title">Settings</h2>
+            <p style="display: flex; justify-content: space-between; align-items: center; font-size: 1.4rem;">
+                <span id="settings-vol-label">Volume</span>: <input type="range" id="volume-slider" min="0" max="100" value="100"
+                    style="width: 180px; accent-color: red;" oninput="audioEngine.setVolume(this.value);">
             </p>
-            <p style="display: flex; flex-direction: column; gap: 5px;">
-                <span id="settings-lang-label">Язык</span>: 
-                <span style="display: flex; gap: 10px; justify-content: center;">
-                    <span class="lang-btn" onclick="setLanguage('ru')">Русский</span>
-                    <span class="lang-btn" onclick="setLanguage('ua')">Українська</span>
-                    <span class="lang-btn" onclick="setLanguage('en')">English</span>
+            <p style="display: flex; flex-direction: column; gap: 8px; font-size: 1.4rem;">
+                <span id="settings-lang-label">Language</span>: 
+                <span style="display: flex; gap: 12px; justify-content: center;">
+                    <button class="lang-btn" data-lang="ru" onclick="setLanguage('ru')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">Русский</button>
+                    <button class="lang-btn" data-lang="ua" onclick="setLanguage('ua')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">Українська</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onmousedown="if(typeof audioEngine !== 'undefined') audioEngine.playClick()">English</button>
                 </span>
             </p>
-            <button id="settings-back-btn" class="menu-btn" style="font-size: 1.5rem; margin-top: 20px; padding: 5px 20px;"
+            <button id="settings-back-btn" class="menu-btn" style="font-size: 1.6rem; margin-top: 24px; padding: 10px 40px 10px 22px; min-width: 200px;"
                 onmouseenter="audioEngine.playHover()"
-                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', false)">Назад</button>
+                onclick="audioEngine.playClick(); toggleSubmenu('settings-menu', false)">
+                Back
+                <span id="settings-back-sub" class="btn-sub">To Main Menu</span>
+            </button>
         </div>
 
         <!-- Подменю Авторы -->
         <div id="credits-menu" class="submenu-panel">
-            <h2 id="credits-title">Авторы</h2>
-            <p id="credits-designer">Дизайнер: Игорь</p>
-            <p id="credits-ideas">Идеи: Игорь</p>
-            <p id="credits-programmer">Программист: Gemini AI</p>
-            <p id="credits-realization">Воплощение: Gemini AI</p>
-            <button id="credits-back-btn" class="menu-btn" style="font-size: 1.5rem; margin-top: 20px; padding: 5px 20px;"
+            <div class="submenu-scanlines"></div>
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <h2 id="credits-title">Credits</h2>
+            <p id="credits-designer" style="font-size: 1.3rem;">Designer: Igor</p>
+            <p id="credits-ideas" style="font-size: 1.3rem;">Ideas: Igor</p>
+            <p id="credits-programmer" style="font-size: 1.3rem;">Programmer: Gemini AI</p>
+            <p id="credits-realization" style="font-size: 1.3rem;">Realization: Gemini AI</p>
+            <button id="credits-back-btn" class="menu-btn" style="font-size: 1.6rem; margin-top: 24px; padding: 10px 40px 10px 22px; min-width: 200px;"
                 onmouseenter="audioEngine.playHover()"
-                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', false)">Назад</button>
+                onclick="audioEngine.playClick(); toggleSubmenu('credits-menu', false)">
+                Back
+                <span id="credits-back-sub" class="btn-sub">To Main Menu</span>
+            </button>
+        </div>
+
+        <!-- Подменю Главы -->
+        <div id="chapters-menu" class="submenu-panel">
+            <div class="submenu-scanlines"></div>
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <h2 id="chapters-title">Chapters</h2>
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+                <button id="chapter-1-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px;" onmouseenter="audioEngine.playHover()" onclick="audioEngine.playClick(); toggleSubmenu('saves-menu', true)">
+                    Chapter 1
+                    <span id="chapter-1-sub" class="btn-sub">Beginning of Nightmare</span>
+                </button>
+                <button id="chapter-2-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px; opacity: 0.4; cursor: not-allowed;" disabled>
+                    Chapter 2
+                    <span id="chapter-2-sub" class="btn-sub">Soon</span>
+                </button>
+                <button id="chapter-3-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px; opacity: 0.4; cursor: not-allowed;" disabled>
+                    Chapter 3
+                    <span id="chapter-3-sub" class="btn-sub">Soon</span>
+                </button>
+            </div>
+            <button id="chapters-back-btn" class="menu-btn" style="font-size: 1.6rem; margin-top: 24px; padding: 10px 40px 10px 22px; min-width: 200px;"
+                onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu(null, false)">
+                Back
+                <span id="chapters-back-sub" class="btn-sub">To Main Menu</span>
+            </button>
+        </div>
+
+        <!-- Подменю Сохранения -->
+        <div id="saves-menu" class="submenu-panel">
+            <div class="submenu-scanlines"></div>
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <h2 id="saves-title">Save Slots</h2>
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+                <button id="save-1-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px;" onmouseenter="audioEngine.playHover()" onclick="audioEngine.playClick(); startGameFromMenu()">
+                    Slot 1
+                    <span id="save-1-sub" class="btn-sub">Empty — New Game</span>
+                </button>
+                <button id="save-2-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px;" onmouseenter="audioEngine.playHover()" onclick="audioEngine.playClick(); startGameFromMenu()">
+                    Slot 2
+                    <span id="save-2-sub" class="btn-sub">Empty — New Game</span>
+                </button>
+                <button id="save-3-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px;" onmouseenter="audioEngine.playHover()" onclick="audioEngine.playClick(); startGameFromMenu()">
+                    Slot 3
+                    <span id="save-3-sub" class="btn-sub">Empty — New Game</span>
+                </button>
+            </div>
+            <button id="saves-back-btn" class="menu-btn" style="font-size: 1.6rem; margin-top: 24px; padding: 10px 40px 10px 22px; min-width: 200px;"
+                onmouseenter="audioEngine.playHover()"
+                onclick="audioEngine.playClick(); toggleSubmenu('chapters-menu', true)">
+                Back
+                <span id="saves-back-sub" class="btn-sub">To Chapter Selection</span>
+            </button>
         </div>
     </div>
 
     <div id="desktop">
         <!-- Иконка Мой Компьютер -->
-        <div class="icon-container" tabindex="0" ondblclick="alert('Отказано в доступе.')"
+        <div class="icon-container" tabindex="0" ondblclick="openMyComputer()"
             style="top: 10px; left: 10px;">
             <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2" y="4" width="28" height="20" fill="#c0c0c0" stroke="black" stroke-width="2" />
                 <rect x="4" y="6" width="24" height="14" fill="#008080" stroke="black" stroke-width="2" />
                 <rect x="10" y="24" width="12" height="4" fill="#c0c0c0" stroke="black" stroke-width="2" />
             </svg>
-            <span id="desktop-pc-text" class="icon-text">Мой компьютер</span>
+            <span id="desktop-pc-text" class="icon-text">My Computer</span>
         </div>
 
         <!-- Иконка Корзины -->
-        <div class="icon-container" tabindex="0" style="top: 90px; left: 10px;">
+        <div class="icon-container" tabindex="0" ondblclick="openTrash()" style="top: 90px; left: 10px;">
             <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 8H26V28H6V8Z" fill="#c0c0c0" stroke="black" stroke-width="2" />
                 <path d="M10 4H22V8H10V4Z" fill="#c0c0c0" stroke="black" stroke-width="2" />
@@ -86,7 +275,25 @@
                 <line x1="16" y1="12" x2="16" y2="24" stroke="black" stroke-width="2" />
                 <line x1="20" y1="12" x2="20" y2="24" stroke="black" stroke-width="2" />
             </svg>
-            <span id="desktop-trash-text" class="icon-text">Корзина</span>
+            <span id="desktop-trash-text" class="icon-text">Recycle Bin</span>
+        </div>
+
+        <!-- Иконка Письма -->
+        <div class="icon-container" tabindex="0" ondblclick="openLetter()" style="top: 250px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Лист бумаги -->
+                <rect x="3" y="3" width="20" height="26" rx="1" fill="#fffde7" stroke="#555" stroke-width="1.5"/>
+                <!-- Загнутый угол -->
+                <path d="M19 3 L23 7 L19 7 Z" fill="#e0c800" stroke="#555" stroke-width="1"/>
+                <!-- Строки текста -->
+                <line x1="6" y1="11" x2="20" y2="11" stroke="#333" stroke-width="1"/>
+                <line x1="6" y1="15" x2="20" y2="15" stroke="#333" stroke-width="1"/>
+                <line x1="6" y1="19" x2="20" y2="19" stroke="#333" stroke-width="1"/>
+                <line x1="6" y1="23" x2="14" y2="23" stroke="#333" stroke-width="1"/>
+                <!-- Красная полоса сбоку -->
+                <rect x="3" y="3" width="3" height="26" rx="1" fill="#cc0000" opacity="0.7"/>
+            </svg>
+            <span id="desktop-letter-text" class="icon-text">READ_ME.txt</span>
         </div>
 
         <!-- Иконка Браузера -->
@@ -97,6 +304,31 @@
                 <line x1="2" y1="16" x2="30" y2="16" stroke="#00ffff" stroke-width="2" />
             </svg>
             <span id="desktop-internet-text" class="icon-text">Internet</span>
+        </div>
+
+        <!-- Иконка MS-DOS Prompt -->
+        <div class="icon-container" tabindex="0" ondblclick="openMSDOSPrompt()" style="top: 330px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="28" height="24" fill="#000000" stroke="#c0c0c0" stroke-width="2"/>
+                <path d="M6 10 L10 14 L6 18" stroke="#00ff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="11" y1="18" x2="17" y2="18" stroke="#00ff00" stroke-width="2"/>
+            </svg>
+            <span id="desktop-dos-text" class="icon-text">MS-DOS Prompt</span>
+        </div>
+
+        <!-- Иконка Registry Editor -->
+        <div class="icon-container" tabindex="0" ondblclick="openRegistryEditor()" style="top: 410px; left: 10px;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="10" height="10" fill="#ffcc00" stroke="black" stroke-width="1.5"/>
+                <rect x="18" y="4" width="10" height="10" fill="#3399ff" stroke="black" stroke-width="1.5"/>
+                <rect x="4" y="18" width="10" height="10" fill="#3399ff" stroke="black" stroke-width="1.5"/>
+                <rect x="18" y="18" width="10" height="10" fill="#ffcc00" stroke="black" stroke-width="1.5"/>
+                <line x1="14" y1="9" x2="18" y2="9" stroke="black" stroke-width="1.5"/>
+                <line x1="9" y1="14" x2="9" y2="18" stroke="black" stroke-width="1.5"/>
+                <line x1="23" y1="14" x2="23" y2="18" stroke="black" stroke-width="1.5"/>
+                <line x1="14" y1="23" x2="18" y2="23" stroke="black" stroke-width="1.5"/>
+            </svg>
+            <span id="desktop-regedit-text" class="icon-text">Registry Editor</span>
         </div>
     </div>
 
@@ -127,15 +359,15 @@
     <!-- Всплывающее рекламное окно -->
     <div id="ad-popup" class="window" style="width: 320px; height: auto; top: 180px; left: 450px; z-index: 200;">
         <div class="title-bar active" id="ad-title-bar">
-            <span>Message</span>
+            <span id="ad-title">Message</span>
             <div class="window-btn" onclick="closeAdPopup(event)">X</div>
         </div>
         <div class="window-content"
             style="text-align: center; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-weight: bold; padding: 15px; height: auto; cursor: pointer; background-color: #ffffcc;"
             onclick="clickAd()">
-            <p style="color: #000080; font-size: 14px; margin-top: 0;">ХОЧЕШЬ ПРОТЕСТИТЬ СВОЮ ПАМЯТЬ?</p>
-            <p style="color: red; font-size: 13px;">НАСКОЛЬКО ХОРОШО ТЫ ЗНАЕШЬ БРЕНДЫ?</p>
-            <p style="color: blue; text-decoration: underline; margin-bottom: 0;">ПРОВЕРЬ СВОЮ ПАМЯТЬ!</p>
+            <p id="ad-p1" style="color: #000080; font-size: 14px; margin-top: 0;">ХОЧЕШЬ ПРОТЕСТИТЬ СВОЮ ПАМЯТЬ?</p>
+            <p id="ad-p2" style="color: red; font-size: 13px;">НАСКОЛЬКО ХОРОШО ТЫ ЗНАЕШЬ БРЕНДЫ?</p>
+            <p id="ad-p3" style="color: blue; text-decoration: underline; margin-bottom: 0;">ПРОВЕРЬ СВОЮ ПАМЯТЬ!</p>
         </div>
     </div>
 
@@ -146,11 +378,12 @@
                 <span style="display: inline-block; transform: rotate(90deg); margin-bottom: 30px;">Windows 95</span>
             </div>
             <div class="start-items">
-                <div id="start-programs" class="start-item" onclick="systemAlert('programsUnavailable')">Программы</div>
-                <div id="start-docs" class="start-item" onclick="systemAlert('docsEmpty')">Документы</div>
-                <div id="start-settings-item" class="start-item" onclick="systemAlert('settingsLocked')">Настройки</div>
+                <div id="start-programs" class="start-item" onclick="systemAlert('programsUnavailable')">Programs</div>
+                <div id="start-docs" class="start-item" onclick="systemAlert('docsEmpty')">Documents</div>
+                <div id="start-settings-item" class="start-item" onclick="systemAlert('settingsLocked')">Settings</div>
+                <div id="start-taskmgr" class="start-item" onclick="openTaskManager(); toggleStartMenu();">Task Manager</div>
                 <div class="start-separator"></div>
-                <div id="start-shutdown" class="start-item" onclick="systemAlert('cannotShutdown')">Завершение работы...</div>
+                <div id="start-shutdown" class="start-item" onclick="startShutdown()">Shutdown...</div>
             </div>
         </div>
     </div>
@@ -175,7 +408,7 @@
                 <rect x="0" y="8" width="7" height="7" fill="#3333ff" />
                 <rect x="8" y="8" width="7" height="7" fill="#ffff33" />
             </svg>
-            <span id="taskbar-start-text">Пуск</span>
+            <span id="taskbar-start-text">Start</span>
         </div>
         <div class="taskbar-items-container">
             <div class="taskbar-item" id="taskbar-browser" onclick="toggleBrowserTaskbar()">
@@ -222,6 +455,114 @@
                 Press any key to continue _
             </div>
         </div>
+    </div>
+
+    <!-- Бой с боссом -->
+    <div id="boss-fight-overlay">
+        <div class="boss-hp-bar"><div id="boss-hp-fill" class="boss-hp-fill"></div></div>
+        <div id="boss-hole" class="boss-hole"></div>
+        <div id="boss-eye-container" class="boss-eye-container">
+            <svg class="boss-eye" viewBox="0 0 100 100" id="boss-eye-svg">
+                <defs>
+                    <clipPath id="sclera-clip">
+                        <path d="M10,50 C30,10 70,10 90,50 C70,90 30,90 10,50 Z"/>
+                    </clipPath>
+                    <radialGradient id="bossIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff2200"/>
+                        <stop offset="55%" stop-color="#880000"/>
+                        <stop offset="100%" stop-color="#330000"/>
+                    </radialGradient>
+                    <filter id="bossGlow">
+                        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <!-- Склера -->
+                <path id="boss-sclera" d="M10,50 C30,10 70,10 90,50 C70,90 30,90 10,50 Z" fill="white" stroke="#cc0000" stroke-width="2"/>
+                <!-- Капилляры в склере (будут краснеть при фазах) -->
+                <g id="boss-capillaries" clip-path="url(#sclera-clip)" opacity="0.5">
+                    <path d="M18,45 Q28,40 38,48" stroke="#cc0000" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+                    <path d="M16,52 Q24,58 32,52 Q38,48 36,55" stroke="#bb0000" stroke-width="0.6" fill="none" stroke-linecap="round"/>
+                    <path d="M22,40 Q30,35 35,42" stroke="#cc0000" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+                    <path d="M64,42 Q72,37 82,44" stroke="#cc0000" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+                    <path d="M65,55 Q74,61 82,55" stroke="#bb0000" stroke-width="0.6" fill="none" stroke-linecap="round"/>
+                    <path d="M68,38 Q76,32 80,40" stroke="#cc0000" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+                    <path d="M20,48 Q26,44 30,50" stroke="#990000" stroke-width="0.4" fill="none" stroke-linecap="round"/>
+                    <path d="M70,48 Q76,44 80,50" stroke="#990000" stroke-width="0.4" fill="none" stroke-linecap="round"/>
+                </g>
+                <!-- Ирис + содержимое глаза, обрезано по форме склеры -->
+                <g clip-path="url(#sclera-clip)" filter="url(#bossGlow)">
+                    <circle id="boss-iris" cx="50" cy="50" r="22" fill="url(#bossIrisGrad)"/>
+                    <!-- Кошачий зрачок (вертикальный эллипс) -->
+                    <ellipse id="boss-pupil" cx="50" cy="50" rx="5" ry="15" fill="black"/>
+                    <!-- Блики -->
+                    <ellipse id="boss-glint" cx="54" cy="43" rx="2.5" ry="4" fill="rgba(255,255,255,0.45)" transform="rotate(-10,54,43)"/>
+                </g>
+                <!-- Трещины (изначально скрыты, появляются по фазам) -->
+                <g id="boss-cracks" clip-path="url(#sclera-clip)" opacity="0" style="transition: opacity 1.5s;">
+                    <path d="M50,28 L46,38 L52,42 L44,55" stroke="#1a0000" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M52,42 L58,48 L54,56" stroke="#1a0000" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+                    <path d="M30,30 L36,40 L32,50 L38,60" stroke="#1a0000" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+                    <path d="M70,32 L65,44 L70,52" stroke="#1a0000" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+                    <path d="M44,65 L50,58 L56,66" stroke="#1a0000" stroke-width="0.7" fill="none" stroke-linecap="round"/>
+                </g>
+                <!-- Трещины 2й фазы (скрыты) -->
+                <g id="boss-cracks-2" clip-path="url(#sclera-clip)" opacity="0" style="transition: opacity 1.5s;">
+                    <path d="M58,25 L62,36 L55,48 L62,58" stroke="#0d0000" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <path d="M38,22 L34,35 L40,44" stroke="#0d0000" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M22,50 L32,46 L28,58" stroke="#0d0000" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    <path d="M76,50 L68,46 L72,58" stroke="#0d0000" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    <path d="M50,70 L46,62 L54,55 L58,66" stroke="#0d0000" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M50,28 L44,20 L48,14" stroke="#0d0000" stroke-width="1" fill="none" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+        <svg id="boss-laser-svg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:50003;pointer-events:none;display:none;" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="laser-glow">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+            </defs>
+            <!-- Ядро луча -->
+            <line id="laser-core"   x1="0" y1="0" x2="0" y2="0" stroke="white"   stroke-width="4"  filter="url(#laser-glow)"/>
+            <!-- Свечение -->
+            <line id="laser-glow1"  x1="0" y1="0" x2="0" y2="0" stroke="red"     stroke-width="12" opacity="0.5" filter="url(#laser-glow)"/>
+            <line id="laser-glow2"  x1="0" y1="0" x2="0" y2="0" stroke="#ff4444" stroke-width="22" opacity="0.25" filter="url(#laser-glow)"/>
+        </svg>
+        <div id="boss-text" class="boss-text"></div>
+    </div>
+
+    <!-- Диспетчер задач -->
+    <div id="task-manager" class="window" style="width: 400px; height: 300px; display: none; z-index: 10000; top: 150px; left: 200px;">
+        <div class="title-bar active" id="taskmgr-title-bar">
+            <span>Task Manager</span>
+            <div class="window-btn" onclick="closeTaskManager()">X</div>
+        </div>
+        <div class="window-content" style="padding: 10px; font-family: 'MS Sans Serif', Tahoma, sans-serif; display: flex; flex-direction: column; gap: 10px; height: calc(100% - 40px); box-sizing: border-box;">
+            <div>Tasks</div>
+            <div id="taskmgr-list" style="border: 2px inset #fff; background: white; flex-grow: 1; padding: 5px; overflow-y: auto;">
+                <div class="taskmgr-item" style="padding: 2px;" onclick="selectTaskmgrItem(this)">Explorer</div>
+                <div id="taskmgr-internet" class="taskmgr-item glitch-text" style="padding: 2px; cursor: pointer; color: red; font-weight: bold; animation: shake 0.2s infinite;" onclick="selectTaskmgrItem(this)" oncontextmenu="showTaskmgrContext(event)">Internet (Not responding)</div>
+                <div class="taskmgr-item" style="padding: 2px;" onclick="selectTaskmgrItem(this)">Audio Service</div>
+                <div class="taskmgr-item" style="padding: 2px; color: #660000;" onclick="selectTaskmgrItem(this)">watching_you.exe</div>
+                <div class="taskmgr-item" style="padding: 2px; color: #660000;" onclick="selectTaskmgrItem(this)">fear.sys</div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 5px;">
+                <button style="padding: 3px 10px;" onclick="endSelectedTask()">End Task</button>
+                <button style="padding: 3px 10px;" onclick="closeTaskManager()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контекстное меню Диспетчера задач -->
+    <div id="taskmgr-context-menu" style="display: none; position: fixed; background: #c0c0c0; border: 2px outset #fff; z-index: 10001; padding: 2px; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+        <div style="padding: 5px 15px; cursor: pointer; font-family: 'MS Sans Serif', Tahoma, sans-serif;" onmouseenter="this.style.background='#000080'; this.style.color='white'" onmouseleave="this.style.background='transparent'; this.style.color='black'" onclick="endInternetTask()">End Task</div>
+    </div>
+
+    <!-- Оверлей для корпоративных вспышек (Reality Bleed) -->
+    <div id="corporate-flash-overlay" class="corporate-flash-overlay">
+        <div id="corporate-flash-content" class="corporate-flash-content"></div>
     </div>
 
     <script src="script.js"></script>
