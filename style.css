@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
+
         @font-face {
             font-family: 'W95FA';
             src: url('https://fonts.cdnfonts.com/s/11835/W95FA.woff') format('woff');
@@ -500,11 +502,9 @@
             }
         }
 
-        /* --- Шрифты для меню --- */
-        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
-
         /* --- Стили Главного Меню --- */
         #main-menu {
+            display: none; /* Скрыто по умолчанию, показываем после дисклеймера */
             position: fixed;
             top: 0;
             left: 0;

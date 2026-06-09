@@ -474,6 +474,12 @@
                 }, 800);
             }
 
+            // Показываем главное меню
+            const mainMenu = document.getElementById('main-menu');
+            if (mainMenu) {
+                mainMenu.style.display = 'block';
+            }
+
             // Добавляем звуки для элементов интерфейса после инициализации
             document.querySelectorAll('.icon-container, .window-btn, .start-btn, .taskbar-item, .go-btn, .start-item').forEach(el => {
                 el.addEventListener('mousedown', () => audioEngine.playClick());
@@ -2824,6 +2830,14 @@
             audioEngine.playBoot();
             document.getElementById('bsod-screen').style.display = 'none';
             closeAllDesktopWindows();
+            
+            is666Mode = false;
+            if (creepyFacesInterval) {
+                clearInterval(creepyFacesInterval);
+                creepyFacesInterval = null;
+            }
+            document.querySelectorAll('.creepy-face').forEach(e => e.remove());
+
             window._bossIntroStarted = false;
             window._bossFightInitiated = false;
             hasRebootedAfterBSOD = true;
