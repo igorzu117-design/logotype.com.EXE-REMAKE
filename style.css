@@ -1456,5 +1456,193 @@
             color: #ffffff;
         }
 
+        /* --- Nickname Menu Styles --- */
+        #nickname-input {
+            font-family: 'W95FA', 'MS Sans Serif', Tahoma, sans-serif;
+            font-size: 1.4rem;
+            padding: 8px 12px;
+            width: 280px;
+            text-align: center;
+            border: 2px solid #550000;
+            background: #000000;
+            color: #cc2222;
+            outline: none;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.95);
+            transition: border-color 0.25s, color 0.2s, box-shadow 0.2s;
+        }
+        #nickname-input:focus {
+            border-color: #ff3333;
+            color: #ff3333;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4), 4px 4px 0 rgba(0,0,0,0.95);
+        }
+        #nickname-input::placeholder {
+            color: #440000;
+        }
+
+        .internet-glitch {
+            filter: brightness(0.55) sepia(0.3) saturate(1.5) drop-shadow(0 0 5px rgba(255, 0, 0, 0.7));
+            animation: gentle-shake 0.25s infinite;
+        }
+
+        @keyframes gentle-shake {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            20% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+            40% { transform: translate(1.5px, -1px) rotate(0.5deg); }
+            60% { transform: translate(-1px, -1.5px) rotate(-0.5deg); }
+            80% { transform: translate(1px, 1px) rotate(0.5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        .red-aura-shake {
+            filter: drop-shadow(0 0 8px #ff0000) drop-shadow(0 0 15px #ff0000);
+            animation: icon-shake 0.4s infinite alternate;
+        }
+
+        @keyframes icon-shake {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-1.5px, 1px) rotate(-0.5deg); }
+            50% { transform: translate(1.5px, -1px) rotate(0.5deg); }
+            75% { transform: translate(-1px, -1px) rotate(-0.5deg); }
+            100% { transform: translate(1px, 1.5px) rotate(0.5deg); }
+        }
+
+        /* ================================================================
+           ТИТРЫ ГЛАВЫ 1
+           ================================================================ */
+        .solo-ending-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle at center, #0f0000 0%, #050000 70%, #000000 100%);
+            z-index: 55000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .solo-ending-overlay::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, transparent 40%, rgba(120, 0, 0, 0.4) 100%);
+            pointer-events: none;
+            z-index: 1;
+            animation: fogPulse 4s ease-in-out infinite alternate;
+        }
+
+        .ch1-credits-scanlines {
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0,0,0,0.25) 0px,
+                rgba(0,0,0,0.25) 1px,
+                transparent 1px,
+                transparent 4px
+            );
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .ch1-credits-container {
+            position: relative;
+            z-index: 3;
+            max-width: 680px;
+            width: 90%;
+            background: linear-gradient(160deg, #0d0000 0%, #080000 50%, #050000 100%);
+            border: 2px solid #660000;
+            outline: 1px solid #1a0000;
+            box-shadow: 0 0 40px rgba(180, 0, 0, 0.35), 0 0 100px rgba(100, 0, 0, 0.2), inset 0 0 15px rgba(255, 0, 0, 0.1);
+            padding: 40px 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            animation: ch1CreditsAppear 1.2s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+        }
+
+        @keyframes ch1CreditsAppear {
+            0% { opacity: 0; transform: scale(0.92) translateY(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .ch1-credits-title {
+            font-family: 'Nosifer', 'Rubik Glitch', cursive;
+            color: #ff2222;
+            font-size: 2.2rem;
+            margin: 0 0 14px 0;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(150, 0, 0, 0.5);
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .ch1-credits-sub {
+            font-family: 'W95FA', 'MS Sans Serif', monospace;
+            color: #ff8888;
+            font-size: 1.15rem;
+            margin: 0 0 20px 0;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+        }
+
+        .ch1-credits-divider {
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #880000, #ff3333, #880000, transparent);
+            margin: 5px 0 25px 0;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        .ch1-credits-dev-box {
+            width: 100%;
+            background: rgba(20, 0, 0, 0.6);
+            border: 1px solid #440000;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .ch1-credits-dev-head {
+            font-family: 'Rubik Glitch', cursive;
+            color: #ff3333;
+            font-size: 1.6rem;
+            margin: 0 0 15px 0;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+        }
+
+        .ch1-credits-list p {
+            font-family: 'W95FA', 'MS Sans Serif', monospace;
+            color: #ddaaaa;
+            font-size: 1.1rem;
+            margin: 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .ch1-credits-thanks {
+            font-family: 'W95FA', 'MS Sans Serif', monospace;
+            color: #ffcccc;
+            font-size: 1.05rem;
+            margin: 0 0 30px 0;
+            font-style: italic;
+            line-height: 1.4;
+            text-shadow: 0 0 6px rgba(255, 0, 0, 0.3);
+        }
+
+        .ch1-credits-btn {
+            font-size: 1.6rem !important;
+            padding: 12px 45px 12px 25px !important;
+            min-width: 260px !important;
+            margin-top: 5px;
+        }
+
+
 
 
