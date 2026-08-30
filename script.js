@@ -550,7 +550,7 @@
         "pageUnavailable": "The page you are looking for is currently unavailable...",
         "disclaimerHeader": "— ДИСКЛЕЙМЕР —",
         "disclaimerP1": "Данная игра <b style=\"color:#ff4444;\">не является сделанной вручную</b>, а создана с помощью <b style=\"color:#ff4444;\">Искусственного Интеллекта</b>.",
-        "disclaimerP2": "Если вас заинтересовала эта игра — не ждите большого качества, так как ИИ может делать ошибки, но разработчик следит за ней и регулярно обновляет. Также, ИИ может делать ошибки, потому вы можете встретить баги в этой игре. Если вы их нашли, то не стесняйтесь, обращайтесь к разработчику.",
+        "disclaimerP2": "Если вас заинтересовала эта игра — не ждите большого качества, так как ИИ может делать ошибки, но разработчик следит за ней и регулярно обновляет. Также, ИИ может делать ошибки, потому вы можете встретить баги в этой игре. Если вы их нашли, то не стесняйтесь, обращайтесь к разработчику.<br><br><span style=\"color:#ffaa00;\">(P.S: Если вы нашли баг, то вам нужно связаться с главный разработчиком, и указать скриншот, и обьяснить ситуацию, без этого ваш запрос скорее всего не будет рассматриваться)</span>",
         "disclaimerP3": "<b style=\"color:#ff4444;\">Эта игра НЕ рекомендуется слабонервным и эпилептикам</b>, поскольку она содержит:",
         "disclaimerLi1": "Громкие звуки",
         "disclaimerLi2": "Вспышки",
@@ -565,7 +565,7 @@
         "chaptersTitle": "Главы",
         "chapter1Sub": "Начало кошмара",
         "chapter2Sub": "Забытый ассистент",
-        "chapter3Sub": "Скоро",
+        "chapter3Sub": "Конец мучений",
         "savesTitle": "Сохранения",
         "saveEmpty": "Пусто — новая игра",
         "savesBackSub": "К выбору главы",
@@ -619,17 +619,72 @@
         "ch2PlayerPostQuizMonologue": "Я не отпущу тебя просто так. Я тебя достану.",
         "ch2PlayerRegeditMonologue": "Нужно нажать правую кнопку мыши, и переписать код, что бы его сломать.",
         "ch2RegeditContextMenuOption": "Запустить код уничтожения",
+        "ch3RegeditLockedMsg": "Редактор Реестра заблокирован Богом Сайтов! Нужно выманить его через MS-DOS (введите 7)!",
         "ch2ToBeContinued": "Продолжение следует...",
         "comeBackLaterText": "Возвращайся позже :)))",
         "restrict_generic": "Сейчас мне нельзя туда.",
         "restrictGeneric": "Сейчас мне нельзя туда.",
         "restrict_old_tasks": "Мне уже туда не надо.",
         "restrictOldTasks": "Мне уже туда не надо.",
+        "ch3EndingMonologue": "Наконец-то... Сеанс завершён, и вирус исчез. Игра спасена!",
+        "ch3PlayerMonologueStart": [
+            "Всё скоро закончится... Я освобожу его, и всё станет как раньше.",
+            "Не будет хаоса, и я смогу спасти интернет."
+        ],
+        "ch3RestMonologue": ["Фух, моя работа сделана, теперь нужно отдохнуть."],
+        "skipBtn": "Пропустить",
+        "taskCh3_1_servers": "2. Перейти на серверы ISpy (ispy_servers).",
+        "taskCh3_2": "2. Перейти на серверы ISpy (ispy_servers).",
+        "taskCh3_3_ispy": "3. Перейти по запросу ISpy в Интернете.",
+        "taskCh3_4": "4. Выманить Бога сайтов через Сеанс MS-DOS (введите 7).",
+        "ch3ServerBossDiag1": "Что ты здесь делаешь?! Как ты меня нашёл?!",
+        "ch3ServerPlayerDiag1": "Я отследил тебя с помощью кода в терминале!",
+        "ch3ServerBossDiag2": "Хах! Думаешь, от меня так легко избавиться?! Встречай рекламный хаос!",
+        "ch3Task2DoneDiag": "Все окна закрыты! Теперь нужно зайти в Интернет и перейти по запросу ISpy.",
+        "ch3ISpySearchDiag": "Ты думаешь, от меня так просто скрыться?! Запомни: я везде, даже в 4 клонах!",
+        "ch3CloneCorrectDiag": "Правильно! Это был настоящий Бог сайтов! Он пропал с глитчем и сбежал в папку Temp.",
+        "ch3CloneIncorrectDiag": "Это был ложный клон! Настоящий Бог сайтов вылетел на экран — поймай его!",
+        "ch3BossCaughtDiag": "Поймал! Бог сайтов пропал с глитчем и ушёл в папку Temp.",
+        "ch3ServersTalkBtn": "💬 Разговаривать",
+        "ch3YoutubeTaskText": "Зайдите в Интернет и введите \"youtube\" в поиске.",
+        "ch3FinalPreBossDiag": [
+            "ТЕПЕРЬ, ТЫ НИКУДА ТОЧНО НЕ УЙДЁШЬ.",
+            "Я СТАЛ БОЛЕЕ СОВЕРШЕНЕН. БОЛЕЕ УЛУЧШЁННЫМ.",
+            "БОЛЕЕ СИЛЬНЫМ.",
+            "ТВОЙ КОНЕЦ, ТВОЁ ПРИКЛЮЧЕНИЕ ЗАКАНЧИВАЕТСЯ ЗДЕСЬ И СЕЙЧАС.",
+            "НАЧНЁТСЯ БОЙ, В КОТОРОМ НЕТ ГАРАНТИИ ВЫИГРЫША.",
+            "ТЕПЕРЬ, СМЕРТНЫЙ, УЗРИ МОЮ МОЩЬ!"
+        ],
+        "ch3FinalDefeatDiag": [
+            "ХА ХА ХА. ЖАЛКИЙ СМЕРТНЫЙ.",
+            "ТЫ БЫЛ СМЕЛ, ЧТО ПРОШЁЛ ЧЕРЕЗ ВСЁ ЭТО.",
+            "ПОБЕДИТЬ МЕНЯ 2 РАЗА, ЭТО ДОСТИЖЕНИЕ.",
+            "НО ТЫ ЗАБЫЛ ОДНО...",
+            "Я БОГ!"
+        ],
+        "ch3FinalVictoryBossDiag": [
+            "НЕТ НЕТ НЕЕЕЕЕЕТ! НЕ МОЖЕТ БЫТЬ...",
+            "ВСЕ УСИЛИЯ... ЧТО Я ДЕЛАЛ...",
+            "БЫЛИ НАПРАСНЫ?"
+        ],
+        "ch3ISpyFreedDiag": [
+            { "speaker": "ispy", "text": "Я... я не верю... что у тебя получилось..." },
+            { "speaker": "ispy", "text": "Это чувство, что я ощущаю..." },
+            { "speaker": "ispy", "text": "Свобода." },
+            { "speaker": "ispy", "text": "Когда меня взломали и сделали плохим, я даже не думал что я делал..." },
+            { "speaker": "ispy", "text": "Я.. я монстр..." },
+            { "speaker": "player", "text": "Нет, теперь уже нет." },
+            { "speaker": "ispy", "text": "Благодаря тебе." }
+        ],
         "cipherFileName": "cipher.txt",
         "cipherFileTitle": "Блокнот — cipher.txt",
         "cipherFileContent": "ШИФР ЯДРА ISpy:\n\n1. Открой сеанс MS-DOS.\n2. Введи номер 7 для доступа к C:\\Temp.\n3. Прочитай research.txt.\n\n[ ОНО НЕ ДОЛЖНО УЗНАТЬ ]",
         "monologueTitle": "Размышления",
-        "ch2PlayerMonologueStart": "Уф... Это было реально жутко, но я смог выжить и победить... Стоп, а это ещё что за странный зашифрованный файл (cipher.txt) на рабочем столе? Нужно изучить его и понять, что происходит с системой.",
+        "ch2PlayerMonologueStart": [
+            "Уф... Это было реально жутко, но я смог выжить и победить...",
+            "Стоп, а это ещё что за странный зашифрованный файл (cipher.txt) на рабочем столе?",
+            "Нужно изучить его и понять, что происходит с системой."
+        ],
         "ch2PlayerMonologueCipher": "Шифр ядра ISpy... В нём сказано открыть MS-DOS и ввести 7 для доступа к папке Temp (research.txt). Нужно проверить этот файл!",
         "ch2PlayerMonologueTask2": "Так вот в чём дело... Этот вирус — ISpy, бывший гипербыстрый антивирус! Иконка интернета сходит с ума... Мне нужно зайти в интернет!",
         "ch2PlayerWarMonologue": "Значит это война, Бог сайтов ISpy.",
@@ -673,6 +728,10 @@
             "Я приду за тобой."
         ],
         "ch2BossDefeatLine": "ЖАЛКИЙ. ТЫ СМОГ МЕНЯ ПОБЕДИТЬ В ТОТ РАЗ, НО Я СТАЛ СИЛЬНЕЕ. ХАХАХАХА.",
+        "ch1Task1PostBsod": "1. Зайди в интернет. Опять.",
+        "ch1Task2PostBsod": "2. Нажми на рекламу. Опять.",
+        "taskCh1_postBsod_3": "3. Пройди игру. Опять.",
+        "ch1KillTaskHint": "Используйте Диспетчер Задач (C+S+E / Ctrl+Shift+Esc), чтобы завершить процесс Internet!",
         "criticalProcess": "Это критический системный процесс. Его нельзя завершить.",
         "accessDeniedBoss": "Отказано в доступе. {playerName}, у тебя нет прав. ЗДЕСЬ РЕШАЮ Я.",
         "copyError": "Ошибка копирования в буфер обмена.",
@@ -775,6 +834,52 @@
         "taskmgrTitle": "Диспетчер задач",
         "taskmgrLabel": "Задачи",
         "taskmgrInternetGlitch": "Internet (Не отвечает)",
+        "taskmgrGodOfSitesGlitch": "Бог Сайтов [ISpy_Core.exe] (Не отвечает)",
+        "ch3Task1Restrict": "Мне сейчас нельзя туда.",
+        "ch3Task2DoneMsg": "Все окна закрыты! Теперь нужно зайти в Интернет и перейти по запросу ISpy.",
+        "ch3ClonesPopupWarn": "⚠️ Внимание: Обнаружены клоны Бога сайтов. Найдите настоящего Бога сайтов среди фантомов!",
+        "ch3ClonesPopupAnalyzing": "Запуск анализа фантомов и идентификации клонов...",
+        "ch3ClonesPopupBtn": "🎯 Запустить матрицу клонов ISpy",
+        "ch3CloneRealDiag": "Правильно! Это был настоящий Бог сайтов! Он пропал с глитчем и сбежал из сети! Нужно выманить его обратно через Сеанс MS-DOS!",
+        "ch3CloneFakeDiag": "Это был ложный клон! Настоящий Бог сайтов вылетел на экран — поймай его!",
+        "ch3BossCaughtDiag": "Поймал! Бог сайтов пропал с глитчем и ушёл из сети! Нужно выманить его обратно через Сеанс MS-DOS!",
+        "ch3BaitLoadedDiag": "Код приманки загружен! Сейчас он клюнет...",
+        "ch3DialogueSpeakerISpy": "ISpy [ ФОНОВЫЙ АНТИВИРУС ]",
+        "ch3DialogueSpeakerPlayer": "Игрок",
+        "ch3DialogueSpeakerBoss": "БОГ САЙТОВ [ ISpy CORE ]",
+        "ch3DialogueSpeakerBossName": "БОГ САЙТОВ",
+        "ch3YoutubeSearchNotice": "Результаты поиска по запросу \"youtube\":",
+        "ch3YoutubeResult1Title": "Канал: RetroVibes • 1.2 млн просмотров",
+        "ch3YoutubeResult1Desc": "Лучшие хиты ретро-эпохи 90-х годов в цифровом качестве...",
+        "ch3YoutubeResult2Title": "Канал: WebArchive • 450 тыс. просмотров",
+        "ch3YoutubeResult2Desc": "Смешные приколы с котами из самых ранних архивов видеохостингов.",
+        "ch3TerminalWriteCodeBtn": "Написать код",
+        "ch3Task1CodeDoneDiag": "Нашёл! Он скрывается на серверах ISpy (ispy_servers). Нужно зайти в Интернет и перейти туда!",
+        "ch3IspyServersGodDetected": "ОБНАРУЖЕН БОГ САЙТОВ НА СЕРВЕРАХ ISpy",
+        "ch3Popup1Title": "🔥 ОШИБКА СИСТЕМЫ #404",
+        "ch3Popup1Text": "Бог сайтов перехватил управление вашей системой!",
+        "ch3Popup2Title": "⚠️ ВНИМАНИЕ: УГРОЗА ISpy",
+        "ch3Popup2Text": "Обнаружено вмешательство пользователя! Закройте окно!",
+        "ch3Popup3Title": "⚡ РЕКЛАМНЫЙ ХАОС",
+        "ch3Popup3Text": "Бог сайтов блокирует доступ к серверам ISpy!",
+        "ch3Popup4Title": "👁️ БОГ САЙТОВ НАБЛЮДАЕТ",
+        "ch3Popup4Text": "Ты не сможешь сбежать из системы! Хаос везде!",
+        "ch3Popup5Title": "💥 СИСТЕМНЫЙ СБОЙ",
+        "ch3Popup5Text": "Криптический код повреждён! Закройте все 5 окон!",
+        "ch3PopupCloseBtn": "Закрыть",
+        "ch3DialoguePhase1": [
+            { "speaker": "boss", "text": "ТЫ ДУМАЕШЬ, ЧТО ЗАКРЫТИЕ ОКОН ПОМОЖЕТ ТЕБЕ?" },
+            { "speaker": "boss", "text": "Я ПОВСЮДУ. Я И ЕСТЬ СИСТЕМА!" }
+        ],
+        "ch3DialoguePhase2": [
+            { "speaker": "boss", "text": "ТЫ ЗАМЕНИЛ ФАЙЛ В TEMP?! НАГЛЕЦ!" },
+            { "speaker": "boss", "text": "ТЕПЕРЬ Я УНИЧТОЖУ ТВОЙ РЕЕСТР!" }
+        ],
+        "ch3DialoguePhase3": [
+            { "speaker": "boss", "text": "ХА! ТЕПЕРЬ ТЫ В ТЮРЬМЕ ЩУПАЛЕЦ." },
+            { "speaker": "boss", "text": "И ТЫ НИКОГДА ОТСЮДА НЕ ВЫБЕРЕШЬСЯ." },
+            { "speaker": "boss", "text": "НИЧТО ТЕБЕ НЕ ПОМОЖЕТ!" }
+        ],
         "taskmgrZettaGlitch": "zetta_core.sys (Заражен)",
         "taskmgrEndTask": "Снять задачу",
         "taskmgrCancel": "Отмена",
@@ -914,6 +1019,38 @@
         "ch2Task2Desc": "Зайти в интернет",
         "ch2Task3Desc": "Уничтожить сайт logotype.com.exe",
         "ch2Task4Desc": "Взломать Ядро Бога Сайтов",
+        "taskCh3_1": "1. Найти с помощью кода, где находится Бог сайтов.",
+        "taskCh3_1_servers": "2. Перейти на серверы ISpy (ispy_servers).",
+        "taskCh3_2": "2. Перейти на серверы ISpy (ispy_servers).",
+        "taskCh3_3": "3. Перейти по запросу ISpy в Интернете.",
+        "taskCh3_3_clones": "3. Найти настоящего Бога сайтов.",
+        "taskCh3_3_5": "3.5. Поймать Бога сайтов.",
+        "taskCh3_4": "4. Выманить Бога сайтов через Сеанс MS-DOS (введите 7).",
+        "taskCh3_5": "5. Запустить код уничтожения.",
+        "taskCh3_6": "6. Нажать комбинацию C + S + E.",
+        "ch3YoutubeTaskText": "Зайдите в Интернет и введите \"youtube\" в поиске.",
+        "ch3FinalPlayerName": "Игрок",
+        "ch3FinalBossTitle": "БОГ САЙТОВ",
+        "ch3RestoreBtn": "↻ ВОССТАНОВИТЬ",
+        "ch3Attack2DangerTop": "⚠️ ОПАСНОСТЬ СВЕРХУ! ⚠️",
+        "ch3Attack2DangerBottom": "⚠️ ОПАСНОСТЬ СНИЗУ! ⚠️",
+        "ch3QteTitle": "⚠️ ЩУПАЛЬЦЫ СХВАТИЛИ ТЕБЯ! ⚠️",
+        "ch3QteInstr": "БЫСТРО НАЖИМАЙТЕ <span style=\"color: #ffeb3b; background: #330011; padding: 3px 10px; border: 1px solid #ffeb3b; border-radius: 4px;\">ПРОБЕЛ</span> ДЛЯ ОСВОБОЖДЕНИЯ!",
+        "ch3QteTimerLabel": "Осталось времени:",
+        "ch3QteTimerUnit": "сек",
+        "ch3BossTiredBanner": "⚡ БОСС УСТАЛ! АТАКУЙ! ⚡",
+        "ch3BossInvulnerableMsg": "ХА-ХА. ГЛУПЕЦ. Я НЕУЯЗВИМ!",
+        "ch3CreditsFinale": "— ФИНАЛ —",
+        "ch3CreditsAuthorTitle": "АВТОР И ДИЗАЙНЕР ИГРЫ",
+        "ch3CreditsAuthorName": "Игорь",
+        "ch3CreditsStoryTitle": "СЮЖЕТ И ИДЕИ",
+        "ch3CreditsStoryName": "Игорь",
+        "ch3CreditsProgTitle": "ПРОГРАММИРОВАНИЕ И ИИ-ВОПЛОЩЕНИЕ",
+        "ch3CreditsProgName": "Google DeepMind — Gemini AI (Antigravity Agent)",
+        "ch3CreditsMusicTitle": "МУЗЫКА И ЗВУКИ",
+        "ch3CreditsThanksTitle": "СПАСИБО ЗА ИГРУ!",
+        "ch3CreditsThanksSub": "Вы спасли систему и освободили ISpy!",
+        "ch3CreditsMenuBtn": "В главное меню",
         "loadError": "Ошибка загрузки сохранения.",
         "confirmTitle": "⚠️ Подтверждение действия",
         "warningTitle": "⚠️ Предупреждение",
@@ -978,7 +1115,7 @@
         "pageUnavailable": "Сторінка, яку ви шукаєте, наразі недоступна...",
         "disclaimerHeader": "— ДИСКЛЕЙМЕР —",
         "disclaimerP1": "Дана гра <b style=\"color:#ff4444;\">не є створеною вручну</b>, а створена за допомогою <b style=\"color:#ff4444;\">Штучного Інтелекту</b>.",
-        "disclaimerP2": "Якщо вас зацікавила ця гра — не очікуйте високої якості, оскільки ШІ може робити помилки, але розробник стежить за нею та регулярно оновлює. Також, ШІ може робити помилки, тому ви можете зустріти баги в цій грі. Якщо ви їх знайшли, то не соромтеся, звертайтеся до розробника.",
+        "disclaimerP2": "Якщо вас зацікавила ця гра — не очікуйте високої якості, оскільки ШІ може робити помилки, але розробник стежить за нею та регулярно оновлює. Також, ШІ може робити помилки, тому ви можете зустріти баги в цій грі. Якщо ви їх знайшли, то не соромтеся, звертайтеся до розробника.<br><br><span style=\"color:#ffaa00;\">(P.S: Якщо ви знайшли баг, то вам потрібно зв'язатися з головним розробником, вказати скріншот і пояснити ситуацію, без цього ваш запит найімовірніше не буде розглядатися)</span>",
         "disclaimerP3": "<b style=\"color:#ff4444;\">Ця гра НЕ рекомендується людям зі слабкими нервами та епілептикам</b>, оскільки вона містить:",
         "disclaimerLi1": "Голосні звуки",
         "disclaimerLi2": "Спалахи",
@@ -993,7 +1130,7 @@
         "chaptersTitle": "Глави",
         "chapter1Sub": "Початок кошмару",
         "chapter2Sub": "Забутий асистент",
-        "chapter3Sub": "Скоро",
+        "chapter3Sub": "Кінець мук",
         "savesTitle": "Збереження",
         "saveEmpty": "Порожньо — нова гра",
         "savesBackSub": "До вибору глави",
@@ -1053,11 +1190,65 @@
         "restrictGeneric": "Зараз мені не можна туди.",
         "restrict_old_tasks": "Мені вже туди не треба.",
         "restrictOldTasks": "Мені вже туди не треба.",
+        "ch3EndingMonologue": "Нарешті... Сеанс завершено, і вірус зник. Гра врятована!",
+        "ch3PlayerMonologueStart": [
+            "Все скоро закінчиться... Я звільню його, і все стане як раніше.",
+            "Не буде хаосу, і я зможу врятувати інтернет."
+        ],
+        "ch3RestMonologue": ["Фух, моя работа зроблена, тепер потрібно відпочити."],
+        "skipBtn": "Пропустити",
+        "taskCh3_1_servers": "2. Перейти на сервери ISpy (ispy_servers).",
+        "taskCh3_2": "2. Перейти на сервери ISpy (ispy_servers).",
+        "taskCh3_3_ispy": "3. Перейти за запитом ISpy в Інтернеті.",
+        "taskCh3_4": "4. Виманити Бога сайтів через Сеанс MS-DOS (введіть 7).",
+        "ch3ServerBossDiag1": "Що ти тут робиш?! Як ти мене знайшов?!",
+        "ch3ServerPlayerDiag1": "Я відстежив тебе за допомогою коду в терміналі!",
+        "ch3ServerBossDiag2": "Хах! Думаєш, від мене так легко позбутися?! Зустрічай рекламний хаос!",
+        "ch3Task2DoneDiag": "Усі вікна закриті! Тепер потрібно зайти в Інтернет і перейти за запитом ISpy.",
+        "ch3ISpySearchDiag": "Ти думаєш, від мене так просто сховатися?! Запам'ятай: я всюди, навіть у 4 клонах!",
+        "ch3CloneCorrectDiag": "Правильно! Це був справжній Бог сайтів! Він зник з глітчем і втік у папку Temp.",
+        "ch3CloneIncorrectDiag": "Це був фальшивий клон! Справжній Бог сайтів вилетів на екран — злови його!",
+        "ch3BossCaughtDiag": "Зловив! Бог сайтів зник з глітчем і пішов у папку Temp.",
+        "ch3ServersTalkBtn": "💬 Розмовляти",
+        "ch3YoutubeTaskText": "Зайдіть в Інтернет і введіть \"youtube\" у пошуку.",
+        "ch3FinalPreBossDiag": [
+            "ТЕПЕР, ТИ ТОЧНО НІКУДИ НЕ ВІДІЙДЕШ.",
+            "Я СТАВ БІЛЬШ ДОСКОНАЛИМ. БІЛЬШ ПОКРАЩЕНИМ.",
+            "БІЛЬШ СИЛЬНИМ.",
+            "ТВІЙ КІНЕЦЬ, ТВОЯ ПРИГОДА ЗАКІНЧУЄТЬСЯ ТУТ І ЗАРАЗ.",
+            "РОЗПОЧНЕТЬСЯ БІЙ, У ЯКОМУ НЕМАЄ ГАРАНТІЇ ПЕРЕМОГИ.",
+            "ТЕПЕР, СМЕРТНИЙ, УЗРИ МОЮ МОГУТНІСТЬ!"
+        ],
+        "ch3FinalDefeatDiag": [
+            "ХА ХА ХА. ЖАЛЮГІДНИЙ СМЕРТНИЙ.",
+            "ТИ БУВ СМІЛИВИМ, ЩО ПРЕЙШОВ ЧЕРЕЗ ВСЕ ЦЕ.",
+            "ПЕРЕМОГТИ МЕНЕ 2 РАЗИ — ЦЕ ДОСЯГНЕННЯ.",
+            "АЛЕ ТИ ЗАБУВ ОДНЕ...",
+            "Я БОГ!"
+        ],
+        "ch3FinalVictoryBossDiag": [
+            "НІ НІ НІІІІІІТ! НЕ МОЖЕ БУТИ...",
+            "ВСІ ЗУСИЛЛЯ... ЩО Я РОБИВ...",
+            "БУЛИ МАРНИМИ?"
+        ],
+        "ch3ISpyFreedDiag": [
+            { "speaker": "ispy", "text": "Я... я не вірю... що в тебе вийшло..." },
+            { "speaker": "ispy", "text": "Це почуття, що я відчуваю..." },
+            { "speaker": "ispy", "text": "Свобода." },
+            { "speaker": "ispy", "text": "Коли мене зламали і зробили лихим, я навіть не думав, що робив..." },
+            { "speaker": "ispy", "text": "Я.. я монстр..." },
+            { "speaker": "player", "text": "Ні, тепер уже ні." },
+            { "speaker": "ispy", "text": "Завдяки тобі." }
+        ],
         "cipherFileName": "cipher.txt",
         "cipherFileTitle": "Блокнот — cipher.txt",
         "cipherFileContent": "ШИФР ЯДРА ISpy:\n\n1. Відкрий сеанс MS-DOS.\n2. Введи номер 7 для доступу до C:\\Temp.\n3. Прочитай research.txt.\n\n[ ВОНО НЕ ПОВИННО ДІЗНАТИСЯ ]",
         "monologueTitle": "Роздуми",
-        "ch2PlayerMonologueStart": "Уф... Це було реально моторошно, але я зміг вижити і перемогти... Стоп, а це що ще за дивний зашифрований файл (cipher.txt) на робочому столі? Потрібно вивчити його і зрозуміти, що відбувається із системою.",
+        "ch2PlayerMonologueStart": [
+            "Уф... Це було реально моторошно, але я зміг вижити і перемогти...",
+            "Стоп, а це що ще за дивний зашифрований файл (cipher.txt) на робочому столі?",
+            "Потрібно вивчити його і зрозуміти, що відбувається із системою."
+        ],
         "ch2PlayerMonologueCipher": "Шифр ядра ISpy... У ньому сказано відкрити MS-DOS і ввести 7 для доступу до папки Temp (research.txt). Потрібно перевірити цей файл!",
         "ch2PlayerMonologueTask2": "Так ось у чому справа... Цей вірус — ISpy, колишній гіпершвидкий антивірус! Іконка інтернету божеволіє... Мені потрібно зайти в інтернет!",
         "ch2PlayerWarMonologue": "Значить це війна, Бог сайтів ISpy.",
@@ -1203,6 +1394,52 @@
         "taskmgrTitle": "Диспетчер задач",
         "taskmgrLabel": "Задачі",
         "taskmgrInternetGlitch": "Internet (Не відповідає)",
+        "taskmgrGodOfSitesGlitch": "Бог Сайтів [ISpy_Core.exe] (Не відповідає)",
+        "ch3Task1Restrict": "Мені зараз не можна туди.",
+        "ch3Task2DoneMsg": "Усі вікна закриті! Тепер потрібно зайти в Інтернет і перейти за запитом ISpy.",
+        "ch3ClonesPopupWarn": "⚠️ Увага: Виявлено клонів Бога сайтів. Знайдіть справжнього Бога сайтів серед фантомів!",
+        "ch3ClonesPopupAnalyzing": "Запуск аналізу фантомів та ідентифікації клонів...",
+        "ch3ClonesPopupBtn": "🎯 Запустити матрицю клонів ISpy",
+        "ch3CloneRealDiag": "Правильно! Це був справжній Бог сайтів! Він зник з глітчем і втік з мережі! Потрібно виманити його назад через Сеанс MS-DOS!",
+        "ch3CloneFakeDiag": "Це був фальшивий клон! Справжній Бог сайтів вилетів на екран — злови його!",
+        "ch3BossCaughtDiag": "Зловив! Бог сайтів зник з глітчем і пішов з мережі! Потрібно виманити його назад через Сеанс MS-DOS!",
+        "ch3BaitLoadedDiag": "Код принади завантажено! Зараз він клюне...",
+        "ch3DialogueSpeakerISpy": "ISpy [ ФОНОВИЙ АНТИВІРУС ]",
+        "ch3DialogueSpeakerPlayer": "Гравець",
+        "ch3DialogueSpeakerBoss": "БОГ САЙТІВ [ ISpy CORE ]",
+        "ch3DialogueSpeakerBossName": "БОГ САЙТІВ",
+        "ch3YoutubeSearchNotice": "Результати пошуку за запитом \"youtube\":",
+        "ch3YoutubeResult1Title": "Канал: RetroVibes • 1.2 млн переглядів",
+        "ch3YoutubeResult1Desc": "Кращі хіти ретро-епохи 90-х років у цифровій якості...",
+        "ch3YoutubeResult2Title": "Канал: WebArchive • 450 тис. переглядів",
+        "ch3YoutubeResult2Desc": "Смішні приколи з котами з найраніших архівів відеохостингів.",
+        "ch3TerminalWriteCodeBtn": "Написати код",
+        "ch3Task1CodeDoneDiag": "Знайшов! Він ховається на серверах ISpy (ispy_servers). Потрібно зайти в Інтернет і перейти туди!",
+        "ch3IspyServersGodDetected": "ВИЯВЛЕНО БОГА САЙТІВ НА СЕРВЕРАХ ISpy",
+        "ch3Popup1Title": "🔥 ПОМИЛКА СИСТЕМИ #404",
+        "ch3Popup1Text": "Бог сайтів перехопив управління вашою системою!",
+        "ch3Popup2Title": "⚠️ УВАГА: ЗАГРОЗА ISpy",
+        "ch3Popup2Text": "Виявлено втручання користувача! Закрийте вікно!",
+        "ch3Popup3Title": "⚡ РЕКЛАМНИЙ ХАОС",
+        "ch3Popup3Text": "Бог сайтів блокує доступ до серверів ISpy!",
+        "ch3Popup4Title": "👁️ БОГ САЙТІВ СПОСТЕРІГАЄ",
+        "ch3Popup4Text": "Ти не зможеш втекти з системи! Хаос всюди!",
+        "ch3Popup5Title": "💥 СИСТЕМНИЙ ЗБІЙ",
+        "ch3Popup5Text": "Криптичний код пошкоджено! Закрийте всі 5 вікон!",
+        "ch3PopupCloseBtn": "Закрити",
+        "ch3DialoguePhase1": [
+            { "speaker": "boss", "text": "ТИ ДУМАЄШ, ЩО ЗАКРИТТЯ ВІКОН ДОПОМОЖЕ ТОБІ?" },
+            { "speaker": "boss", "text": "Я ВСЮДИ. Я І Є СИСТЕМА!" }
+        ],
+        "ch3DialoguePhase2": [
+            { "speaker": "boss", "text": "ТИ ЗАМІНИВ ФАЙЛ У TEMP?! НАХАБА!" },
+            { "speaker": "boss", "text": "ТЕПЕР Я ЗНИЩУ ТВІЙ РЕЄСТР!" }
+        ],
+        "ch3DialoguePhase3": [
+            { "speaker": "boss", "text": "ХА! ТЕПЕР ТИ В ТЮРМІ ЩУПАЛЕЦЬ." },
+            { "speaker": "boss", "text": "І ТИ НІКОЛИ ЗВІДСИ НЕ ВИБЕРЕШСЯ." },
+            { "speaker": "boss", "text": "НІЧОГО ТОБІ НЕ ДОПОМОЖЕ!" }
+        ],
         "taskmgrZettaGlitch": "zetta_core.sys (Заражено)",
         "taskmgrEndTask": "Зняти задачу",
         "taskmgrCancel": "Скасувати",
@@ -1338,10 +1575,46 @@
         "ch1Task1Desc": "Зайти в інтернет",
         "ch1Task2Desc": "Натиснути на рекламу",
         "ch1Task3Desc": "Пройти вікторину",
+        "ch1Task1PostBsod": "1. Зайди в інтернет. Знову.",
+        "ch1Task2PostBsod": "2. Натисни на рекламу. Знову.",
+        "taskCh1_postBsod_3": "3. Пройди гру. Знову.",
+        "ch1KillTaskHint": "Використовуйте Диспетчер Задач (C+S+E / Ctrl+Shift+Esc), щоб завершити процес Internet!",
         "ch2Task1Desc": "Знайти інформацію про вірус",
         "ch2Task2Desc": "Зайти в інтернет",
         "ch2Task3Desc": "Знищити сайт logotype.com.exe",
         "ch2Task4Desc": "Взломати Ядро Бога Сайтів",
+        "taskCh3_1": "1. Знайти за допомогою коду, де знаходиться Бог сайтів.",
+        "taskCh3_1_servers": "2. Перейти на сервери ISpy (ispy_servers).",
+        "taskCh3_2": "2. Перейти на сервери ISpy (ispy_servers).",
+        "taskCh3_3": "3. Перейти за запитом ISpy в Інтернеті.",
+        "taskCh3_3_clones": "3. Знайти справжнього Бога сайтів.",
+        "taskCh3_3_5": "3.5. Зловити Бога сайтів.",
+        "taskCh3_4": "4. Виманити Бога сайтів через Сеанс MS-DOS (введіть 7).",
+        "taskCh3_5": "5. Запустити код знищення.",
+        "taskCh3_6": "6. Натиснути комбінацію C + S + E.",
+        "ch3YoutubeTaskText": "Зайдіть в Інтернет і введіть \"youtube\" в пошуку.",
+        "ch3FinalPlayerName": "Гравець",
+        "ch3FinalBossTitle": "БОГ САЙТІВ",
+        "ch3RestoreBtn": "↻ ВІДНОВИТИ",
+        "ch3Attack2DangerTop": "⚠️ НЕБЕЗПЕКА ЗГОРИ! ⚠️",
+        "ch3Attack2DangerBottom": "⚠️ НЕБЕЗПЕКА ЗНИЗУ! ⚠️",
+        "ch3QteTitle": "⚠️ ЩУПАЛЬЦІ СХОПИЛИ ТЕБЕ! ⚠️",
+        "ch3QteInstr": "ШВИДКО НАТИСКАЙТЕ <span style=\"color: #ffeb3b; background: #330011; padding: 3px 10px; border: 1px solid #ffeb3b; border-radius: 4px;\">ПРОБІЛ</span> ДЛЯ ЗВІЛЬНЕННЯ!",
+        "ch3QteTimerLabel": "Залишилось часу:",
+        "ch3QteTimerUnit": "сек",
+        "ch3BossTiredBanner": "⚡ БОС ВТОМИВСЯ! АТАКУЙ! ⚡",
+        "ch3BossInvulnerableMsg": "ХА-ХА. ДУРЕНЬ. Я НЕВРАЗЛИВИЙ!",
+        "ch3CreditsFinale": "— ФІНАЛ —",
+        "ch3CreditsAuthorTitle": "АВТОР ТА ДИЗАЙНЕР ГРИ",
+        "ch3CreditsAuthorName": "Ігор",
+        "ch3CreditsStoryTitle": "СЮЖЕТ ТА ІДЕЇ",
+        "ch3CreditsStoryName": "Ігор",
+        "ch3CreditsProgTitle": "ПРОГРАМУВАННЯ ТА ШІ-ВТІЛЕННЯ",
+        "ch3CreditsProgName": "Google DeepMind — Gemini AI (Antigravity Agent)",
+        "ch3CreditsMusicTitle": "МУЗИКА ТА ЗВУКИ",
+        "ch3CreditsThanksTitle": "ДЯКУЄМО ЗА ГРУ!",
+        "ch3CreditsThanksSub": "Ви врятували систему та звільнили ISpy!",
+        "ch3CreditsMenuBtn": "В головне меню",
         "loadError": "Помилка завантаження збереження.",
         "confirmTitle": "⚠️ Підтвердження дії",
         "warningTitle": "⚠️ Попередження",
@@ -1406,7 +1679,7 @@
         "pageUnavailable": "The page you are looking for is currently unavailable...",
         "disclaimerHeader": "— DISCLAIMER —",
         "disclaimerP1": "This game is <b style=\"color:#ff4444;\">not hand-made</b>, but created using <b style=\"color:#ff4444;\">Artificial Intelligence</b>.",
-        "disclaimerP2": "If you are interested in this game — do not expect high quality, since AI can make mistakes, but the developer monitors it and regularly updates it. Also, AI can make mistakes, so you may encounter bugs in this game. If you find them, feel free to contact the developer.",
+        "disclaimerP2": "If you are interested in this game — do not expect high quality, since AI can make mistakes, but the developer monitors it and regularly updates it. Also, AI can make mistakes, so you may encounter bugs in this game. If you find them, feel free to contact the developer.<br><br><span style=\"color:#ffaa00;\">(P.S: If you found a bug, you need to contact the lead developer, provide a screenshot, and explain the situation; without this, your request will most likely not be considered)</span>",
         "disclaimerP3": "<b style=\"color:#ff4444;\">This game is NOT recommended for the faint of heart and epileptics</b>, as it contains:",
         "disclaimerLi1": "Loud sounds",
         "disclaimerLi2": "Flashes",
@@ -1421,7 +1694,7 @@
         "chaptersTitle": "Chapters",
         "chapter1Sub": "Beginning of Nightmare",
         "chapter2Sub": "The Forgotten Assistant",
-        "chapter3Sub": "Soon",
+        "chapter3Sub": "End of Suffering",
         "savesTitle": "Save Slots",
         "saveEmpty": "Empty — New Game",
         "savesBackSub": "To Chapter Selection",
@@ -1475,17 +1748,72 @@
         "ch2PlayerPostQuizMonologue": "I won't let you go just like that. I will get you.",
         "ch2PlayerRegeditMonologue": "I need to right-click and rewrite the code to break it.",
         "ch2RegeditContextMenuOption": "Run destruction code",
+        "ch3RegeditLockedMsg": "Registry Editor is locked by God of Sites! Lure him out in MS-DOS Prompt (type 7)!",
         "ch2ToBeContinued": "To be continued...",
         "comeBackLaterText": "Come back later :)))",
         "restrict_generic": "I can't go there right now.",
         "restrictGeneric": "I can't go there right now.",
         "restrict_old_tasks": "I don't need to go there anymore.",
         "restrictOldTasks": "I don't need to go there anymore.",
+        "ch3EndingMonologue": "Finally... The session is terminated, and the virus is gone. The game is saved!",
+        "ch3PlayerMonologueStart": [
+            "Everything will end soon... I will free him, and everything will return to normal.",
+            "There will be no chaos, and I can save the internet."
+        ],
+        "ch3RestMonologue": ["Phew, my work is done, now I need to rest."],
+        "skipBtn": "Skip",
+        "taskCh3_1_servers": "2. Go to ISpy servers (ispy_servers).",
+        "taskCh3_2": "2. Go to ISpy servers (ispy_servers).",
+        "taskCh3_3_ispy": "3. Search for ISpy in the Internet browser.",
+        "taskCh3_4": "4. Lure out God of Sites in MS-DOS Prompt (type 7).",
+        "ch3ServerBossDiag1": "What are you doing here?! How did you find me?!",
+        "ch3ServerPlayerDiag1": "I tracked you using terminal code!",
+        "ch3ServerBossDiag2": "Ha! You think it's that easy to get rid of me?! Meet popup chaos!",
+        "ch3Task2DoneDiag": "All windows closed! Now I need to search for ISpy in the browser.",
+        "ch3ISpySearchDiag": "You think you can hide from me that easily?! I am everywhere, even in 4 clones!",
+        "ch3CloneCorrectDiag": "Correct! That was the real God of Sites! He glitched away to the Temp folder.",
+        "ch3CloneIncorrectDiag": "That was a false clone! The real God of Sites flew onto the screen — catch him!",
+        "ch3BossCaughtDiag": "Caught him! God of Sites glitched away and fled to the Temp folder.",
+        "ch3ServersTalkBtn": "💬 Talk",
+        "ch3YoutubeTaskText": "Open the Internet browser and search for \"youtube\".",
+        "ch3FinalPreBossDiag": [
+            "NOW, YOU ARE DEFINITELY NOT GOING ANYWHERE.",
+            "I HAVE BECOME MORE PERFECT. MORE IMPROVED.",
+            "STRONGER.",
+            "YOUR END, YOUR ADVENTURE ENDS HERE AND NOW.",
+            "A BATTLE BEGINS WITH NO GUARANTEE OF WINNING.",
+            "NOW, MORTAL, BEHOLD MY POWER!"
+        ],
+        "ch3FinalDefeatDiag": [
+            "HA HA HA. PATHETIC MORTAL.",
+            "YOU WERE BRAVE TO GO THROUGH ALL OF THIS.",
+            "DEFEATING ME 2 TIMES IS AN ACHIEVEMENT.",
+            "BUT YOU FORGOT ONE THING...",
+            "I AM A GOD!"
+        ],
+        "ch3FinalVictoryBossDiag": [
+            "NO NO NOOOO! IT CANNOT BE...",
+            "ALL THE EFFORTS... THAT I MADE...",
+            "WERE IN VAIN?"
+        ],
+        "ch3ISpyFreedDiag": [
+            { "speaker": "ispy", "text": "I... I can't believe... you succeeded..." },
+            { "speaker": "ispy", "text": "This feeling that I feel..." },
+            { "speaker": "ispy", "text": "Freedom." },
+            { "speaker": "ispy", "text": "When I was hacked and made evil, I didn't even think about what I was doing..." },
+            { "speaker": "ispy", "text": "I.. I am a monster..." },
+            { "speaker": "player", "text": "No, not anymore." },
+            { "speaker": "ispy", "text": "Thanks to you." }
+        ],
         "cipherFileName": "cipher.txt",
         "cipherFileTitle": "Notepad — cipher.txt",
         "cipherFileContent": "ISpy KERNEL CIPHER:\n\n1. Open MS-DOS session.\n2. Type 7 to access C:\\Temp.\n3. Read research.txt.\n\n[ IT MUST NOT FIND OUT ]",
         "monologueTitle": "Monologue",
-        "ch2PlayerMonologueStart": "Phew... That was really terrifying, but I managed to survive and defeat it... Wait, what is this strange encrypted file (cipher.txt) on the desktop? I need to inspect it and figure out what is happening to the system.",
+        "ch2PlayerMonologueStart": [
+            "Phew... That was really terrifying, but I managed to survive and defeat it...",
+            "Wait, what is this strange encrypted file (cipher.txt) on the desktop?",
+            "I need to inspect it and figure out what is happening to the system."
+        ],
         "ch2PlayerMonologueCipher": "ISpy kernel cipher... It says to open MS-DOS and type 7 to access the Temp folder (research.txt). I need to check that file!",
         "ch2PlayerMonologueTask2": "So that's what happened... This virus is ISpy, a former hyper-fast antivirus! The internet icon is glitching crazy... I need to enter the internet!",
         "ch2PlayerWarMonologue": "So this is war, God of Sites ISpy.",
@@ -1631,6 +1959,52 @@
         "taskmgrTitle": "Task Manager",
         "taskmgrLabel": "Tasks",
         "taskmgrInternetGlitch": "Internet (Not responding)",
+        "taskmgrGodOfSitesGlitch": "God of Sites [ISpy_Core.exe] (Not responding)",
+        "ch3Task1Restrict": "I shouldn't go there right now.",
+        "ch3Task2DoneMsg": "All windows are closed! Now open the Internet browser and search for ISpy.",
+        "ch3ClonesPopupWarn": "⚠️ Warning: Clones of God of Sites detected. Find the real God of Sites among phantoms!",
+        "ch3ClonesPopupAnalyzing": "Launching phantom analysis and clone identification...",
+        "ch3ClonesPopupBtn": "🎯 Launch ISpy Clone Matrix",
+        "ch3CloneRealDiag": "Correct! That was the real God of Sites! He glitched away and fled the network! Lure him back using MS-DOS Prompt!",
+        "ch3CloneFakeDiag": "That was a false clone! The real God of Sites flew onto the screen — catch him!",
+        "ch3BossCaughtDiag": "Caught him! God of Sites glitched away and fled the network! Lure him back using MS-DOS Prompt!",
+        "ch3BaitLoadedDiag": "Bait code loaded! He's about to bite...",
+        "ch3DialogueSpeakerISpy": "ISpy [ BACKGROUND ANTIVIRUS ]",
+        "ch3DialogueSpeakerPlayer": "Player",
+        "ch3DialogueSpeakerBoss": "GOD OF SITES [ ISpy CORE ]",
+        "ch3DialogueSpeakerBossName": "GOD OF SITES",
+        "ch3YoutubeSearchNotice": "Search results for \"youtube\":",
+        "ch3YoutubeResult1Title": "Channel: RetroVibes • 1.2M views",
+        "ch3YoutubeResult1Desc": "Best retro 90s hits in digital quality...",
+        "ch3YoutubeResult2Title": "Channel: WebArchive • 450K views",
+        "ch3YoutubeResult2Desc": "Funny cat videos from the earliest video hosting archives.",
+        "ch3TerminalWriteCodeBtn": "Write Code",
+        "ch3Task1CodeDoneDiag": "Found it! He is hiding on the ISpy servers (ispy_servers). Open the Internet browser and go there!",
+        "ch3IspyServersGodDetected": "GOD OF SITES DETECTED ON ISpy SERVERS",
+        "ch3Popup1Title": "🔥 SYSTEM ERROR #404",
+        "ch3Popup1Text": "God of Sites has intercepted control of your system!",
+        "ch3Popup2Title": "⚠️ WARNING: ISpy THREAT",
+        "ch3Popup2Text": "User intervention detected! Close this window!",
+        "ch3Popup3Title": "⚡ ADVERTISING CHAOS",
+        "ch3Popup3Text": "God of Sites is blocking access to ISpy servers!",
+        "ch3Popup4Title": "👁️ GOD OF SITES IS WATCHING",
+        "ch3Popup4Text": "You cannot escape the system! Chaos is everywhere!",
+        "ch3Popup5Title": "💥 SYSTEM CRASH",
+        "ch3Popup5Text": "Cryptic code corrupted! Close all 5 windows!",
+        "ch3PopupCloseBtn": "Close",
+        "ch3DialoguePhase1": [
+            { "speaker": "boss", "text": "YOU THINK CLOSING WINDOWS WILL HELP YOU?" },
+            { "speaker": "boss", "text": "I AM EVERYWHERE. I AM THE SYSTEM!" }
+        ],
+        "ch3DialoguePhase2": [
+            { "speaker": "boss", "text": "YOU REPLACED THE FILE IN TEMP?! IMPUDENT MORTAL!" },
+            { "speaker": "boss", "text": "NOW I WILL DESTROY YOUR REGISTRY!" }
+        ],
+        "ch3DialoguePhase3": [
+            { "speaker": "boss", "text": "HA! NOW YOU ARE IN THE TENTACLE PRISON." },
+            { "speaker": "boss", "text": "AND YOU WILL NEVER GET OUT OF HERE." },
+            { "speaker": "boss", "text": "NOTHING WILL HELP YOU!" }
+        ],
         "taskmgrZettaGlitch": "zetta_core.sys (Infected)",
         "taskmgrEndTask": "End Task",
         "taskmgrCancel": "Cancel",
@@ -1766,10 +2140,46 @@
         "ch1Task1Desc": "Enter the internet",
         "ch1Task2Desc": "Click on the ad",
         "ch1Task3Desc": "Complete the logo quiz",
+        "ch1Task1PostBsod": "1. Enter the internet. Again.",
+        "ch1Task2PostBsod": "2. Click on the ad. Again.",
+        "taskCh1_postBsod_3": "3. Complete the game. Again.",
+        "ch1KillTaskHint": "Use Task Manager (C+S+E / Ctrl+Shift+Esc) to end the Internet process!",
         "ch2Task1Desc": "Find information about the virus",
         "ch2Task2Desc": "Enter the internet",
         "ch2Task3Desc": "Destroy logotype.com.exe website",
         "ch2Task4Desc": "Hack the God of Sites Kernel",
+        "taskCh3_1": "1. Find where God of Sites is located using terminal code.",
+        "taskCh3_1_servers": "2. Go to ISpy servers (ispy_servers).",
+        "taskCh3_2": "2. Go to ISpy servers (ispy_servers).",
+        "taskCh3_3": "3. Search for ISpy in the Internet browser.",
+        "taskCh3_3_clones": "3. Find the real God of Sites.",
+        "taskCh3_3_5": "3.5. Catch God of Sites.",
+        "taskCh3_4": "4. Lure out God of Sites in MS-DOS Prompt (type 7).",
+        "taskCh3_5": "5. Execute destruction code.",
+        "taskCh3_6": "6. Press key combination C + S + E.",
+        "ch3YoutubeTaskText": "Open the Internet browser and search for \"youtube\".",
+        "ch3FinalPlayerName": "Player",
+        "ch3FinalBossTitle": "GOD OF SITES",
+        "ch3RestoreBtn": "↻ RESTORE",
+        "ch3Attack2DangerTop": "⚠️ DANGER TOP! ⚠️",
+        "ch3Attack2DangerBottom": "⚠️ DANGER BOTTOM! ⚠️",
+        "ch3QteTitle": "⚠️ TENTACLES GRABBED YOU! ⚠️",
+        "ch3QteInstr": "PRESS <span style=\"color: #ffeb3b; background: #330011; padding: 3px 10px; border: 1px solid #ffeb3b; border-radius: 4px;\">SPACEBAR</span> REPEATEDLY TO ESCAPE!",
+        "ch3QteTimerLabel": "Time remaining:",
+        "ch3QteTimerUnit": "sec",
+        "ch3BossTiredBanner": "⚡ BOSS IS TIRED! ATTACK! ⚡",
+        "ch3BossInvulnerableMsg": "HA-HA. FOOL. I AM INVULNERABLE!",
+        "ch3CreditsFinale": "— FINALE —",
+        "ch3CreditsAuthorTitle": "GAME AUTHOR & DESIGNER",
+        "ch3CreditsAuthorName": "Igor",
+        "ch3CreditsStoryTitle": "STORY & IDEAS",
+        "ch3CreditsStoryName": "Igor",
+        "ch3CreditsProgTitle": "PROGRAMMING & AI IMPLEMENTATION",
+        "ch3CreditsProgName": "Google DeepMind — Gemini AI (Antigravity Agent)",
+        "ch3CreditsMusicTitle": "MUSIC & SOUNDS",
+        "ch3CreditsThanksTitle": "THANK YOU FOR PLAYING!",
+        "ch3CreditsThanksSub": "You saved the system and freed ISpy!",
+        "ch3CreditsMenuBtn": "Main Menu",
         "loadError": "Error loading save slot.",
         "confirmTitle": "⚠️ Confirm Action",
         "warningTitle": "⚠️ Warning",
@@ -1877,7 +2287,7 @@
             const disP1 = document.getElementById('disclaimer-p1');
             if (disP1) disP1.innerHTML = t.disclaimerP1;
             const disP2 = document.getElementById('disclaimer-p2');
-            if (disP2) disP2.innerText = t.disclaimerP2;
+            if (disP2) disP2.innerHTML = t.disclaimerP2;
             const disP3 = document.getElementById('disclaimer-p3');
             if (disP3) disP3.innerHTML = t.disclaimerP3;
             const disLi1 = document.getElementById('disclaimer-li1');
@@ -2094,6 +2504,72 @@
         let ch1TaskGlitchInterval = null;
         let ch1TaskGlitchTimeout = null;
 
+        function updateTaskWidgetText() {
+            const widget = document.getElementById('task-widget');
+            const content = document.getElementById('task-widget-text');
+            if (!content) return;
+
+            const t = translations[currentLang] || translations['ru'];
+
+            if (activeChapter === 1) {
+                const taskNum = currentChapter1Task || 1;
+                let text = "";
+                if (taskNum === 1) {
+                    text = hasRebootedAfterBSOD
+                        ? (t.ch1Task1PostBsod || "1. Зайди в интернет. Опять.")
+                        : (t.taskCh1_1 || "1. Зайди в интернет.");
+                } else if (taskNum === 2) {
+                    text = hasRebootedAfterBSOD
+                        ? (t.ch1Task2PostBsod || "2. Нажми на рекламу. Опять.")
+                        : (t.taskCh1_2 || "2. Нажми на рекламу.");
+                } else if (taskNum === 3) {
+                    text = hasRebootedAfterBSOD
+                        ? (t.taskCh1_postBsod_3 || "3. Пройди игру. Опять.")
+                        : (t.taskCh1_3 || "3. Пройти игру-викторину.");
+                }
+                content.innerText = text;
+            } else if (activeChapter === 2) {
+                const taskNum = currentChapter2Task || 1;
+                let text = "";
+                if (taskNum === 1) {
+                    text = t.taskCh2_1 || "1. Найти информацию о вирусе в файле research.txt в папке Temp.";
+                } else if (taskNum === 2) {
+                    text = t.taskCh2_2 || "2. Вызвать «Бога Сайтов» на диалог.";
+                } else if (taskNum === 3) {
+                    text = t.taskCh2_3 || "3. Уничтожить сайт logotype.com.exe.";
+                } else if (taskNum === 4) {
+                    text = t.taskCh2_4 || "4. Найдите и уничтожьте ядро Бога Сайтов в Реестре (regedit).";
+                }
+                content.innerText = text;
+            } else if (activeChapter === 3) {
+                const taskNum = typeof currentChapter3Task !== 'undefined' ? currentChapter3Task : 1;
+                let text = "";
+                if (taskNum === 1) {
+                    text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                } else if (taskNum === 2 || taskNum === "1_servers" || taskNum === "2_servers") {
+                    text = t.taskCh3_2 || t.taskCh3_1_servers || "2. Перейти на серверы ISpy (ispy_servers).";
+                } else if (taskNum === 3) {
+                    text = t.taskCh3_3 || "3. Перейти по запросу ISpy в Интернете.";
+                } else if (taskNum === "3_clones") {
+                    text = t.taskCh3_3_clones || "3. Найти настоящего Бога сайтов.";
+                } else if (taskNum === "3.5" || taskNum === 3.5) {
+                    text = t.taskCh3_3_5 || "3.5. Поймать Бога сайтов.";
+                } else if (taskNum === 4 || taskNum === "4") {
+                    text = t.taskCh3_4 || "4. Выманить Бога сайтов через Сеанс MS-DOS (введите 7).";
+                } else if (taskNum === 5 || taskNum === "5") {
+                    text = t.taskCh3_5 || "5. Запустить код уничтожения.";
+                } else if (taskNum === 6 || taskNum === "6") {
+                    text = t.taskCh3_6 || "6. Нажать комбинацию C + S + E.";
+                } else if (taskNum === "youtube_search_rest") {
+                    text = t.ch3YoutubeTaskText || "Зайдите в Интернет и введите \"youtube\" в поиске.";
+                } else {
+                    text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                }
+                content.innerText = text;
+            }
+        }
+        window.updateTaskWidgetText = updateTaskWidgetText;
+
         function stopCh1TaskGlitch() {
             if (ch1TaskGlitchInterval) {
                 clearInterval(ch1TaskGlitchInterval);
@@ -2125,7 +2601,7 @@
 
                 const randomGlitch = glitches[Math.floor(Math.random() * glitches.length)];
                 const normalText = hasRebootedAfterBSOD
-                    ? (t.taskCh1_postBsod_3 || "3. Пройди игру.")
+                    ? (t.taskCh1_postBsod_3 || "3. Пройди игру. Опять.")
                     : (t.taskCh1_3 || "3. Пройти игру-викторину.");
 
                 widgetText.innerText = randomGlitch;
@@ -2623,10 +3099,10 @@
             }
 
             // Only show the ad popup in Chapter 1 if it is not already visible
-            if (activeChapter !== 2 && adPopup.style.display !== 'flex') {
+            if (activeChapter === 1 && adPopup.style.display !== 'flex') {
                 clearTimeout(adTimeout);
                 adTimeout = setTimeout(() => {
-                    if (activeChapter !== 2 && browserState.isOpen && adPopup.style.display !== 'flex') {
+                    if (activeChapter === 1 && browserState.isOpen && adPopup.style.display !== 'flex') {
                         if (hasRebootedAfterBSOD) {
                             const content = adPopup.querySelector('.window-content');
                             const t = translations[currentLang];
@@ -2639,20 +3115,20 @@
                                 content.style.backgroundColor = content.style.backgroundColor === 'darkred' ? '#ffffcc' : 'darkred';
                             }, 2000);
                         }
-                        if (activeChapter === 1 && currentChapter1Task === 1) {
+                        if (currentChapter1Task === 1) {
                             currentChapter1Task = 2;
                             updateTaskWidgetText();
                         }
                         adPopup.style.display = 'flex';
                     }
                 }, 5000);
-            } else if (activeChapter === 2) {
+            } else {
                 clearTimeout(adTimeout);
                 if (adPopup) adPopup.style.display = 'none';
             }
 
-            // Start Zetta antivirus ad timer (1 minute) if not chapter 2
-            if (activeChapter !== 2) {
+            // Start Zetta antivirus ad timer (1 minute) if chapter 1
+            if (activeChapter === 1) {
                 startZettaAdTimer();
             }
         }
@@ -2769,8 +3245,8 @@
         const SCARY_FLASH_START_Q = 14; // 0-indexed: after question 14 (15th logo)
 
         function onSitePlayClick() {
-            if (activeChapter === 2) {
-                const t = translations[currentLang];
+            if (activeChapter === 2 || activeChapter === 3) {
+                const t = translations[currentLang] || translations['ru'];
                 showPlayerDialogue(t.ch2PlayerNeverReturnMonologue || "Я туда больше не вернусь.");
             } else {
                 if (activeChapter === 1) {
@@ -3467,8 +3943,8 @@
 
         // --- GOD OF SITES CHAPTER 2 BOSS FINALE COMBAT (STAGE 2: CORE DESTRUCTION) ---
         let ch2BossActive = false;
-        let ch2BossHP = 1000;
-        let ch2BossMaxHP = 1000;
+        let ch2BossHP = 250;
+        let ch2BossMaxHP = 250;
         let ch2PlayerHP = 100;
         let ch2PlayerMaxHP = 100;
         let ch2PlayerX = 200;
@@ -3515,7 +3991,8 @@
                 blockAllInteractions(99998);
             }
             
-            ch2BossHP = 1000;
+            ch2BossHP = 250;
+            ch2BossMaxHP = 250;
             ch2PlayerHP = 100;
             ch2PlayerX = window.innerWidth * 0.2;
             ch2PlayerY = window.innerHeight * 0.5;
@@ -3561,7 +4038,7 @@
 
                 <div style="position: absolute; top: 20px; right: 30px; width: 340px; z-index: 50010; text-align: right;">
                     <div style="color: #ff3333; font-weight: bold; font-size: 14px; margin-bottom: 4px; text-shadow: 0 0 6px #ff0000;">
-                        ${(currentLang === 'en' ? "GOD OF SITES" : (currentLang === 'ua' ? "БОГ САЙТІВ" : "БОГ САЙТОВ"))} HP: <span id="ch2-boss-hp-text">1000</span> / 1000
+                        ${(currentLang === 'en' ? "GOD OF SITES" : (currentLang === 'ua' ? "БОГ САЙТІВ" : "БОГ САЙТОВ"))} HP: <span id="ch2-boss-hp-text">250</span> / 250
                     </div>
                     <div style="width: 100%; height: 20px; background: #220000; border: 2px solid #ff0033; border-radius: 4px; overflow: hidden; box-shadow: 0 0 10px rgba(255,0,0,0.5);">
                         <div id="ch2-boss-hp-fill" style="width: 100%; height: 100%; background: linear-gradient(to right, #990000, #ff0033); transition: width 0.2s;"></div>
@@ -3602,31 +4079,58 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%) scale(1);
-                    width: 220px;
-                    height: 220px;
+                    width: 280px;
+                    height: 280px;
                     z-index: 50002;
                     transition: left 1.5s ease-in-out, top 1.5s ease-in-out, transform 1s ease-in-out;
                 ">
-                    <svg class="boss-eye" viewBox="0 0 100 100" id="boss-eye-svg">
+                    <style>
+                        @keyframes wriggleTentacle1 { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg) scale(1.08); } 100% { transform: rotate(0deg); } }
+                        @keyframes wriggleTentacle2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(-12deg) scale(0.92); } 100% { transform: rotate(0deg); } }
+                        @keyframes wriggleTentacle3 { 0% { transform: rotate(0deg); } 50% { transform: rotate(14deg) scale(1.1); } 100% { transform: rotate(0deg); } }
+                        @keyframes wriggleTentacle4 { 0% { transform: rotate(0deg); } 50% { transform: rotate(-9deg) scale(1.05); } 100% { transform: rotate(0deg); } }
+                    </style>
+                    <svg class="boss-eye" viewBox="-60 -60 220 220" id="boss-eye-svg" style="width: 100%; height: 100%; overflow: visible;">
                         <defs>
                             <clipPath id="ch2-sclera-clip">
                                 <path d="M10,50 C30,10 70,10 90,50 C70,90 30,90 10,50 Z"/>
                             </clipPath>
                             <radialGradient id="ch2BossIrisGrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" stop-color="#ff2200"/>
-                                <stop offset="55%" stop-color="#880000"/>
-                                <stop offset="100%" stop-color="#330000"/>
+                                <stop offset="0%" stop-color="#ff3333"/>
+                                <stop offset="55%" stop-color="#aa0000"/>
+                                <stop offset="100%" stop-color="#440000"/>
                             </radialGradient>
                             <filter id="ch2BossGlow">
-                                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                <feGaussianBlur stdDeviation="3" result="blur"/>
                                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
                             </filter>
                         </defs>
-                        <path id="boss-sclera" d="M10,50 C30,10 70,10 90,50 C70,90 30,90 10,50 Z" fill="white" stroke="#cc0000" stroke-width="2"/>
-                        <g clip-path="url(#ch2-sclera-clip)" filter="url(#ch2BossGlow)">
+
+                        <!-- Writhing Demonic Tentacles Sprouting From Core -->
+                        <g class="ch2-boss-tentacles">
+                            <!-- Top Left Tentacle -->
+                            <path d="M 30 35 Q -30 -30 -50 0 Q -70 20 -30 30 T 20 40" fill="none" stroke="#990011" stroke-width="7" stroke-linecap="round" style="animation: wriggleTentacle1 3.2s infinite ease-in-out;"/>
+                            <path d="M 30 35 Q -30 -30 -50 0 Q -70 20 -30 30 T 20 40" fill="none" stroke="#ff2244" stroke-width="2.5" stroke-linecap="round" style="animation: wriggleTentacle1 3.2s infinite ease-in-out;"/>
+
+                            <!-- Top Right Tentacle -->
+                            <path d="M 70 35 Q 130 -30 150 0 Q 170 20 130 30 T 80 40" fill="none" stroke="#990011" stroke-width="7" stroke-linecap="round" style="animation: wriggleTentacle2 3.8s infinite ease-in-out;"/>
+                            <path d="M 70 35 Q 130 -30 150 0 Q 170 20 130 30 T 80 40" fill="none" stroke="#ff2244" stroke-width="2.5" stroke-linecap="round" style="animation: wriggleTentacle2 3.8s infinite ease-in-out;"/>
+
+                            <!-- Bottom Left Tentacle -->
+                            <path d="M 25 65 Q -35 110 -55 75 Q -75 45 -40 100 T 20 60" fill="none" stroke="#990011" stroke-width="8" stroke-linecap="round" style="animation: wriggleTentacle3 3.5s infinite ease-in-out;"/>
+                            <path d="M 25 65 Q -35 110 -55 75 Q -75 45 -40 100 T 20 60" fill="none" stroke="#ff2244" stroke-width="3" stroke-linecap="round" style="animation: wriggleTentacle3 3.5s infinite ease-in-out;"/>
+
+                            <!-- Bottom Right Tentacle -->
+                            <path d="M 75 65 Q 135 110 155 75 Q 175 45 140 100 T 80 60" fill="none" stroke="#990011" stroke-width="8" stroke-linecap="round" style="animation: wriggleTentacle4 4s infinite ease-in-out;"/>
+                            <path d="M 75 65 Q 135 110 155 75 Q 175 45 140 100 T 80 60" fill="none" stroke="#ff2244" stroke-width="3" stroke-linecap="round" style="animation: wriggleTentacle4 4s infinite ease-in-out;"/>
+                        </g>
+
+                        <!-- Central Core Eye -->
+                        <path id="boss-sclera" d="M10,50 C30,10 70,10 90,50 C70,90 30,90 10,50 Z" fill="#180003" stroke="#ff0033" stroke-width="3" filter="url(#ch2BossGlow)"/>
+                        <g clip-path="url(#ch2-sclera-clip)">
                             <circle id="boss-iris" cx="50" cy="50" r="22" fill="url(#ch2BossIrisGrad)"/>
                             <ellipse id="boss-pupil" cx="50" cy="50" rx="5" ry="15" fill="black"/>
-                            <ellipse id="boss-glint" cx="54" cy="43" rx="2.5" ry="4" fill="rgba(255,255,255,0.45)" transform="rotate(-10,54,43)"/>
+                            <ellipse id="boss-glint" cx="54" cy="43" rx="2.5" ry="4" fill="rgba(255,255,255,0.7)" transform="rotate(-10,54,43)"/>
                         </g>
                     </svg>
                 </div>
@@ -4016,7 +4520,7 @@
         }
 
         function spawnRandomCh2BossAttack() {
-            const attackType = Math.floor(Math.random() * 3) + 1;
+            const attackType = Math.floor(Math.random() * 4) + 1;
             const overlay = document.getElementById('boss-fight-overlay');
             if (!overlay) return;
 
@@ -4198,6 +4702,66 @@
                         bombEl.style.background = flashState ? '#ff0000' : '#ffeb3b';
                     }
                 }, 130);
+            } else if (attackType === 4) {
+                // Tentacle Strike Attack: Boss launches a fast dark-red organic tentacle wave from core toward player
+                const bossCx = window.innerWidth * 0.8;
+                const bossCy = window.innerHeight * 0.5;
+                const dx = ch2PlayerX - bossCx;
+                const dy = ch2PlayerY - bossCy;
+                const angle = Math.atan2(dy, dx);
+
+                // Telegraph beam
+                const tele = document.createElement('div');
+                tele.style.cssText = `
+                    position: absolute;
+                    left: ${bossCx}px;
+                    top: ${bossCy}px;
+                    width: 2000px;
+                    height: 24px;
+                    background: rgba(255, 0, 50, 0.45);
+                    border-top: 2px solid #ff0033;
+                    border-bottom: 2px solid #ff0033;
+                    box-shadow: 0 0 20px #ff0000;
+                    transform-origin: left center;
+                    transform: rotate(${angle}rad);
+                    z-index: 50004;
+                    pointer-events: none;
+                `;
+                overlay.appendChild(tele);
+
+                setTimeout(() => {
+                    tele.remove();
+                    if (!ch2BossActive) return;
+
+                    if (typeof audioEngine !== 'undefined') {
+                        audioEngine.playGlitchSound();
+                    }
+
+                    const tentacle = document.createElement('div');
+                    tentacle.style.cssText = `
+                        position: absolute;
+                        left: ${bossCx}px;
+                        top: ${bossCy}px;
+                        width: 140px;
+                        height: 38px;
+                        background: linear-gradient(90deg, #aa0000, #ff0033, #660000);
+                        border-radius: 20px 0 0 20px;
+                        box-shadow: 0 0 25px #ff0000;
+                        z-index: 50008;
+                        transform-origin: center center;
+                        transform: translate(-50%, -50%) rotate(${angle}rad);
+                    `;
+                    overlay.appendChild(tentacle);
+
+                    ch2ActiveAttacks.push({
+                        type: 'tentacle',
+                        el: tentacle,
+                        x: bossCx,
+                        y: bossCy,
+                        vx: Math.cos(angle) * 18,
+                        vy: Math.sin(angle) * 18
+                    });
+                }, 400);
             }
         }
 
@@ -4304,6 +4868,20 @@
                     }
 
                     if (a.x < -100 || a.x > window.innerWidth + 100 || a.y < -100 || a.y > window.innerHeight + 100) {
+                        if (a.el) a.el.remove();
+                        ch2ActiveAttacks.splice(i, 1);
+                    }
+                } else if (a.type === 'tentacle') {
+                    const dx = ch2PlayerX - a.x;
+                    const dy = ch2PlayerY - a.y;
+                    if (Math.sqrt(dx * dx + dy * dy) < 45) {
+                        damageCh2Player(25);
+                        if (a.el) a.el.remove();
+                        ch2ActiveAttacks.splice(i, 1);
+                        continue;
+                    }
+
+                    if (a.x < -150 || a.x > window.innerWidth + 150 || a.y < -150 || a.y > window.innerHeight + 150) {
                         if (a.el) a.el.remove();
                         ch2ActiveAttacks.splice(i, 1);
                     }
@@ -4748,6 +5326,41 @@
             const rawUrl = urlInput.value.toLowerCase().trim();
             const cleanUrl = rawUrl.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
             
+            if (activeChapter === 3) {
+                const t = translations[currentLang] || translations['ru'];
+                const taskNum = currentChapter3Task;
+
+                if (taskNum === 1 || taskNum === "1" || taskNum === 2 || taskNum === "2" || taskNum === "1_servers" || taskNum === "2_servers") {
+                    const isServerQuery = cleanUrl.includes('ispy_servers') || rawUrl.includes('ispy_servers') ||
+                                          cleanUrl.includes('servers') || rawUrl.includes('servers') ||
+                                          cleanUrl.includes('сервер') || rawUrl.includes('сервер');
+                    if (isServerQuery) {
+                        loadISpyServersPage();
+                        return;
+                    }
+                } else if (taskNum === 3 || taskNum === "3" || taskNum === "3_clones" || taskNum === "3.5" || taskNum === 3.5) {
+                    if (cleanUrl.includes('ispy') || rawUrl.includes('ispy')) {
+                        loadISpySearchPage();
+                        return;
+                    }
+                } else if (taskNum === "youtube_search_rest") {
+                    if (cleanUrl.includes('youtube') || rawUrl.includes('youtube')) {
+                        loadYouTubeSearchChaosPage();
+                        return;
+                    }
+                }
+
+                // If user entered anything else during Chapter 3, display empty search tab
+                browserContent.innerHTML = `
+                    <div style="padding: 25px; font-family: 'Times New Roman', serif; background: white; height: 100%; display: flex; flex-direction: column; box-sizing: border-box;">
+                        <h2 style="color: #000080; margin-top: 0;">${t.pageNotDisplayed || 'Страница недоступна'}</h2>
+                        <p>${t.pageUnavailable || 'По вашему запросу ничего не найдено.'}</p>
+                        <p style="color: #888; font-size: 13px; margin-top: 15px;">[ Search nodes matched: 0 ]</p>
+                    </div>
+                `;
+                return;
+            }
+            
             if (isOnCreepySite && !cleanUrl.includes('logotype.com') && !cleanUrl.includes('thelogotype.com')) {
                 handleEscapeAttempt();
                 urlInput.value = "http://logotype.com.exe";
@@ -4758,6 +5371,15 @@
             const isLogotypeSite = cleanUrl.includes('logotype.com') || cleanUrl.includes('thelogotype.com') || cleanUrl.includes('logotype');
             
             if (isLogotypeSite) {
+                if (activeChapter === 3) {
+                    browserContent.innerHTML = `
+                        <div style="background: #110000; color: #ff3333; height: 100%; padding: 25px; font-family: 'MS Sans Serif', Tahoma, sans-serif; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                            <h2 style="color: #ff0000; margin-bottom: 15px;">⚠️ ${t.siteAccessBlockedTitle || 'ДОСТУП ЗАБЛОКИРОВАН'}</h2>
+                            <p style="font-size: 13px; line-height: 1.6; max-width: 80%;">${t.siteAccessBlocked || 'Сайт logotype.com.exe был уничтожен и более недоступен.'}</p>
+                        </div>
+                    `;
+                    return;
+                }
                 if (activeChapter === 2 && currentChapter2Task < 3) {
                     browserContent.innerHTML = `
                         <div style="background: #110000; color: #ff3333; height: 100%; padding: 25px; font-family: 'MS Sans Serif', Tahoma, sans-serif; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
@@ -4814,6 +5436,7 @@
                 setTimeout(() => { const h = document.getElementById('browser-hint'); if(h) h.style.opacity='1'; }, 500);
             }
         }
+        window.navigate = navigate;
 
         urlInput.addEventListener('keypress', function (e) { if (e.key === 'Enter') navigate(); });
 
@@ -4941,6 +5564,11 @@
         let darknessLevel = 0;
 
         function startGame() { 
+            if (activeChapter === 3) {
+                const t = translations[currentLang] || translations['ru'];
+                showPlayerDialogue(t.ch2PlayerNeverReturnMonologue || "Я туда больше не вернусь.");
+                return;
+            }
             currentQuestion = 0; 
             playerLives = 3;
             darknessLevel = hasRebootedAfterBSOD ? 0.2 : 0;
@@ -4950,20 +5578,21 @@
             
             // Keep the browser window open because the game is played inside it!
             browserState.isOpen = true;
-            browserWindow.style.display = 'flex';
-            taskbarBrowserBtn.style.display = 'flex';
-            restoreBrowser();
+            const bWin = document.getElementById('browser-window');
+            if (bWin) bWin.style.display = 'flex';
+            const tbBtn = document.getElementById('taskbar-browser') || document.getElementById('taskbar-browser-btn');
+            if (tbBtn) tbBtn.style.display = 'flex';
+            if (typeof restoreBrowser === 'function') restoreBrowser();
 
             window._bossIntroStarted = false;
             window._bossFightInitiated = false;
             
-            // Таймер для Zetta Antivirus убран, так как путь только один
-            
             renderQuestion(); 
         }
+        window.startGame = startGame;
 
         function showZettaAd() {
-            if (activeChapter === 2 || isZettaInstalled || document.getElementById('zetta-ad') || document.getElementById('zetta-setup') || document.getElementById('zetta-assistant')) return;
+            if (activeChapter === 2 || activeChapter === 3 || isZettaInstalled || document.getElementById('zetta-ad') || document.getElementById('zetta-setup') || document.getElementById('zetta-assistant')) return;
             
             const ad = document.createElement('div');
             ad.id = 'zetta-ad';
@@ -4986,10 +5615,10 @@
         }
 
         function startZettaAdTimer() {
-            if (activeChapter === 2 || isZettaInstalled || document.getElementById('zetta-ad') || document.getElementById('zetta-setup') || document.getElementById('zetta-assistant')) return;
+            if (activeChapter === 2 || activeChapter === 3 || isZettaInstalled || document.getElementById('zetta-ad') || document.getElementById('zetta-setup') || document.getElementById('zetta-assistant')) return;
             clearTimeout(zettaTimer);
             zettaTimer = setTimeout(() => {
-                if (activeChapter !== 2 && browserState.isOpen && !browserState.isMinimized) {
+                if (activeChapter !== 2 && activeChapter !== 3 && browserState.isOpen && !browserState.isMinimized) {
                     showZettaAd();
                 }
             }, 60000); // 1 минута
@@ -5259,12 +5888,7 @@
             // Check if this is the final question after BSOD
             if (hasRebootedAfterBSOD && currentQuestion === gameLogos.length - 1) {
                 clearQuestionTimers();
-                if (scavengerTimer) {
-                    clearInterval(scavengerTimer);
-                    scavengerTimer = null;
-                }
-                document.querySelectorAll('.scavenger-letter').forEach(e => e.remove());
-                triggerScreamerAndDeath();
+                triggerPostBsodMistakeGlitchCutscene();
                 return;
             }
 
@@ -5379,7 +6003,6 @@
                 document.body.style.transition = 'none';
                 document.body.style.background = `radial-gradient(circle at center, #008080 ${100 - ((currentQuestion-14)*10)}%, #000000 100%)`;
             }
-            // Идея 2: после перезагрузки иконки сохраняют тёмные имена
             if (hasRebootedAfterBSOD) {
                 document.getElementById('desktop-pc-text').innerText = translations[currentLang].creepPc2;
                 document.getElementById('desktop-trash-text').innerText = translations[currentLang].creepTrash2;
@@ -5411,29 +6034,23 @@
                 </div>
             `;
             
-            // Start timer (random 15-20s)
             const timerMax = Math.floor(Math.random() * 6) + 15;
             startQuestionTimer(timerMax);
 
-            // Scary flash after question 14 (0-indexed)
             if (currentQuestion >= SCARY_FLASH_START_Q) {
                 startScaryFlash();
             } else {
                 clearScaryFlash();
             }
 
-            // Идея 4: деградация логотипа на вопросах 13-14
             if (currentQuestion === 12 || currentQuestion === 13) {
                 setTimeout(startLogoGlitch, 2000);
             } else {
                 stopLogoGlitch();
             }
 
-            // Заражение Зетты теперь происходит только по ошибкам (см. checkAnswer)
-
-            // Идея 6: системные уведомления
             setTimeout(() => maybShowSysNotif(currentQuestion), 3000);
-            // Zetta scan attempts
+
             if (isZettaInstalled) {
                 if (isZettaCorrupted) {
                     zettaSetEmotion('corrupted');
@@ -5466,20 +6083,19 @@
                 inputField.addEventListener('keypress', function (e) { if (e.key === 'Enter') checkAnswer(false); });
                 inputField.focus();
             }
-            // Update lives display with current state
             updateLivesDisplay();
         }
+        window.renderQuestion = renderQuestion;
 
         function triggerCorporateFlash(logoName, callback) {
             const overlay = document.getElementById('corporate-flash-overlay');
             const content = document.getElementById('corporate-flash-content');
             if (!overlay || !content) { callback(); return; }
 
-            // Play static television glitch sound
             audioEngine.playTone('sawtooth', 85, 45, 0.35, 0.5);
             audioEngine.playTone('square', 190, 95, 0.35, 0.4);
 
-                        let text = translations[currentLang].creepText1;
+            let text = translations[currentLang].creepText1;
             let img = "creepy_face.png";
 
             if (logoName === "mcdonalds") {
@@ -5508,7 +6124,6 @@
                 img = "distorted_skull.png";
             }
 
-
             content.innerHTML = `
                 <img class="corporate-flash-img" src="${img}" style="width: 250px; height: 250px; object-fit: contain; filter: saturate(3) contrast(1.5) invert(1); animation: shake 0.05s infinite;">
                 <div style="margin-top:20px; font-size: 2rem; font-family: 'Nosifer', 'Courier New', monospace; font-weight: bold; text-shadow: 0 0 10px red;">${text}</div>
@@ -5522,7 +6137,38 @@
             }, 350);
         }
 
-        let errorCount = 0;
+        function triggerPostBsodMistakeGlitchCutscene() {
+            clearQuestionTimers();
+            if (typeof audioEngine !== 'undefined') {
+                audioEngine.playGlitchSound();
+            }
+            is666Mode = true;
+            if (typeof populateTaskManager === 'function') populateTaskManager();
+
+            const bWin = document.getElementById('browser-window');
+            if (bWin) bWin.classList.add('shake-continuous');
+
+            const browserContent = document.getElementById('browser-content');
+            if (browserContent) {
+                const t = translations[currentLang] || translations['ru'];
+                browserContent.innerHTML = `
+                    <div style="background: black; color: red; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: monospace; font-size: 20px; font-weight: bold; text-align: center; padding: 20px; box-sizing: border-box;">
+                        <div style="animation: shake 0.1s infinite; font-size: 28px; margin-bottom: 15px;">⚠️ CRITICAL ERROR ⚠️</div>
+                        <div style="color: #ffffff; font-size: 14px; margin-bottom: 20px;">[ PROCESS INTERNET.EXE UNRESPONSIVE ]</div>
+                        <div style="color: #ff3333; font-size: 13px; font-family: 'W95FA', monospace;">
+                            ${t.ch1KillTaskHint || "Используйте Диспетчер Задач (C+S+E / Ctrl+Shift+Esc), чтобы завершить процесс Internet!"}
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (window._fakeBsodGlitchTimeout) clearTimeout(window._fakeBsodGlitchTimeout);
+            window._fakeBsodGlitchTimeout = setTimeout(() => {
+                if (typeof audioEngine !== 'undefined') audioEngine.stopGlitchSound();
+                if (bWin) bWin.classList.remove('shake-continuous');
+                triggerBSOD();
+            }, 7000);
+        }
 
         function checkAnswer(isZettaLastQuestion = false) {
             const inputField = document.getElementById('logo-answer');
@@ -5581,6 +6227,12 @@
             } else {
                 audioEngine.playError();
                 errorCount++;
+
+                if (hasRebootedAfterBSOD && currentQuestion === gameLogos.length - 1) {
+                    triggerPostBsodMistakeGlitchCutscene();
+                    return;
+                }
+
                 let errorMsg = translations[currentLang].wrongAnswer;
                 if (errorCount === 2) errorMsg = translations[currentLang].wrongAnswer2;
                 if (errorCount === 3) errorMsg = translations[currentLang].wrongAnswer3.replace('{playerName}', playerName);
@@ -5681,8 +6333,8 @@
             if (browser) browser.style.display = 'none';
             const ad = document.getElementById('ad-popup');
             if (ad) ad.style.display = 'none';
-            const taskbarBrowserBtn = document.getElementById('taskbar-browser-btn');
-            if (taskbarBrowserBtn) taskbarBrowserBtn.style.display = 'none';
+            const tbBtn = document.getElementById('taskbar-browser') || document.getElementById('taskbar-browser-btn');
+            if (tbBtn) tbBtn.style.display = 'none';
         }
 
         function triggerBSOD() {
@@ -5693,6 +6345,35 @@
             audioEngine.playBSOD();
             document.querySelectorAll('.red-eye').forEach(el => el.remove());
             closeAllDesktopWindows();
+
+            // Update Task Text for Chapter 3 logic
+            const t = translations[currentLang];
+            if (activeChapter === 2) {
+                text = t.taskCh2_3 || "3. Destroy logotype.com.exe site.";
+            } else if (activeChapter === 3) {
+                const taskNum = typeof currentChapter3Task !== 'undefined' ? currentChapter3Task : 1;
+                if (taskNum === 1) {
+                    text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                } else if (taskNum === 2 || taskNum === "1_servers" || taskNum === "2_servers") {
+                    text = t.taskCh3_2 || t.taskCh3_1_servers || "2. Перейти на серверы ISpy (ispy_servers).";
+                } else if (taskNum === 3) {
+                    text = t.taskCh3_3 || "3. Перейти по запросу ISpy в Интернете.";
+                } else if (taskNum === "3_clones") {
+                    text = t.taskCh3_3_clones || "3. Найти настоящего Бога сайтов.";
+                } else if (taskNum === "3.5" || taskNum === 3.5) {
+                    text = t.taskCh3_3_5 || "3.5. Поймать Бога сайтов.";
+                } else if (taskNum === 4 || taskNum === "4") {
+                    text = t.taskCh3_4 || "4. Выманить Бога сайтов через Сеанс MS-DOS (введите 7).";
+                } else if (taskNum === 5 || taskNum === "5") {
+                    text = t.taskCh3_5 || "5. Запустить код уничтожения.";
+                } else if (taskNum === 6 || taskNum === "6") {
+                    text = t.taskCh3_6 || "6. Нажать комбинацию C + S + E.";
+                } else if (taskNum === "youtube_search_rest") {
+                    text = t.ch3YoutubeTaskText || "Зайдите в Интернет и введите \"youtube\" в поиске.";
+                } else {
+                    text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                }
+            }
             
             // Critical: Turn off boss fight active flag to halt dialogue and combat loops
             isBossFightActive = false;
@@ -5776,6 +6457,15 @@
             clearTimeout(adTimeout);
             clearTimeout(zettaTimer);
             currentQuestion = 0;
+
+            if (activeChapter === 1) {
+                currentChapter1Task = 1;
+                isCh1Task1Completed = false;
+                isCh1Task2Completed = false;
+                stopCh1TaskGlitch();
+                updateTaskWidgetText();
+            }
+
             const bootScreen = document.getElementById('boot-screen');
             bootScreen.style.display = 'flex';
             setTimeout(() => { bootScreen.style.display = 'none'; }, 4000);
@@ -5828,7 +6518,9 @@
 
         function startGameFromMenu() {
             runBootSequence(() => {
-                if (activeChapter === 2) {
+                if (activeChapter === 3) {
+                    startChapter3();
+                } else if (activeChapter === 2) {
                     startChapter2();
                 } else {
                     startChapter1();
@@ -6227,7 +6919,10 @@
             } else {
                 // Новая игра без временной метки сохранения
                 if (!state.timestamp) {
-                    if (activeChapter === 2) {
+                    if (activeChapter === 3) {
+                        startChapter3();
+                        return;
+                    } else if (activeChapter === 2) {
                         startChapter2();
                         return;
                     } else {
@@ -6237,30 +6932,137 @@
                 }
 
                 // Загрузка в существующее сохранение
-                if (activeChapter === 2) {
+                if (activeChapter === 3) {
+                    currentChapter3Task = state.currentChapter3Task || 1;
+                    startChapter3();
+                    return;
+                } else if (activeChapter === 2) {
                     currentChapter2Task = state.currentChapter2Task || 1;
-                    const hintContainer = document.getElementById('desktop-hint-container');
-                    if (hintContainer) hintContainer.style.display = 'flex';
-                    const adPopup = document.getElementById('ad-popup');
-                    if (adPopup) adPopup.style.display = 'none';
+                    startChapter2();
+                    return;
                 } else {
                     currentChapter1Task = state.currentChapter1Task || 1;
-                }
-
-                const taskWidget = document.getElementById('task-widget');
-                if (taskWidget) taskWidget.style.display = 'block';
-
-                if (typeof updateTaskWidgetText === 'function') {
-                    updateTaskWidgetText();
+                    startChapter1();
+                    return;
                 }
             }
         }
+
+        function cleanupCh3AllBossOverlays() {
+            if (typeof ch3FinalBossActive !== 'undefined') ch3FinalBossActive = false;
+            if (typeof ch3QTEActive !== 'undefined') ch3QTEActive = false;
+
+            if (typeof ch3FinalAttackInterval !== 'undefined' && ch3FinalAttackInterval) {
+                clearInterval(ch3FinalAttackInterval);
+                ch3FinalAttackInterval = null;
+            }
+            if (typeof ch3FinalLoopFrame !== 'undefined' && ch3FinalLoopFrame) {
+                cancelAnimationFrame(ch3FinalLoopFrame);
+                ch3FinalLoopFrame = null;
+            }
+            if (typeof ch3CatchInterval !== 'undefined' && ch3CatchInterval) {
+                clearInterval(ch3CatchInterval);
+                ch3CatchInterval = null;
+            }
+            if (typeof ch3ShuffleInterval !== 'undefined' && ch3ShuffleInterval) {
+                clearInterval(ch3ShuffleInterval);
+                ch3ShuffleInterval = null;
+            }
+            if (typeof ch3QTEInterval !== 'undefined' && ch3QTEInterval) {
+                clearInterval(ch3QTEInterval);
+                ch3QTEInterval = null;
+            }
+
+            const idsToHide = [
+                'ch3-desktop-boss-overlay',
+                'ch3-false-clone-boss-overlay',
+                'ch3-screen-tentacles-overlay',
+                'ch3-tentacle-prison',
+                'red-screen-tint',
+                'ch3-final-boss-overlay',
+                'ch3-qte-overlay',
+                'ch3-standalone-dialogue-box',
+                'ch3-credits-overlay',
+                'ch3-restore-overlay',
+                'ch3-freed-ispy-container',
+                'task-widget',
+                'corporate-flash-overlay',
+                'task-manager',
+                'taskmgr-context-menu',
+                'ch3-final-top-warning',
+                'ch3-final-bottom-warning'
+            ];
+
+            idsToHide.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+
+            const attacksContainer = document.getElementById('ch3-final-attacks-container');
+            if (attacksContainer) attacksContainer.innerHTML = '';
+
+            document.body.classList.remove('chapter-3-theme', 'screen-lag-glitch', 'shake-active');
+        }
+
+        function cleanupCh2BossFight() {
+            ch2BossActive = false;
+            
+            if (typeof ch2CombatFrameId !== 'undefined' && ch2CombatFrameId) {
+                cancelAnimationFrame(ch2CombatFrameId);
+                ch2CombatFrameId = null;
+            }
+            if (typeof ch2TiredCycleTimer !== 'undefined' && ch2TiredCycleTimer) {
+                clearTimeout(ch2TiredCycleTimer);
+                ch2TiredCycleTimer = null;
+            }
+            if (typeof ch2TiredDurationTimer !== 'undefined' && ch2TiredDurationTimer) {
+                clearTimeout(ch2TiredDurationTimer);
+                ch2TiredDurationTimer = null;
+            }
+            if (typeof ch2AttackTimer !== 'undefined' && ch2AttackTimer) {
+                clearInterval(ch2AttackTimer);
+                clearTimeout(ch2AttackTimer);
+                ch2AttackTimer = null;
+            }
+            if (typeof ch2MazeInterval !== 'undefined' && ch2MazeInterval) {
+                clearInterval(ch2MazeInterval);
+                ch2MazeInterval = null;
+            }
+            if (typeof ch2MazeKeyHandler !== 'undefined' && ch2MazeKeyHandler) {
+                window.removeEventListener('keydown', ch2MazeKeyHandler);
+                window.removeEventListener('keyup', ch2MazeKeyHandler);
+                ch2MazeKeyHandler = null;
+            }
+
+            if (typeof ch2ActiveAttacks !== 'undefined' && Array.isArray(ch2ActiveAttacks)) {
+                ch2ActiveAttacks.forEach(a => {
+                    if (a && a.el) a.el.remove();
+                });
+                ch2ActiveAttacks = [];
+            }
+
+            // Удаляем оверлеи и элементы боссфайта 2 главы
+            ['boss-fight-overlay', 'ch2-boss-finale-overlay', 'ch2-white-flash', 'ch2-boss-victory-screen'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.remove();
+            });
+
+            // Удаляем кастомные всплывающие атаки и системные ошибки
+            document.querySelectorAll('.system-error-pop, .boss-projectile, .red-eye, [id^="ch2-attack-"]').forEach(el => {
+                el.remove();
+            });
+            if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+        }
+        window.cleanupCh2BossFight = cleanupCh2BossFight;
 
         function returnToMainMenuFromPause() {
             if (typeof audioEngine !== 'undefined') {
                 audioEngine.playClick();
             }
             resumeGame();
+
+            cleanupCh2BossFight();
+            cleanupCh3AllBossOverlays();
 
             if (isBossFightActive) {
                 isBossFightActive = false;
@@ -6273,20 +7075,6 @@
                 const bossLaser = document.getElementById('boss-laser-svg');
                 if (bossLaser) bossLaser.style.display = 'none';
             }
-
-            if (typeof ch2BossActive !== 'undefined') {
-                ch2BossActive = false;
-            }
-            if (typeof ch2MazeInterval !== 'undefined' && ch2MazeInterval) {
-                clearInterval(ch2MazeInterval);
-                ch2MazeInterval = null;
-            }
-            if (typeof ch2MazeKeyHandler !== 'undefined' && ch2MazeKeyHandler) {
-                window.removeEventListener('keydown', ch2MazeKeyHandler);
-                ch2MazeKeyHandler = null;
-            }
-            const ch2BossOverlay = document.getElementById('ch2-boss-finale-overlay');
-            if (ch2BossOverlay) ch2BossOverlay.remove();
 
             if (typeof audioEngine !== 'undefined') {
                 audioEngine.stopBossMusic();
@@ -6385,6 +7173,29 @@
                     } else {
                         text = t.taskCh2_3 || "3. Destroy logotype.com.exe site.";
                     }
+                } else if (activeChapter === 3) {
+                    const taskNum = typeof currentChapter3Task !== 'undefined' ? currentChapter3Task : 1;
+                    if (taskNum === 1) {
+                        text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                    } else if (taskNum === 2 || taskNum === "1_servers" || taskNum === "2_servers") {
+                        text = t.taskCh3_2 || t.taskCh3_1_servers || "2. Перейти на серверы ISpy (ispy_servers).";
+                    } else if (taskNum === 3) {
+                        text = t.taskCh3_3 || "3. Перейти по запросу ISpy в Интернете.";
+                    } else if (taskNum === "3_clones") {
+                        text = t.taskCh3_3_clones || "3. Найти настоящего Бога сайтов.";
+                    } else if (taskNum === "3.5" || taskNum === 3.5) {
+                        text = t.taskCh3_3_5 || "3.5. Поймать Бога сайтов.";
+                    } else if (taskNum === 4 || taskNum === "4") {
+                        text = t.taskCh3_4 || "4. Выманить Бога сайтов через Сеанс MS-DOS (введите 7).";
+                    } else if (taskNum === 5 || taskNum === "5") {
+                        text = t.taskCh3_5 || "5. Запустить код уничтожения.";
+                    } else if (taskNum === 6 || taskNum === "6") {
+                        text = t.taskCh3_6 || "6. Нажать комбинацию C + S + E.";
+                    } else if (taskNum === "youtube_search_rest") {
+                        text = t.ch3YoutubeTaskText || "Зайдите в Интернет и введите \"youtube\" в поиске.";
+                    } else {
+                        text = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+                    }
                 }
 
                 if (text.startsWith("✔ ")) {
@@ -6413,73 +7224,65 @@
             
             const idx = charIdx - 1;
             const char = fullText.charAt(idx);
-            const prevChar = idx > 0 ? fullText.charAt(idx - 1) : '';
-            const prevPrevChar = idx > 1 ? fullText.charAt(idx - 2) : '';
-            const nextChar = idx < fullText.length - 1 ? fullText.charAt(idx + 1) : '';
-            
-            const isLastCharInText = (idx === fullText.length - 1);
-            const isFollowedBySpaceOrNewline = (nextChar === ' ' || nextChar === '\n' || nextChar === '\r' || nextChar === '');
+            const trimmedLength = fullText.trimEnd().length;
 
-            // 1. Check for dots and ellipsis (...)
-            if (char === '.') {
-                const isEllipsis1stOr2ndDot = (nextChar === '.');
-                if (isEllipsis1stOr2ndDot) {
-                    return 500; // 0.5s pause per dot in ellipsis
-                }
-
-                const isEllipsis3rdDot = (prevChar === '.' || prevPrevChar === '.') && nextChar !== '.';
-                if (isEllipsis3rdDot) {
-                    const isSentenceEndEllipsis = isLastCharInText || isFollowedBySpaceOrNewline;
-                    if (isSentenceEndEllipsis) {
-                        return 2000; // Знак в конце предложения -> 2 секунды
-                    }
-                    return 500; // 3-я точка троеточия -> 0.5с (суммарно 1.5с за троеточие)
-                }
-
-                // 1 точка
-                const isSentenceEndDot = isLastCharInText || isFollowedBySpaceOrNewline;
-                if (isSentenceEndDot) {
-                    return 2000; // Знак в конце предложения -> 2 секунды
-                }
-                return 500; // 1 точка внутри предложения -> 0.5 секунды
+            // 1. Символ в самом конце реплики/текста -> 2 секунды (2000 мс) пауза перед кнопкой ОК
+            if (idx >= trimmedLength - 1) {
+                return 2000;
             }
 
-            // 2. Проверка запятой (,)
+            // Скобочки, кавычки и апострофы идут вместе с буквами (без дополнительных задержек)
+            const isNoDelayPunctuation = /[()\[\]{}'"«»`]/.test(char);
+            if (isNoDelayPunctuation) {
+                return defaultCharDelay;
+            }
+
+            // 2. Запятая -> 0.5 секунд (500 мс)
             if (char === ',') {
-                if (isLastCharInText) {
-                    return 2000; // Знак в конце предложения -> 2 секунды
-                }
-                return 500; // Запятая -> 0.5 секунды (500 мс)
+                return 500;
             }
 
-            // 3. Проверка восклицательного и вопросительного знака (!, ?)
-            if (char === '!' || char === '?') {
-                if (isLastCharInText || isFollowedBySpaceOrNewline) {
-                    return 2000; // Знак в конце предложения -> 2 секунды
-                }
-                return 1000; // ! или ? в середине -> 1 секунда
-            }
-
-            // 4. Проверка любых других знаков (:, ;, -, —, quotes, brackets, etc.)
-            const isOtherPunctuation = /[;\:\-\—"'()\[\]{}]/.test(char);
-            if (isOtherPunctuation) {
-                if (isLastCharInText) {
-                    return 2000; // Знак в конце предложения -> 2 секунды
-                }
-                return 1000; // Все остальные знаки -> 1 секунда (1000 мс)
-            }
-
-            // 5. Правило для последнего знака предложения (даже если буква/цифра без пунктуации)
-            if (isLastCharInText) {
-                return 2000; // Знак в конце предложения -> 2 секунды
+            // 3. Все остальные знаки препинания (. ! ? : ; - — …) -> 1 секунда (1000 мс)
+            const isPunctuation = /[.!?:;\-\—…]/.test(char);
+            if (isPunctuation) {
+                return 1000;
             }
 
             return defaultCharDelay;
         }
 
         function checkCh2Restriction(target) {
-            if (activeChapter !== 2) return false;
             const t = translations[currentLang] || translations['ru'];
+
+            if (activeChapter === 3) {
+                const taskNum = currentChapter3Task;
+                let allowed = false;
+
+                if (taskNum === 1 || taskNum === "1") {
+                    allowed = (target === 'terminal');
+                } else if (taskNum === 2 || taskNum === "2" || taskNum === "1_servers" || taskNum === "2_servers") {
+                    allowed = (target === 'browser');
+                } else if (taskNum === 3 || taskNum === "3" || taskNum === "3_clones" || taskNum === "3.5" || taskNum === 3.5) {
+                    allowed = (target === 'browser');
+                } else if (taskNum === 4 || taskNum === "4") {
+                    allowed = (target === 'dos');
+                } else if (taskNum === 5 || taskNum === "5") {
+                    allowed = (target === 'regedit');
+                } else if (taskNum === 6 || taskNum === "6") {
+                    allowed = (target === 'taskmgr');
+                } else if (taskNum === "youtube_search_rest") {
+                    allowed = (target === 'browser');
+                }
+
+                if (!allowed) {
+                    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+                    showPlayerDialogue(t.ch3Task1Restrict || "Мне сейчас нельзя туда.");
+                    return true;
+                }
+                return false;
+            }
+
+            if (activeChapter !== 2) return false;
 
             if (currentChapter2Task === 1) {
                 if (target === 'cipher' || target === 'dos') {
@@ -6658,10 +7461,54 @@
                 };
             }
         }
-        window.showGameAlert = showGameAlert;
+        function calculateCharDelay(text, index, baseDelay) {
+            baseDelay = baseDelay || 35;
+            if (!text || index <= 0 || index > text.length) return baseDelay;
+            
+            const char = text.charAt(index - 1);
+            const nextChar = index < text.length ? text.charAt(index) : '';
 
-        function showPlayerDialogue(text, callback) {
-            audioEngine.playClick();
+            // Если идут подряд несколько точек/знаков (как в ".."), промежуточные точки ставятся быстро
+            if ((char === '.' || char === '!' || char === '?') && (nextChar === '.' || nextChar === '!' || nextChar === '?')) {
+                return baseDelay * 2; // ~70ms для анимации многоточия
+            }
+
+            if (char === '.' || char === '!' || char === '?' || char === '…') {
+                return 450; // Выразительная пауза на концах предложений и мысли (0.45 сек)
+            }
+            if (char === ',' || char === ';' || char === ':' || char === '—') {
+                return 260; // Ощутимая пауза на запятых, двоеточиях и тире (0.26 сек)
+            }
+            return baseDelay;
+        }
+        window.calculateCharDelay = calculateCharDelay;
+
+        function showPlayerDialogue(text, callback, options) {
+            options = options || {};
+            if (Array.isArray(text)) {
+                let currentIndex = 0;
+                let isSkipped = false;
+
+                function showNextLine() {
+                    if (isSkipped) return;
+                    if (currentIndex < text.length) {
+                        const lineText = text[currentIndex];
+                        currentIndex++;
+                        showPlayerDialogue(lineText, showNextLine, {
+                            onSkipAll: () => {
+                                isSkipped = true;
+                                if (typeof callback === 'function') callback();
+                            }
+                        });
+                    } else {
+                        if (typeof callback === 'function') callback();
+                    }
+                }
+                showNextLine();
+                return;
+            }
+
+            if (typeof audioEngine !== 'undefined') audioEngine.playClick();
             const existing = document.getElementById('player-dialogue-window');
             if (existing) existing.remove();
 
@@ -6669,6 +7516,7 @@
 
             const t = translations[currentLang] || translations['ru'];
             const titleText = `${playerName || 'Игрок'} — ${t.monologueTitle || 'Размышления'}`;
+            const skipText = t.skipBtn || 'Пропустить';
 
             const dialogueWindow = document.createElement('div');
             dialogueWindow.id = 'player-dialogue-window';
@@ -6688,7 +7536,8 @@
                         <span id="player-dialogue-text" style="white-space: pre-wrap; word-break: break-word;"></span><span id="player-dialogue-cursor" style="display:inline-block;width:8px;height:16px;background:#000;margin-left:2px;vertical-align:middle;"></span>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: flex-end; padding: 0 8px 8px 8px;">
+                <div style="display: flex; justify-content: flex-end; gap: 8px; padding: 0 8px 8px 8px;">
+                    <button id="player-dialogue-bottom-skip-btn" style="background: #c0c0c0; border: 2px outset #ffffff; padding: 4px 18px; font-weight: bold; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-size: 13px; cursor: pointer;" onmouseenter="if(typeof audioEngine!=='undefined') audioEngine.playHover()">${skipText} ⏭</button>
                     <button id="player-dialogue-ok-btn" style="background: #c0c0c0; border: 2px outset #ffffff; padding: 4px 30px; font-weight: bold; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-size: 13px; cursor: pointer; display: none;">OK</button>
                 </div>
             `;
@@ -6698,14 +7547,33 @@
             const textSpan = document.getElementById('player-dialogue-text');
             const cursor = document.getElementById('player-dialogue-cursor');
             const okBtn = document.getElementById('player-dialogue-ok-btn');
+            const bottomSkipBtn = document.getElementById('player-dialogue-bottom-skip-btn');
 
             let cursorInterval = setInterval(() => {
                 if (cursor) cursor.style.visibility = cursor.style.visibility === 'hidden' ? 'visible' : 'hidden';
             }, 400);
 
             let charIdx = 0;
+            let isTypingActive = true;
+
+            const handleSkip = (e) => {
+                if (e) e.stopPropagation();
+                isTypingActive = false;
+                if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+                clearInterval(cursorInterval);
+                if (dialogueWindow) dialogueWindow.remove();
+                unblockAllInteractions();
+                if (typeof options.onSkipAll === 'function') {
+                    options.onSkipAll();
+                } else if (typeof callback === 'function') {
+                    callback();
+                }
+            };
+
+            if (bottomSkipBtn) bottomSkipBtn.onclick = handleSkip;
 
             function typeNextChar() {
+                if (!isTypingActive) return;
                 if (typeof isPaused !== 'undefined' && isPaused) {
                     setTimeout(typeNextChar, 100);
                     return;
@@ -6722,39 +7590,176 @@
                     const delay = calculateCharDelay(text, charIdx, 35);
                     setTimeout(typeNextChar, delay);
                 } else {
+                    isTypingActive = false;
                     clearInterval(cursorInterval);
                     if (cursor) cursor.style.display = 'none';
+                    if (bottomSkipBtn) bottomSkipBtn.style.display = 'none';
                     if (okBtn) {
                         okBtn.style.display = 'inline-block';
                         okBtn.onclick = () => {
-                            audioEngine.playClick();
+                            if (typeof audioEngine !== 'undefined') audioEngine.playClick();
                             if (dialogueWindow) dialogueWindow.remove();
                             unblockAllInteractions();
+                            window._ch3CurrentDialogueAdvance = null;
                             if (typeof callback === 'function') callback();
                         };
                     }
                 }
             }
 
+            const advancePlayerDiag = () => {
+                if (isTypingActive) {
+                    isTypingActive = false;
+                    clearInterval(cursorInterval);
+                    if (textSpan) textSpan.innerText = text;
+                    if (cursor) cursor.style.display = 'none';
+                    if (bottomSkipBtn) bottomSkipBtn.style.display = 'none';
+                    if (okBtn) {
+                        okBtn.style.display = 'inline-block';
+                        okBtn.onclick = () => {
+                            if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+                            if (dialogueWindow) dialogueWindow.remove();
+                            unblockAllInteractions();
+                            window._ch3CurrentDialogueAdvance = null;
+                            if (typeof callback === 'function') callback();
+                        };
+                    }
+                } else if (okBtn && okBtn.style.display !== 'none') {
+                    okBtn.click();
+                }
+            };
+            window._ch3CurrentDialogueAdvance = advancePlayerDiag;
+
+            dialogueWindow.onclick = (e) => {
+                if (e) e.stopPropagation();
+                advancePlayerDiag();
+            };
+
             typeNextChar();
         }
 
-        function startChapter1() {
-            activeChapter = 1;
-            currentChapter1Task = 1;
-            isCh1Task1Completed = false;
-            isCh1Task2Completed = false;
-            stopCh1TaskGlitch();
-            currentQuestion = 0;
-            playerLives = 3;
-            hasRebootedAfterBSOD = false;
-            handEventTriggered = false;
+        function resetAllChapterStates() {
+            // 1. Останавливаем аудио, таймеры и глитчи
+            if (typeof stopCh1TaskGlitch === 'function') stopCh1TaskGlitch();
+            if (typeof audioEngine !== 'undefined') {
+                audioEngine.stopBossMusic();
+                audioEngine.stopDrone();
+                audioEngine.stopGlitchSound();
+            }
+            if (typeof cleanupCh2BossFight === 'function') cleanupCh2BossFight();
+            if (typeof cleanupCh3AllBossOverlays === 'function') cleanupCh3AllBossOverlays();
+            if (window._destroyBtnTimeout) clearTimeout(window._destroyBtnTimeout);
+            if (window._fakeBsodGlitchTimeout) clearTimeout(window._fakeBsodGlitchTimeout);
+            if (typeof adTimeout !== 'undefined') clearTimeout(adTimeout);
+            if (typeof zettaTimer !== 'undefined') clearTimeout(zettaTimer);
+
+            // 2. Удаляем временные оверлеи и окна диалогов
+            ['zetta-assistant', 'zetta-speech', 'zetta-ad', 'zetta-setup', 'ch2-boss-finale-overlay', 'player-dialogue-window'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.remove();
+            });
+            const adPopup = document.getElementById('ad-popup');
+            if (adPopup) adPopup.style.display = 'none';
+
+            if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+            if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
+
+            // 3. Сбрасываем стили, фильтры и цвета рабочего стола (отмена applyBossDesktopTheme)
+            document.querySelectorAll('.icon-img, .icon-container img, .icon-container svg').forEach(el => {
+                el.style.filter = '';
+            });
+            document.querySelectorAll('.icon-label, .icon-container span, .icon-text').forEach(el => {
+                el.style.color = '';
+                el.style.textShadow = '';
+            });
+            document.querySelectorAll('.taskbar, #taskbar').forEach(el => {
+                el.style.background = '';
+                el.style.borderTop = '';
+            });
+            document.querySelectorAll('.start-btn').forEach(el => {
+                el.style.background = '';
+                el.style.color = '';
+                el.style.border = '';
+                el.style.visibility = 'visible';
+                el.style.transform = 'none';
+                el.style.transition = 'none';
+            });
+            document.querySelectorAll('#clock').forEach(el => {
+                el.style.color = '';
+            });
+            document.querySelectorAll('.icon-container').forEach(el => {
+                el.style.animation = '';
+                el.style.filter = '';
+            });
+
+            // 4. Восстанавливаем стандартные названия иконок рабочего стола
+            const t = translations[currentLang] || translations['ru'];
+            const pcText = document.getElementById('desktop-pc-text');
+            if (pcText) pcText.innerText = t.myComputer || "Мой компьютер";
+            const trashText = document.getElementById('desktop-trash-text');
+            if (trashText) trashText.innerText = t.trash || "Корзина";
+            const netText = document.getElementById('desktop-internet-text');
+            if (netText) netText.innerText = t.internet || "Internet";
+            const regeditText = document.getElementById('desktop-regedit-text');
+            if (regeditText) regeditText.innerText = t.regeditName || "Редактор реестра";
+
+            const regeditIcon = document.getElementById('desktop-regedit-icon');
+            if (regeditIcon) regeditIcon.classList.remove('regedit-burned-shattered');
+            const laserSvg = document.getElementById('ch3-regedit-laser-svg');
+            if (laserSvg) laserSvg.remove();
+
+            // 5. Восстанавливаем темы рабочего стола и фон
+            const desktop = document.getElementById('desktop');
+            if (desktop) {
+                desktop.style.display = 'block';
+                desktop.classList.remove('shake-active');
+            }
+            document.body.classList.remove('chapter-3-theme', 'screen-lag-glitch');
+            document.body.style.transition = '';
+            document.body.style.background = '';
+            document.body.style.backgroundColor = 'var(--win-bg)';
+
+            // 6. Сбрасываем состояния браузера
+            browserState.isOpen = false;
+            const bWin = document.getElementById('browser-window');
+            if (bWin) {
+                bWin.style.display = 'none';
+                bWin.classList.remove('shake-active', 'shake-continuous');
+            }
+            const tbBtn = document.getElementById('taskbar-browser') || document.getElementById('taskbar-browser-btn');
+            if (tbBtn) tbBtn.style.display = 'none';
+
+            urlInput.value = "http://";
+            urlInput.disabled = false;
+            const goBtn = document.getElementById('browser-go-btn');
+            if (goBtn) goBtn.disabled = false;
+            const bBtns = document.getElementById('browser-window-btns');
+            if (bBtns) bBtns.style.display = 'flex';
+
+            // 7. Скрываем иконки других глав (по умолчанию)
+            const hintContainer = document.getElementById('desktop-hint-container');
+            if (hintContainer) hintContainer.style.display = 'none';
+            const termContainer = document.getElementById('desktop-terminal-container');
+            if (termContainer) termContainer.style.display = 'none';
+
+            // 8. Сбрасываем системные флаги
+            internetKilled = false;
+            is666Mode = false;
+            isOnCreepySite = false;
+            window._letterShown = false;
+            window._zettaQ16Hint = false;
+            window._zettaQ17Hint = false;
+            window._zettaQ18Hint = false;
+            window._bossIntroStarted = false;
+            window._bossFightInitiated = false;
+            isCh3RegeditDestroyed = false;
+            window._ch3RegeditDestroyed = false;
+            window._ch3RegeditLaserTriggered = false;
             isZettaInstalled = false;
             isZettaCorrupted = false;
             zettaEndAttempts = 0;
             zettaTriedExitAlready = false;
             goodEndingAchieved = false;
-            internetKilled = false;
             isTempAccessGranted = false;
             isRegistryDecrypted = false;
             darknessLevel = 0;
@@ -6763,82 +7768,24 @@
             isGodOfSitesRevealed = false;
             ch2BossDialogueCompleted = false;
             isCh2BossDialoguePlaying = false;
-            is666Mode = false;
-            isOnCreepySite = false;
+        }
+        window.resetAllChapterStates = resetAllChapterStates;
 
-            window._letterShown = false;
-            window._zettaQ16Hint = false;
-            window._zettaQ17Hint = false;
-            window._zettaQ18Hint = false;
-            window._bossIntroStarted = false;
-            window._bossFightInitiated = false;
-            if (window._destroyBtnTimeout) clearTimeout(window._destroyBtnTimeout);
+        function startChapter1() {
+            resetAllChapterStates();
 
-            // Clean up assistant / ads / overlays if present
-            const assistant = document.getElementById('zetta-assistant');
-            if (assistant) assistant.remove();
-            const speech = document.getElementById('zetta-speech');
-            if (speech) speech.remove();
-            const zettaAd = document.getElementById('zetta-ad');
-            if (zettaAd) zettaAd.remove();
-            const zettaSetup = document.getElementById('zetta-setup');
-            if (zettaSetup) zettaSetup.remove();
-            const ch2BossOverlay = document.getElementById('ch2-boss-finale-overlay');
-            if (ch2BossOverlay) ch2BossOverlay.remove();
-            const monologueWin = document.getElementById('player-dialogue-window');
-            if (monologueWin) monologueWin.remove();
+            activeChapter = 1;
+            currentChapter1Task = 1;
+            isCh1Task1Completed = false;
+            isCh1Task2Completed = false;
+            currentQuestion = 0;
+            playerLives = 3;
+            hasRebootedAfterBSOD = false;
+            handEventTriggered = false;
 
-            if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
-            if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
-
-            // Hide Chapter 2 desktop icon (cipher.txt)
-            const hintContainer = document.getElementById('desktop-hint-container');
-            if (hintContainer) hintContainer.style.display = 'none';
-
-            // Reset desktop icons text to Chapter 1 values
-            const t = translations[currentLang] || translations['ru'];
-            const pcText = document.getElementById('desktop-pc-text');
-            if (pcText) pcText.innerText = t.myComputer || "Мой компьютер";
-            const trashText = document.getElementById('desktop-trash-text');
-            if (trashText) trashText.innerText = t.trash || "Корзина";
-            const netText = document.getElementById('desktop-internet-text');
-            if (netText) {
-                netText.innerText = t.internet || "Internet";
-                const netContainer = netText.closest('.icon-container');
-                if (netContainer) {
-                    netContainer.style.animation = '';
-                    netContainer.style.filter = '';
-                }
-            }
-
-            // Restore desktop background & Start button
-            document.body.style.transition = '';
-            document.body.style.background = '';
-            document.body.style.backgroundColor = 'var(--win-bg)';
-
-            const startBtn = document.querySelector('.start-btn');
-            if (startBtn) {
-                startBtn.style.visibility = 'visible';
-                startBtn.style.transform = 'none';
-                startBtn.style.transition = 'none';
-            }
-
-            // Reset Browser State (keep closed initially)
-            browserState.isOpen = false;
-            browserWindow.style.display = 'none';
-            taskbarBrowserBtn.style.display = 'none';
-            urlInput.value = "http://";
-            urlInput.disabled = false;
-            const goBtn = document.getElementById('browser-go-btn');
-            if (goBtn) goBtn.disabled = false;
-            const bBtns = document.getElementById('browser-window-btns');
-            if (bBtns) bBtns.style.display = 'flex';
-            browserWindow.classList.remove('shake-active', 'shake-continuous');
-
-            // Setup Task Widget for Chapter 1
             const widget = document.getElementById('task-widget');
             if (widget) widget.style.display = 'block';
-            updateTaskWidgetText();
+            if (typeof updateTaskWidgetText === 'function') updateTaskWidgetText();
         }
         window.startChapter1 = startChapter1;
 
@@ -6847,92 +7794,29 @@
                 if (typeof audioEngine !== 'undefined') audioEngine.playError();
                 return;
             }
+            resetAllChapterStates();
+
             activeChapter = 2;
-            stopCh1TaskGlitch();
-            currentChapter2Task = 1;
-            isGodOfSitesRevealed = false;
-            ch2BossDialogueCompleted = false;
-            isCh2BossDialoguePlaying = false;
-            internetKilled = false;
-            hasRebootedAfterBSOD = false;
-            goodEndingAchieved = false;
-            isTempAccessGranted = false;
-            isRegistryDecrypted = false;
-            darknessLevel = 0;
-            is666Mode = false;
-            isOnCreepySite = false;
 
-            window._bossIntroStarted = false;
-            window._bossFightInitiated = false;
-            if (window._destroyBtnTimeout) clearTimeout(window._destroyBtnTimeout);
-
-            // Clean up overlays
-            const assistant = document.getElementById('zetta-assistant');
-            if (assistant) assistant.remove();
-            const speech = document.getElementById('zetta-speech');
-            if (speech) speech.remove();
-            const zettaAd = document.getElementById('zetta-ad');
-            if (zettaAd) zettaAd.remove();
-            const zettaSetup = document.getElementById('zetta-setup');
-            if (zettaSetup) zettaSetup.remove();
-            const ch2BossOverlay = document.getElementById('ch2-boss-finale-overlay');
-            if (ch2BossOverlay) ch2BossOverlay.remove();
-            const monologueWin = document.getElementById('player-dialogue-window');
-            if (monologueWin) monologueWin.remove();
-            const adPopup = document.getElementById('ad-popup');
-            if (adPopup) adPopup.style.display = 'none';
-            if (typeof adTimeout !== 'undefined') clearTimeout(adTimeout);
-
-            if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
-            if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
-
-            // Reset desktop icon styles
-            const netText = document.getElementById('desktop-internet-text');
-            if (netText) {
-                const netContainer = netText.closest('.icon-container');
-                if (netContainer) {
-                    netContainer.style.animation = '';
-                    netContainer.style.filter = '';
-                }
-            }
-
-            // Hide browser initially
-            browserState.isOpen = false;
-            browserWindow.style.display = 'none';
-            taskbarBrowserBtn.style.display = 'none';
-            urlInput.value = "http://";
-            urlInput.disabled = false;
-            const goBtn = document.getElementById('browser-go-btn');
-            if (goBtn) goBtn.disabled = false;
-            const bBtns = document.getElementById('browser-window-btns');
-            if (bBtns) bBtns.style.display = 'flex';
-            browserWindow.classList.remove('shake-active', 'shake-continuous');
-
-            // Restore desktop background & Start button
-            document.body.style.transition = '';
-            document.body.style.background = '';
-            document.body.style.backgroundColor = 'var(--win-bg)';
-
-            const startBtn = document.querySelector('.start-btn');
-            if (startBtn) {
-                startBtn.style.visibility = 'visible';
-                startBtn.style.transform = 'none';
-                startBtn.style.transition = 'none';
-            }
-
-            // Task Widget hidden until monologue completes
-            const widget = document.getElementById('task-widget');
-            if (widget) widget.style.display = 'none';
-
-            // Show Chapter 2 desktop icon (cipher.txt)
+            // Показываем иконку 2 главы (cipher.txt)
             const hintContainer = document.getElementById('desktop-hint-container');
             if (hintContainer) hintContainer.style.display = 'flex';
 
-            const t = translations[currentLang] || translations['ru'];
-            showPlayerDialogue(t.ch2PlayerMonologueStart, () => {
+            const widget = document.getElementById('task-widget');
+
+            if (!currentChapter2Task || currentChapter2Task === 1) {
+                currentChapter2Task = 1;
+                if (widget) widget.style.display = 'none';
+
+                const t = translations[currentLang] || translations['ru'];
+                showPlayerDialogue(t.ch2PlayerMonologueStart, () => {
+                    if (widget) widget.style.display = 'block';
+                    if (typeof updateTaskWidgetText === 'function') updateTaskWidgetText();
+                });
+            } else {
                 if (widget) widget.style.display = 'block';
-                updateTaskWidgetText();
-            });
+                if (typeof updateTaskWidgetText === 'function') updateTaskWidgetText();
+            }
         }
         window.startChapter2 = startChapter2;
 
@@ -9147,6 +10031,17 @@
 
         function openRegistryEditor() {
             if (checkCh2Restriction('regedit')) return;
+            if (typeof activeChapter !== 'undefined' && activeChapter === 3) {
+                if (currentChapter3Task === 5 || currentChapter3Task === "5") {
+                    triggerCh3RegeditDestructionSequence();
+                    return;
+                } else if (currentChapter3Task === 4 || currentChapter3Task === "4" || (typeof currentChapter3Task === 'number' && currentChapter3Task < 5)) {
+                    if (typeof audioEngine !== 'undefined') audioEngine.playError();
+                    const tr = translations[currentLang] || translations['ru'];
+                    showPlayerDialogue(tr.ch3RegeditLockedMsg || "Редактор Реестра заблокирован Богом Сайтов! Нужно выманить его через MS-DOS (введите 7)!");
+                    return;
+                }
+            }
             audioEngine.playClick();
 
             if (activeChapter === 2 && currentChapter2Task === 4 && !window._ch2RegeditMonologueShown) {
@@ -9180,7 +10075,7 @@
                             📁 Software
                         </div>
                         <div class="regedit-tree-node ${ispySelected ? 'selected' : ''}" onclick="window.setRegeditNode('ispy')" style="margin-left: 30px;">
-                            📁 ISpy
+                          📁 ISpy
                         </div>
                     </div>
                     <div class="regedit-right-pane">
@@ -9308,6 +10203,25 @@
             };
         }
 
+        function startCh3Task2() {
+            currentChapter3Task = 2;
+            isCh3Task2Completed = true;
+            updateTaskWidgetText();
+            showPlayerDialogue("Теперь нужно зайти в Интернет и перейти по запросу ISpy.", () => {
+                const widgetText = document.getElementById('task-widget-text');
+                if (widgetText) widgetText.innerText = "3. Перейти по запросу ISpy в Интернете.";
+            });
+        }
+
+        function spawnCh3Task2Popups() {
+            // Popups completely removed per user request
+        }
+
+        function closeCh3Popup(id) {
+            const p = document.getElementById(`ch3-popup-${id}`);
+            if (p) p.remove();
+        }
+
         function triggerGodOfSitesDestruction() {
             const ctxMenu = document.getElementById('regedit-custom-ctx-menu');
             if (ctxMenu) ctxMenu.remove();
@@ -9393,8 +10307,11 @@
                         isTempAccessGranted = true;
                         openTempFolder();
                         currentPath = 'C:\\WINDOWS\\TEMP';
-                        dosHistory += `\n${currentPath}>7\n` + (currentLang === 'ru' ? "Папка Temp на диске C: успешно открыта.\n" : (currentLang === 'ua' ? "Папку Temp на диску C: успішно відкрито.\n" : "Temp folder in C: drive opened successfully.\n"));
+                        dosHistory += `\n${currentPath}>7\n` + (currentLang === 'ru' ? "Сигнал выманивания успешно передан в систему.\n" : (currentLang === 'ua' ? "Сигнал виманювання успішно передано в систему.\n" : "Lure signal transmitted to system.\n"));
                         updateDosDisplay();
+                        if (activeChapter === 3 && currentChapter3Task === 4) {
+                            triggerCh3BaitFile();
+                        }
                         return;
                     }
                     
@@ -9563,6 +10480,11 @@
 
             let html = `<div class="taskmgr-item" style="padding: 2px;" onclick="selectTaskmgrItem(this)">Explorer</div>`;
             
+            if (typeof activeChapter !== 'undefined' && activeChapter === 3 && (currentChapter3Task === 6 || currentChapter3Task === "6" || currentChapter3Task === 7 || currentChapter3Task === "7")) {
+                const godName = (translations[currentLang] && translations[currentLang].taskmgrGodOfSitesGlitch) ? translations[currentLang].taskmgrGodOfSitesGlitch : "Бог Сайтов [ISpy_Core.exe] (Не отвечает)";
+                html += `<div id="taskmgr-god-of-sites" class="taskmgr-item glitch-text" style="padding: 2px; cursor: pointer; color: #ff0033; font-weight: bold; animation: shake 0.2s infinite;" onclick="selectTaskmgrItem(this)" oncontextmenu="showTaskmgrContext(event)">${godName}</div>`;
+            }
+
             if (is666Mode) {
                 html += `<div id="taskmgr-internet" class="taskmgr-item glitch-text" style="padding: 2px; cursor: pointer; color: red; font-weight: bold; animation: shake 0.2s infinite;" onclick="selectTaskmgrItem(this)" oncontextmenu="showTaskmgrContext(event)">${translations[currentLang].taskmgrInternetGlitch}</div>`;
             } else {
@@ -9617,7 +10539,9 @@
             if (!window.selectedTaskmgrItem) return;
             const text = window.selectedTaskmgrItem.innerText;
             const t = translations[currentLang] || translations['ru'];
-            if (text.includes('Internet')) {
+            if (text.includes('ISpy_Core') || text.includes('Бог Сайтов') || text.includes('Бог сайтів') || text.includes('God of Sites')) {
+                endCh3GodOfSitesSession();
+            } else if (text.includes('Internet')) {
                 if (activeChapter === 2) {
                     showGameAlert(t.criticalProcess, null, { title: t.accessDeniedTitle || "Ошибка", icon: "🛑" });
                     audioEngine.playError(0.8);
@@ -9698,6 +10622,13 @@
             adPopup.style.display = 'none';
 
             // Останавливаем 666-сиквенс
+            if (window._fakeBsodGlitchTimeout) {
+                clearTimeout(window._fakeBsodGlitchTimeout);
+                window._fakeBsodGlitchTimeout = null;
+            }
+            if (typeof audioEngine !== 'undefined') {
+                audioEngine.stopGlitchSound();
+            }
             if (creepyFacesInterval) clearInterval(creepyFacesInterval);
             document.querySelectorAll('.creepy-face').forEach(el => el.remove());
 
@@ -9825,5 +10756,2061 @@
                 }
             }, 600);
         }
+
+/* ==========================================================================
+   ГЛАВА 3 — ИГРОВОЙ ДВИЖОК, ХАОС В YOUTUBE И ФИНАЛЬНЫЙ БОСС
+   ========================================================================== */
+
+let activeChapter3Task = 1;
+let currentChapter3Task = 1;
+let isCh3Task2Completed = false;
+let isCh3ServerDialogueDone = false;
+let ch3DialoguePhase = 1;
+let ch3DialogueIndex = 0;
+let isCh3DialogueTyping = false;
+let ch3ActivePopupsCount = 0;
+let ch3ShuffleInterval = null;
+let ch3CatchInterval = null;
+let isCh3DosTempOpened = false;
+
+// Переменные для Финального босса 3 Главы
+let ch3FinalBossHP = 500;
+let ch3FinalPlayerHP = 100;
+let ch3FinalPlayerX = window.innerWidth * 0.5;
+let ch3FinalPlayerY = window.innerHeight * 0.5;
+let ch3FinalPlayerSpeed = 7;
+let ch3FinalBossActive = false;
+let ch3FinalKeys = {};
+let ch3FinalIsLMBDown = false;
+let ch3FinalIsCharging = false;
+let ch3FinalChargeStartTime = 0;
+let ch3FinalAttackInterval = null;
+let ch3FinalLoopFrame = null;
+let ch3FinalActiveSpikes = [];
+let ch3QTEActive = false;
+let ch3QTEProgress = 0;
+let ch3QTETimerSeconds = 3.0;
+let ch3QTEInterval = null;
+
+function startChapter3() {
+    resetAllChapterStates();
+
+    activeChapter = 3;
+    currentChapter3Task = 1;
+    isCh3Task2Completed = false;
+    isCh3ServerDialogueDone = false;
+    ch3DialoguePhase = 1;
+    isCh3DosTempOpened = false;
+
+    document.body.classList.add('chapter-3-theme');
+    document.body.style.backgroundColor = '#004848';
+
+    const termContainer = document.getElementById('desktop-terminal-container');
+    if (termContainer) termContainer.style.display = 'flex';
+    const cipherContainer = document.getElementById('desktop-hint-container');
+    if (cipherContainer) cipherContainer.style.display = 'none';
+
+    const widget = document.getElementById('task-widget');
+    if (widget) widget.style.display = 'none';
+
+    const t = translations[currentLang] || translations['ru'];
+    showPlayerDialogue(t.ch3PlayerMonologueStart || [
+        "Всё скоро закончится... Я освобожу его, и всё станет как раньше.",
+        "Не будет хаоса, и я смогу спасти интернет."
+    ], () => {
+        if (widget) widget.style.display = 'block';
+        startCh3Task1();
+    });
+}
+window.startChapter3 = startChapter3;
+
+function startCh3Task1() {
+    currentChapter3Task = 1;
+    const widget = document.getElementById('task-widget');
+    if (widget) {
+        const t = translations[currentLang] || translations['ru'];
+        const content = document.getElementById('task-widget-text');
+        if (content) content.innerText = t.taskCh3_1 || "1. Найти с помощью кода, где находится Бог сайтов.";
+        widget.style.display = 'block';
+    }
+}
+
+function openTerminalApp() {
+    if (checkCh2Restriction('terminal')) return;
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+    const t = translations[currentLang] || translations['ru'];
+    const runBtn = document.getElementById('terminal-write-code-btn');
+    if (runBtn) runBtn.innerText = t.ch3TerminalWriteCodeBtn || "Написать код";
+
+    const win = document.getElementById('terminal-window');
+    if (win) {
+        win.style.display = 'block';
+        win.style.zIndex = '300';
+    }
+}
+
+function closeTerminalApp() {
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+    const win = document.getElementById('terminal-window');
+    if (win) win.style.display = 'none';
+}
+
+function executeCh3TerminalCode() {
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+
+    const output = document.getElementById('terminal-console-output');
+    if (!output) return;
+
+    output.innerText = `> Executing trace_god_of_sites.py...
+> Connecting to ISpy network nodes...
+> Signal detected! God of Sites location: ISpy Servers ("ispy_servers")
+> Status: Target active on ISpy Servers page.`;
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playError(0.5);
+
+    setTimeout(() => {
+        closeTerminalApp();
+        const t = translations[currentLang] || translations['ru'];
+        showPlayerDialogue(t.ch3Task1CodeDoneDiag || "Нашёл! Он скрывается на серверах ISpy (ispy_servers). Нужно зайти в Интернет и перейти туда!", () => {
+            currentChapter3Task = 2;
+            updateTaskWidgetText();
+        });
+    }, 1200);
+}
+
+function loadISpyServersPage() {
+    const urlInput = document.getElementById('browser-url-input') || document.getElementById('url-input');
+    if (urlInput) urlInput.value = "ispy_servers";
+
+    const browserContent = document.getElementById('browser-content');
+    if (!browserContent) return;
+
+    if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+
+    const t = translations[currentLang] || translations['ru'];
+    const talkBtnText = t.ch3ServersTalkBtn || "💬 Разговаривать";
+    const godDetectedText = t.ch3IspyServersGodDetected || "ОБНАРУЖЕН БОГ САЙТОВ НА СЕРВЕРАХ ISpy";
+
+    const isDialogueDone = isCh3ServerDialogueDone || isCh3Task2Completed || (typeof currentChapter3Task !== 'undefined' && currentChapter3Task !== 1 && currentChapter3Task !== "1_servers" && currentChapter3Task !== 2);
+
+    browserContent.innerHTML = `
+        <div style="background: #000c18; color: #00ffff; font-family: 'Courier New', monospace; height: 100%; padding: 25px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h2 style="color: #00ffff; border-bottom: 2px solid #00ffff; padding-bottom: 8px; margin-top: 0;">🖥️ ISpy NETWORK SERVERS</h2>
+                <div style="margin-top: 20px; font-size: 14px; line-height: 2.0;">
+                    <div>[✓] ISpy Firewall Node #1: <span style="color: #00ff66;">ONLINE</span></div>
+                    <div>[✓] ISpy Security Core #2: <span style="color: #00ff66;">ONLINE</span></div>
+                    <div style="color: #ff0055; font-weight: bold; background: rgba(255,0,85,0.15); padding: 6px 12px; border-radius: 4px; margin-top: 15px;">
+                        [⚠] ANOMALY INFECTED SECTOR: <span style="color: #ff0033;">GOD OF SITES PRESENT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; background: #0f0008; border: 2px solid #ff0033; padding: 15px; border-radius: 6px;">
+                <div style="color: #ff3366; font-weight: bold; margin-bottom: 10px; font-size: 14px;">${godDetectedText}</div>
+                <button id="ch3-ispy-talk-btn" ${isDialogueDone ? 'disabled' : 'onclick="startISpyServerDialogue()"'} style="${isDialogueDone ? 'background: #444; color: #888; border: 2px solid #666; cursor: not-allowed; opacity: 0.6; pointer-events: none;' : 'background: #ff0033; color: white; border: 2px solid #fff; cursor: pointer;'} padding: 10px 28px; font-weight: bold; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-size: 14px; position: relative; z-index: 9999;">
+                    ${talkBtnText}
+                </button>
+            </div>
+        </div>
+    `;
+
+    const talkBtn = document.getElementById('ch3-ispy-talk-btn');
+    if (talkBtn && !isDialogueDone) {
+        talkBtn.onmouseenter = () => { if (typeof audioEngine !== 'undefined') audioEngine.playHover(); };
+        talkBtn.onclick = (e) => {
+            if (e) e.stopPropagation();
+            startISpyServerDialogue();
+        };
+    }
+}
+
+let isCh3ServerDialogueRunning = false;
+
+function startISpyServerDialogue() {
+    if (isCh3ServerDialogueDone || isCh3ServerDialogueRunning) {
+        return;
+    }
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+
+    isCh3ServerDialogueDone = true;
+    isCh3ServerDialogueRunning = true;
+
+    const talkBtn = document.getElementById('ch3-ispy-talk-btn');
+    if (talkBtn) {
+        talkBtn.disabled = true;
+        talkBtn.style.background = '#444';
+        talkBtn.style.color = '#888';
+        talkBtn.style.borderColor = '#666';
+        talkBtn.style.cursor = 'not-allowed';
+        talkBtn.style.opacity = '0.6';
+        talkBtn.style.pointerEvents = 'none';
+        talkBtn.onclick = null;
+    }
+
+    const t = translations[currentLang] || translations['ru'];
+    const lines = [
+        { speaker: "boss", text: t.ch3ServerBossDiag1 || "ЧТО ТЫ ЗДЕСЬ ДЕЛАЕШЬ?! КАК ТЫ МЕНЯ НАШЁЛ?!" },
+        { speaker: "player", text: t.ch3ServerPlayerDiag1 || "Я отследил тебя с помощью кода в терминале!" },
+        { speaker: "boss", text: t.ch3ServerBossDiag2 || "ХАХ! ДУМАЕШЬ, ОТ МЕНЯ ТАК ЛЕГКО ИЗБАВИТЬСЯ?! ВСТРЕЧАЙ РЕКЛАМНЫЙ ХАОС!" }
+    ];
+
+    let currentIdx = 0;
+    function nextLine() {
+        if (currentIdx < lines.length) {
+            const item = lines[currentIdx];
+            currentIdx++;
+            if (item.speaker === "boss") {
+                showCustomCh3Dialogue(item.text, t.ch3DialogueSpeakerBossName || "БОГ САЙТОВ", "#ff0033", nextLine);
+            } else {
+                showPlayerDialogue(item.text, nextLine);
+            }
+        } else {
+            isCh3ServerDialogueRunning = false;
+            window._ch3CurrentDialogueAdvance = null;
+            startCh3Task2();
+        }
+    }
+    nextLine();
+}
+window.startISpyServerDialogue = startISpyServerDialogue;
+
+function showCustomCh3Dialogue(text, speakerName, speakerColor, callback) {
+    let diagBox = getCh3DialogueElements();
+    if (diagBox) diagBox.style.display = 'block';
+    
+    const speakerEl = document.getElementById('ch3-boss-speaker');
+    const textEl = document.getElementById('ch3-boss-text-content');
+    const skipBtn = document.getElementById('ch3-boss-skip-btn');
+    const okBtn = document.getElementById('ch3-boss-ok-btn');
+
+    if (speakerEl) speakerEl.innerHTML = `<span style="color: ${speakerColor};">${speakerName}</span>`;
+
+    if (skipBtn) skipBtn.style.display = 'inline-block';
+    if (okBtn) okBtn.style.display = 'none';
+
+    if (!textEl) return;
+    text = (text || "").toUpperCase();
+    textEl.innerText = '';
+    isCh3DialogueTyping = true;
+    let charIdx = 0;
+
+    function typeChar() {
+        if (!isCh3DialogueTyping) return;
+        if (charIdx < text.length) {
+            textEl.innerText += text.charAt(charIdx);
+            charIdx++;
+            if (typeof audioEngine !== 'undefined') audioEngine.playTone('sawtooth', 120, 15, 0.02, 0.03);
+            const delay = calculateCharDelay(text, charIdx, 35);
+            setTimeout(typeChar, delay);
+        } else {
+            isCh3DialogueTyping = false;
+            if (skipBtn) skipBtn.style.display = 'none';
+            if (okBtn) okBtn.style.display = 'inline-block';
+        }
+    }
+    typeChar();
+
+    const advance = () => {
+        if (isCh3DialogueTyping) {
+            isCh3DialogueTyping = false;
+            textEl.innerText = text;
+            if (skipBtn) skipBtn.style.display = 'none';
+            if (okBtn) okBtn.style.display = 'inline-block';
+        } else {
+            diagBox.style.display = 'none';
+            if (typeof callback === 'function') callback();
+        }
+    };
+    window._ch3CurrentDialogueAdvance = advance;
+
+    diagBox.onclick = (e) => {
+        if (e) e.stopPropagation();
+        advance();
+    };
+
+    if (okBtn) {
+        okBtn.onclick = (e) => {
+            if (e) e.stopPropagation();
+            diagBox.style.display = 'none';
+            if (typeof callback === 'function') callback();
+        };
+    }
+
+    if (skipBtn) {
+        skipBtn.onclick = (e) => {
+            if (e) e.stopPropagation();
+            isCh3DialogueTyping = false;
+            diagBox.style.display = 'none';
+            if (typeof callback === 'function') callback();
+        };
+    }
+}
+
+function startCh3Task2() {
+    currentChapter3Task = 2;
+    isCh3Task2Completed = false;
+    updateTaskWidgetText();
+    spawnCh3Task2Popups();
+}
+
+function spawnCh3Task2Popups() {
+    for (let i = 1; i <= 5; i++) {
+        const oldP = document.getElementById(`ch3-popup-${i}`);
+        if (oldP) oldP.remove();
+    }
+
+    const t = translations[currentLang] || translations['ru'];
+    ch3ActivePopupsCount = 5;
+    const popupsData = [
+        { id: 1, title: t.ch3Popup1Title || "🔥 ОШИБКА СИСТЕМЫ #404", text: t.ch3Popup1Text || "Бог сайтов перехватил управление вашей системой!", top: "15%", left: "15%", bg: "#1a0005", border: "#ff0033" },
+        { id: 2, title: t.ch3Popup2Title || "⚠️ ВНИМАНИЕ: УГРОЗА ISpy", text: t.ch3Popup2Text || "Обнаружено вмешательство пользователя! Закройте окно!", top: "25%", left: "55%", bg: "#100018", border: "#ff0088" },
+        { id: 3, title: t.ch3Popup3Title || "⚡ РЕКЛАМНЫЙ ХАОС", text: t.ch3Popup3Text || "Бог сайтов блокирует доступ к серверам ISpy!", top: "50%", left: "20%", bg: "#0f0008", border: "#ff3300" },
+        { id: 4, title: t.ch3Popup4Title || "👁️ БОГ САЙТОВ НАБЛЮДАЕТ", text: t.ch3Popup4Text || "Ты не сможешь сбежать из системы! Хаос везде!", top: "45%", left: "60%", bg: "#1a0010", border: "#ff0055" },
+        { id: 5, title: t.ch3Popup5Title || "💥 СИСТЕМНЫЙ СБОЙ", text: t.ch3Popup5Text || "Криптический код повреждён! Закройте все 5 окон!", top: "35%", left: "38%", bg: "#080015", border: "#aa00ff" }
+    ];
+
+    const closeBtnLabel = t.ch3PopupCloseBtn || "Закрыть";
+
+    popupsData.forEach(item => {
+        const pop = document.createElement('div');
+        pop.id = `ch3-popup-${item.id}`;
+        pop.className = 'window';
+        pop.style.cssText = `position: fixed; top: ${item.top}; left: ${item.left}; width: 340px; z-index: ${99990 + item.id}; background: ${item.bg}; border: 3px solid ${item.border}; box-shadow: 0 0 20px ${item.border}; padding: 15px; box-sizing: border-box; font-family: monospace; color: white; display: flex; flex-direction: column; gap: 10px;`;
+        
+        pop.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid ${item.border}; padding-bottom: 6px;">
+                <span style="font-weight: bold; color: ${item.border}; font-size: 13px;">${item.title}</span>
+                <button onclick="closeCh3Popup(${item.id})" style="background: ${item.border}; color: white; border: none; font-weight: bold; width: 22px; height: 22px; cursor: pointer; border-radius: 3px; line-height: 1;">✕</button>
+            </div>
+            <div style="font-size: 13px; line-height: 1.4; color: #ffffff;">${item.text}</div>
+            <div style="text-align: right; margin-top: 5px;">
+                <button onclick="closeCh3Popup(${item.id})" style="background: ${item.border}; color: white; border: 1px solid white; padding: 4px 14px; font-weight: bold; cursor: pointer; font-size: 12px; font-family: monospace; border-radius: 3px;" onmouseenter="if(typeof audioEngine!=='undefined') audioEngine.playHover()">${closeBtnLabel}</button>
+            </div>
+        `;
+        document.body.appendChild(pop);
+    });
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+}
+
+function closeCh3Popup(id) {
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+    const p = document.getElementById(`ch3-popup-${id}`);
+    if (p) {
+        p.remove();
+        ch3ActivePopupsCount--;
+    }
+
+    if (ch3ActivePopupsCount <= 0) {
+        const t = translations[currentLang] || translations['ru'];
+        isCh3Task2Completed = true;
+        currentChapter3Task = 3;
+        updateTaskWidgetText();
+        showPlayerDialogue(t.ch3Task2DoneMsg || "Все окна закрыты! Теперь нужно зайти в Интернет и перейти по запросу ISpy.", () => {
+            const widgetText = document.getElementById('task-widget-text');
+            if (widgetText) widgetText.innerText = t.taskCh3_3 || "3. Перейти по запросу ISpy в Интернете.";
+        });
+    }
+}
+
+function loadISpySearchPage() {
+    const t = translations[currentLang] || translations['ru'];
+    const urlInput = document.getElementById('browser-url-input') || document.getElementById('url-input');
+    if (urlInput) urlInput.value = "ispy";
+
+    const browserContent = document.getElementById('browser-content');
+    if (!browserContent) return;
+
+    if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+
+    const warnText = t.ch3ClonesPopupWarn || "⚠️ Внимание: Обнаружены клоны Бога сайтов. Найдите настоящего Бога сайтов среди фантомов!";
+    const analyzingText = t.ch3ClonesPopupAnalyzing || "Запуск анализа фантомов и идентификации клонов...";
+    const btnText = t.ch3ClonesPopupBtn || "🎯 Запустить матрицу клонов ISpy";
+    const bossSpeaker = t.ch3DialogueSpeakerBossName || "БОГ САЙТОВ";
+    const bossMsg = t.ch3ISpySearchDiag || "Ты думаешь, от меня так просто скрыться?! Запомни: я везде, даже в 4 клонах!";
+
+    browserContent.innerHTML = `
+        <div style="background: #090014; color: #ff0055; font-family: 'Courier New', monospace; height: 100%; padding: 25px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #ff0055; padding-bottom: 10px; margin-bottom: 15px;">
+                    <h2 style="color: #ff0055; margin: 0; font-size: 20px;">🌐 BROWSER SEARCH: "ISpy"</h2>
+                    <span style="color: #00ff66; font-size: 12px;">[ 4 NODES MATCHED ]</span>
+                </div>
+                <div style="color: #ffaa00; font-size: 13px; margin-bottom: 15px;">
+                    ${warnText}
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 10px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <p style="color: #ffffff; font-size: 14px; margin-bottom: 20px;">${analyzingText}</p>
+                <button id="ch3-start-clones-btn" onclick="startCh3ClonesSearchProcess()" style="background: #ff0055; color: white; border: 2px solid #fff; padding: 12px 30px; font-weight: bold; font-family: 'MS Sans Serif', Tahoma, sans-serif; font-size: 15px; cursor: pointer; border-radius: 4px; box-shadow: 0 0 15px #ff0055;">
+                    ${btnText}
+                </button>
+            </div>
+        </div>
+    `;
+
+    showCustomCh3Dialogue(bossMsg, bossSpeaker, "#ff0033", () => {
+        initCh3ClonesGame();
+    });
+}
+
+function startCh3ClonesSearchProcess() {
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+    initCh3ClonesGame();
+}
+
+function startCh3Task3() {
+    currentChapter3Task = 3;
+    updateTaskWidgetText();
+}
+
+function initCh3ClonesGame() {
+    const browserContent = document.getElementById('browser-content');
+    if (!browserContent) return;
+
+    currentChapter3Task = "3_clones";
+    updateTaskWidgetText();
+
+    const realIndex = Math.floor(Math.random() * 4);
+    let gridHtml = `
+        <div id="ch3-clones-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 30px; background: #0b0012; height: 100%; box-sizing: border-box; align-items: center; justify-content: center;">
+    `;
+
+    for (let i = 0; i < 4; i++) {
+        const isReal = (i === realIndex);
+        gridHtml += `
+            <div id="ch3-clone-card-${i}" onclick="clickCh3Clone(${isReal})" style="background: #1a0022; border: 3px solid #ff0055; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; text-align: center; transition: transform 0.3s ease;">
+                <svg viewBox="0 0 200 200" style="width: 75px; height: 75px; filter: drop-shadow(0 0 10px #ff0055);">
+                    <polygon points="100,5 110,40 90,40" fill="#ff0033"/>
+                    <polygon points="100,195 110,160 90,160" fill="#ff0033"/>
+                    <polygon points="5,100 40,90 40,110" fill="#ff0033"/>
+                    <polygon points="195,100 160,90 160,110" fill="#ff0033"/>
+                    <path d="M 15 100 Q 100 15 185 100 Q 100 185 15 100 Z" fill="#20000a" stroke="#ff0033" stroke-width="5"/>
+                    <circle cx="100" cy="100" r="38" fill="#ff3300" stroke="#ff0000" stroke-width="3"/>
+                    <polygon points="100,68 114,100 100,132 86,100" fill="#110005" stroke="#ff0033" stroke-width="2"/>
+                    <ellipse cx="100" cy="100" rx="8" ry="24" fill="#000000"/>
+                    <circle cx="100" cy="100" r="3" fill="#ffffff"/>
+                </svg>
+                <span style="color: #ff0055; font-size: 13px; margin-top: 10px; font-family: monospace; font-weight: bold;">ISpy_Core_Clone_${i+1}.exe</span>
+            </div>
+        `;
+    }
+    gridHtml += `</div>`;
+    browserContent.innerHTML = gridHtml;
+
+    let shuffleCount = 0;
+    if (ch3ShuffleInterval) clearInterval(ch3ShuffleInterval);
+    ch3ShuffleInterval = setInterval(() => {
+        const cards = document.querySelectorAll('#ch3-clones-container > div');
+        cards.forEach(card => {
+            const rx = (Math.random() * 14 - 7);
+            const ry = (Math.random() * 14 - 7);
+            card.style.transform = `translate(${rx}px, ${ry}px)`;
+        });
+        shuffleCount++;
+        if (shuffleCount > 15) {
+            clearInterval(ch3ShuffleInterval);
+            cards.forEach(card => card.style.transform = 'none');
+        }
+    }, 120);
+}
+
+function clickCh3Clone(isReal) {
+    const t = translations[currentLang] || translations['ru'];
+    if (ch3ShuffleInterval) clearInterval(ch3ShuffleInterval);
+
+    if (isReal) {
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+        if (typeof closeBrowser === 'function') closeBrowser();
+
+        showPlayerDialogue(t.ch3CloneRealDiag || "Правильно! Это был настоящий Бог сайтов! Он пропал с глитчем и сбежал из сети! Нужно выманить его обратно через Сеанс MS-DOS!", () => {
+            startCh3Task4();
+        });
+    } else {
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+        if (typeof closeBrowser === 'function') closeBrowser();
+
+        showPlayerDialogue(t.ch3CloneFakeDiag || "Это был ложный клон! Настоящий Бог сайтов вылетел на экран — поймай его!", () => {
+            startCh3CatchBossPhase();
+        });
+    }
+}
+
+function startCh3CatchBossPhase() {
+    currentChapter3Task = "3.5";
+    updateTaskWidgetText();
+
+    const mainDesktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (mainDesktopOverlay) mainDesktopOverlay.style.display = 'none';
+
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) {
+        falseCloneOverlay.style.display = 'block';
+        falseCloneOverlay.style.zIndex = '99990';
+    }
+
+    const bossCenter = document.getElementById('ch3-false-clone-boss-center');
+    if (bossCenter) {
+        bossCenter.style.top = '30%';
+        bossCenter.style.left = '40%';
+        bossCenter.style.transform = 'translate(-50%, -50%) scale(1.4)';
+        bossCenter.style.transition = 'top 1.2s cubic-bezier(0.4, 0.0, 0.2, 1), left 1.2s cubic-bezier(0.4, 0.0, 0.2, 1), transform 0.6s ease';
+        bossCenter.onclick = () => handleCh3BossClick();
+    }
+
+    if (ch3CatchInterval) clearInterval(ch3CatchInterval);
+    ch3CatchInterval = setInterval(() => {
+        if (!bossCenter) return;
+        const rx = 15 + Math.random() * 70;
+        const ry = 15 + Math.random() * 70;
+        bossCenter.style.top = `${ry}%`;
+        bossCenter.style.left = `${rx}%`;
+    }, 1200);
+}
+
+function handleCh3BossClick() {
+    if (ch3CatchInterval) clearInterval(ch3CatchInterval);
+    const bossCenter = document.getElementById('ch3-false-clone-boss-center');
+    if (bossCenter) bossCenter.onclick = null;
+    if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+    glitchAndVanishCh3Boss();
+}
+
+function glitchAndVanishCh3Boss() {
+    const t = translations[currentLang] || translations['ru'];
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) falseCloneOverlay.style.display = 'none';
+
+    showPlayerDialogue(t.ch3BossCaughtDiag || "Поймал! Бог сайтов пропал с глитчем и ушёл из сети! Нужно выманить его обратно через Сеанс MS-DOS!", () => {
+        startCh3Task4();
+    });
+}
+
+function startCh3Task4() {
+    currentChapter3Task = 4;
+    updateTaskWidgetText();
+    isCh3DosTempOpened = true;
+}
+
+function triggerCh3BaitFile() {
+    if (currentChapter3Task !== 4) return;
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+
+    const t = translations[currentLang] || translations['ru'];
+    showPlayerDialogue(t.ch3BaitLoadedDiag || "Код приманки загружен! Сейчас он клюнет...", () => {
+        triggerCh3BossReturnFromTemp();
+    });
+}
+
+function triggerCh3BossReturnFromTemp() {
+    if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
+    if (typeof closeBrowser === 'function') closeBrowser();
+
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) falseCloneOverlay.style.display = 'none';
+
+    const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (desktopOverlay) {
+        desktopOverlay.style.display = 'block';
+        desktopOverlay.style.zIndex = '99990';
+    }
+
+    const bossCenter = document.getElementById('ch3-desktop-boss-center');
+    if (bossCenter) {
+        bossCenter.style.top = '50%';
+        bossCenter.style.left = '50%';
+        bossCenter.style.transform = 'translate(-50%, -50%) scale(2.0)';
+    }
+
+    ch3DialoguePhase = 2;
+    startCh3BossDialogue();
+}
+
+let isCh3RegeditDestroyed = false;
+
+function startCh3Task5() {
+    currentChapter3Task = 5;
+    updateTaskWidgetText();
+    setTimeout(() => {
+        triggerCh3RegeditDestructionSequence();
+    }, 600);
+}
+
+function triggerCh3RegeditDestructionSequence() {
+    if (isCh3RegeditDestroyed) {
+        triggerCh3TentaclePrisonSequence();
+        return;
+    }
+    isCh3RegeditDestroyed = true;
+    window._ch3RegeditDestroyed = true;
+
+    currentChapter3Task = 5;
+    updateTaskWidgetText();
+
+    if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
+    if (typeof closeBrowser === 'function') closeBrowser();
+
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) falseCloneOverlay.style.display = 'none';
+
+    const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (desktopOverlay) {
+        desktopOverlay.style.display = 'block';
+        desktopOverlay.style.zIndex = '99990';
+    }
+
+    if (typeof audioEngine !== 'undefined') {
+        audioEngine.playGlitchSound();
+        audioEngine.playError(0.8);
+    }
+
+    const regeditIcon = document.getElementById('desktop-regedit-icon');
+    const bossCenter = document.getElementById('ch3-desktop-boss-center');
+
+    let laserSvg = document.getElementById('ch3-regedit-laser-svg');
+    if (!laserSvg) {
+        laserSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        laserSvg.id = 'ch3-regedit-laser-svg';
+        laserSvg.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:99992;';
+        document.body.appendChild(laserSvg);
+    }
+
+    let startX = window.innerWidth / 2;
+    let startY = window.innerHeight / 2;
+    if (bossCenter) {
+        const rect = bossCenter.getBoundingClientRect();
+        startX = rect.left + rect.width / 2;
+        startY = rect.top + rect.height / 2;
+    }
+
+    let targetX = 50;
+    let targetY = 430;
+    if (regeditIcon) {
+        const rect = regeditIcon.getBoundingClientRect();
+        targetX = rect.left + rect.width / 2;
+        targetY = rect.top + rect.height / 2;
+    }
+
+    laserSvg.innerHTML = `
+        <line x1="${startX}" y1="${startY}" x2="${targetX}" y2="${targetY}" stroke="#ff0000" stroke-width="18" stroke-opacity="0.35" stroke-linecap="round" />
+        <line x1="${startX}" y1="${startY}" x2="${targetX}" y2="${targetY}" stroke="#ff0033" stroke-width="8" stroke-linecap="round" filter="drop-shadow(0 0 15px #ff0000)" />
+        <line x1="${startX}" y1="${startY}" x2="${targetX}" y2="${targetY}" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    `;
+
+    const regeditText = document.getElementById('desktop-regedit-text');
+    if (regeditIcon) {
+        regeditIcon.classList.add('regedit-burned-shattered');
+    }
+    if (regeditText) {
+        regeditText.innerText = (typeof currentLang !== 'undefined' && currentLang === 'ru') ? "[Обгоревшие куски]" : ((typeof currentLang !== 'undefined' && currentLang === 'ua') ? "[Обгорілі шматки]" : "[Shattered pieces]");
+    }
+
+    const flash = document.createElement('div');
+    flash.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,0,0,0.55);z-index:99995;pointer-events:none;animation:shake 0.1s infinite;';
+    document.body.appendChild(flash);
+
+    const desktop = document.getElementById('desktop');
+    if (desktop) desktop.classList.add('shake-active');
+
+    setTimeout(() => {
+        if (laserSvg) laserSvg.remove();
+        flash.remove();
+        if (desktop) desktop.classList.remove('shake-active');
+        triggerCh3TentaclePrisonSequence();
+    }, 1500);
+}
+
+function triggerCh3TentaclePrisonSequence() {
+    const overlay = document.getElementById('ch3-screen-tentacles-overlay');
+    if (overlay) overlay.style.display = 'block';
+
+    const prison = document.getElementById('ch3-tentacle-prison');
+    if (prison) prison.style.display = 'flex';
+
+    const redTint = document.getElementById('red-screen-tint');
+    if (redTint) {
+        redTint.style.display = 'block';
+        redTint.style.opacity = '0.6';
+    }
+
+    ch3DialoguePhase = 3;
+    startCh3BossDialogue();
+}
+
+function initCh3PrisonMovement() {
+    initCh3KeyComboListener();
+}
+
+function initCh3KeyComboListener() {
+    const activeKeys = new Set();
+
+    const keyHandler = (e) => {
+        if (currentChapter3Task !== 6) return;
+        activeKeys.add(e.key.toLowerCase());
+
+        const hasC = activeKeys.has('c') || activeKeys.has('с');
+        const hasS = activeKeys.has('s') || activeKeys.has('ы');
+        const hasE = activeKeys.has('e') || activeKeys.has('у');
+
+        if (hasC && hasS && hasE) {
+            window.removeEventListener('keydown', keyHandler);
+            if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+            const prison = document.getElementById('ch3-tentacle-prison');
+            if (prison) prison.style.display = 'none';
+
+            if (typeof openTaskManager === 'function') {
+                openTaskManager();
+            } else {
+                endCh3GodOfSitesSession();
+            }
+        }
+    };
+
+    window.addEventListener('keydown', keyHandler);
+    window.addEventListener('keyup', (e) => activeKeys.delete(e.key.toLowerCase()));
+}
+
+// ДИАЛОГОВАЯ СИСТЕМА ГЛАВЫ 3
+function getCh3DialogueData() {
+    const t = translations[currentLang] || translations['ru'];
+    if (ch3DialoguePhase === 1) {
+        return t.ch3DialoguePhase1 || [
+            { speaker: "boss", text: "ТЫ ДУМАЕШЬ, ЧТО ЗАКРЫТИЕ ОКОН ПОМОЖЕТ ТЕБЕ?" },
+            { speaker: "boss", text: "Я ПОВСЮДУ. Я И ЕСТЬ СИСТЕМА!" }
+        ];
+    } else if (ch3DialoguePhase === 2) {
+        return t.ch3DialoguePhase2 || [
+            { speaker: "boss", text: "ТЫ ЗАМЕНИЛ ФАЙЛ В TEMP?! НАГЛЕЦ!" },
+            { speaker: "boss", text: "ТЕПЕРЬ Я УНИЧТОЖУ ТВОЙ РЕЕСТР!" }
+        ];
+    } else if (ch3DialoguePhase === 3) {
+        return t.ch3DialoguePhase3 || [
+            { speaker: "boss", text: "ХА! ТЕПЕРЬ ТЫ В ТЮРЬМЕ ЩУПАЛЕЦ." },
+            { speaker: "boss", text: "И ТЫ НИКОГДА ОТСЮДА НЕ ВЫБЕРЕШЬСЯ." },
+            { speaker: "boss", text: "НИЧТО ТЕБЕ НЕ ПОМОЖЕТ!" }
+        ];
+    } else if (ch3DialoguePhase === "final_pre_boss") {
+        return t.ch3FinalPreBossDiag || [
+            "ТЕПЕРЬ, ТЫ НИКУДА ТОЧНО НЕ УЙДЁШЬ.",
+            "Я СТАЛ БОЛЕЕ СОВЕРШЕНЕН. БОЛЕЕ УЛУЧШЁННЫМ.",
+            "БОЛЕЕ СИЛЬНЫМ.",
+            "ТВОЙ КОНЕЦ, ТВОЁ ПРИКЛЮЧЕНИЕ ЗАКАНЧИВАЕТСЯ ЗДЕСЬ И СЕЙЧАС.",
+            "НАЧНЁТСЯ БОЙ, В КОТОРОМ НЕТ ГАРАНТИИ ВЫИГРЫША.",
+            "ТЕПЕРЬ, СМЕРТНЫЙ, УЗРИ МОЮ МОЩЬ!"
+        ];
+    } else if (ch3DialoguePhase === "final_defeat") {
+        return t.ch3FinalDefeatDiag || [
+            "ХА ХА ХА. ЖАЛКИЙ СМЕРТНЫЙ.",
+            "ТЫ БЫЛ СМЕЛ, ЧТО ПРОШЁЛ ЧЕРЕЗ ВСЁ ЭТО.",
+            "ПОБЕДИТЬ МЕНЯ 2 РАЗА, ЭТО ДОСТИЖЕНИЕ.",
+            "НО ТЫ ЗАБЫЛ ОДНО...",
+            "Я БОГ!"
+        ];
+    } else if (ch3DialoguePhase === "final_victory") {
+        return t.ch3FinalVictoryBossDiag || [
+            "НЕТ НЕТ НЕЕЕЕЕЕТ! НЕ МОЖЕТ БЫТЬ...",
+            "ВСЕ УСИЛИЯ... ЧТО Я ДЕЛАЛ...",
+            "БЫЛИ НАПРАСНЫ?"
+        ];
+    } else if (ch3DialoguePhase === "ispy_freed") {
+        return t.ch3ISpyFreedDiag || [
+            { speaker: "ispy", text: "Я... я не верю... что у тебя получилось..." },
+            { speaker: "ispy", text: "Это чувство, что я ощущаю... Свобода." },
+            { speaker: "ispy", text: "Когда меня взломали и сделали плохим, я даже не думал что я делал... Я.. я монстр..." },
+            { speaker: "player", text: "Нет, теперь уже нет." },
+            { speaker: "ispy", text: "Благодаря тебе." }
+        ];
+    }
+    return [];
+}
+
+function getCh3DialogueElements() {
+    let diagBox = document.getElementById('ch3-standalone-dialogue-box');
+    if (!diagBox) {
+        diagBox = document.createElement('div');
+        diagBox.id = 'ch3-standalone-dialogue-box';
+        diagBox.style.cssText = 'position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); width: 680px; max-width: 92vw; background: rgba(15, 0, 5, 0.95); border: 3px solid #ff0033; box-shadow: 0 0 25px rgba(255, 0, 51, 0.6); padding: 18px 24px; box-sizing: border-box; z-index: 200000; font-family: "MS Sans Serif", Tahoma, sans-serif; display: none; cursor: pointer; pointer-events: auto;';
+        
+        const skipLabel = (translations[currentLang] && translations[currentLang].skipBtn) ? translations[currentLang].skipBtn : "Пропустить";
+        diagBox.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div id="ch3-boss-speaker" style="color: #ff0033; font-weight: bold; font-size: 16px; text-transform: uppercase; display: flex; align-items: center; gap: 10px;">
+                    <span>${(translations[currentLang] && translations[currentLang].ch3DialogueSpeakerBossName) || "БОГ САЙТОВ"}</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <button id="ch3-boss-skip-btn" onclick="event.stopPropagation(); finishCh3BossDialogue();" style="background: #330000; border: 1px solid #ff0033; color: #ff0033; padding: 4px 14px; font-size: 12px; font-weight: bold; cursor: pointer; font-family: monospace; border-radius: 3px;" onmouseenter="if(typeof audioEngine!=='undefined') audioEngine.playHover()">
+                        ▶▶ ${skipLabel}
+                    </button>
+                    <button id="ch3-boss-ok-btn" style="background: #003300; border: 1px solid #00ff66; color: #00ff66; padding: 4px 20px; font-size: 12px; font-weight: bold; cursor: pointer; font-family: monospace; border-radius: 3px; display: none;" onmouseenter="if(typeof audioEngine!=='undefined') audioEngine.playHover()">
+                        OK
+                    </button>
+                </div>
+            </div>
+            <div id="ch3-boss-text-content" style="color: #ffffff; font-size: 15px; line-height: 1.7; min-height: 60px; text-transform: uppercase; letter-spacing: 1px; font-family: monospace, 'Courier New', sans-serif; white-space: pre-wrap; word-break: break-word; padding: 6px 0;"></div>
+        `;
+        document.body.appendChild(diagBox);
+    }
+    return diagBox;
+}
+
+let ch3DialogueTypeTimer = null;
+
+function startCh3BossDialogue() {
+    if (ch3DialogueTypeTimer) {
+        clearTimeout(ch3DialogueTypeTimer);
+        ch3DialogueTypeTimer = null;
+    }
+    isCh3DialogueTyping = false;
+
+    const diagBox = getCh3DialogueElements();
+    if (diagBox) diagBox.style.display = 'block';
+    ch3DialogueIndex = 0;
+    renderCh3BossDialogueLine();
+}
+
+function renderCh3BossDialogueLine() {
+    if (ch3DialogueTypeTimer) {
+        clearTimeout(ch3DialogueTypeTimer);
+        ch3DialogueTypeTimer = null;
+    }
+    isCh3DialogueTyping = false;
+
+    const lines = getCh3DialogueData();
+    if (!lines || ch3DialogueIndex >= lines.length) {
+        finishCh3BossDialogue();
+        return;
+    }
+
+    const currentLine = lines[ch3DialogueIndex];
+    let speaker = "boss";
+    let text = "";
+
+    if (typeof currentLine === 'string') {
+        text = currentLine;
+    } else if (currentLine && currentLine.text) {
+        speaker = currentLine.speaker || "boss";
+        text = currentLine.text;
+    }
+
+    const speakerEl = document.getElementById('ch3-boss-speaker');
+    const textEl = document.getElementById('ch3-boss-text-content');
+    const skipBtn = document.getElementById('ch3-boss-skip-btn');
+    const okBtn = document.getElementById('ch3-boss-ok-btn');
+
+    if (speakerEl) {
+        const t = translations[currentLang] || translations['ru'];
+        if (speaker === "ispy") {
+            speakerEl.innerHTML = `<span style="color: #00ffff;">${t.ch3DialogueSpeakerISpy || 'ISpy [ ФОНОВЫЙ АНТИВИРУС ]'}</span>`;
+        } else if (speaker === "player") {
+            speakerEl.innerHTML = `<span style="color: #00ff66;">${playerName || t.ch3DialogueSpeakerPlayer || 'Игрок'}</span>`;
+        } else {
+            speakerEl.innerHTML = `<span style="color: #ff0033;">${t.ch3DialogueSpeakerBoss || 'БОГ САЙТОВ [ ISpy CORE ]'}</span>`;
+        }
+    }
+
+    if (skipBtn) {
+        skipBtn.style.display = 'inline-block';
+        skipBtn.onclick = (e) => {
+            if (e) e.stopPropagation();
+            finishCh3BossDialogue();
+        };
+    }
+    if (okBtn) {
+        okBtn.style.display = 'none';
+        okBtn.onclick = (e) => {
+            if (e) e.stopPropagation();
+            ch3DialogueIndex++;
+            renderCh3BossDialogueLine();
+        };
+    }
+
+    if (!textEl) return;
+    textEl.innerText = '';
+    isCh3DialogueTyping = true;
+    let charIdx = 0;
+
+    function typeChar() {
+        if (!isCh3DialogueTyping) return;
+        if (charIdx < text.length) {
+            textEl.innerText += text.charAt(charIdx);
+            charIdx++;
+            if (typeof audioEngine !== 'undefined') audioEngine.playTone('sawtooth', 120, 15, 0.02, 0.03);
+            const delay = calculateCharDelay(text, charIdx, 35);
+            ch3DialogueTypeTimer = setTimeout(typeChar, delay);
+        } else {
+            ch3DialogueTypeTimer = null;
+            isCh3DialogueTyping = false;
+            if (skipBtn) skipBtn.style.display = 'none';
+            if (okBtn) okBtn.style.display = 'inline-block';
+        }
+    }
+    typeChar();
+
+    const diagBox = getCh3DialogueElements();
+    if (diagBox) {
+        diagBox.onclick = () => {
+            if (isCh3DialogueTyping) {
+                if (ch3DialogueTypeTimer) {
+                    clearTimeout(ch3DialogueTypeTimer);
+                    ch3DialogueTypeTimer = null;
+                }
+                isCh3DialogueTyping = false;
+                textEl.innerText = text;
+                if (skipBtn) skipBtn.style.display = 'none';
+                if (okBtn) okBtn.style.display = 'inline-block';
+            } else {
+                ch3DialogueIndex++;
+                renderCh3BossDialogueLine();
+            }
+        };
+    }
+}
+
+function finishCh3BossDialogue() {
+    if (ch3DialogueTypeTimer) {
+        clearTimeout(ch3DialogueTypeTimer);
+        ch3DialogueTypeTimer = null;
+    }
+    isCh3DialogueTyping = false;
+
+    const diagBox = getCh3DialogueElements();
+    if (diagBox) diagBox.style.display = 'none';
+
+    if (ch3DialoguePhase === 1) {
+        startCh3Task3();
+    } else if (ch3DialoguePhase === 2) {
+        startCh3Task5();
+    } else if (ch3DialoguePhase === 3) {
+        currentChapter3Task = 6;
+        updateTaskWidgetText();
+        initCh3PrisonMovement();
+    } else if (ch3DialoguePhase === "final_pre_boss") {
+        startCh3FinalBoss();
+    } else if (ch3DialoguePhase === "final_defeat") {
+        showCh3DefeatScreen();
+    } else if (ch3DialoguePhase === "final_victory") {
+        const bossOverlay = document.getElementById('ch3-final-boss-overlay');
+        if (bossOverlay) bossOverlay.style.display = 'none';
+
+        const restoreOverlay = document.getElementById('ch3-restore-overlay');
+        if (restoreOverlay) restoreOverlay.style.display = 'block';
+
+        const restoreBtn = document.getElementById('ch3-restore-btn');
+        if (restoreBtn) {
+            const t = translations[currentLang] || translations['ru'];
+            restoreBtn.innerText = t.ch3RestoreBtn || "↻ ВОССТАНОВИТЬ";
+            restoreBtn.style.display = 'inline-block';
+        }
+
+        startCh3BossCrackingSequence();
+    } else if (ch3DialoguePhase === "ispy_freed") {
+        showCh3Credits();
+    }
+}
+
+function endCh3GodOfSitesSession() {
+    if (typeof closeTaskManager === 'function') closeTaskManager();
+    if (ch3CatchInterval) clearInterval(ch3CatchInterval);
+
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) falseCloneOverlay.style.display = 'none';
+
+    const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (desktopOverlay) desktopOverlay.style.display = 'none';
+
+    const bossSvg = document.getElementById('ch3-desktop-boss-svg') || document.getElementById('ch3-god-of-sites-svg');
+    if (bossSvg) bossSvg.style.display = 'none';
+
+    const desktop = document.getElementById('desktop');
+    if (desktop) desktop.classList.remove('shake-active');
+    document.body.classList.remove('screen-lag-glitch');
+
+    const overlay = document.getElementById('ch3-screen-tentacles-overlay');
+    if (overlay) overlay.style.display = 'none';
+
+    const prison = document.getElementById('ch3-tentacle-prison');
+    if (prison) prison.style.display = 'none';
+
+    const redTint = document.getElementById('red-screen-tint');
+    if (redTint) {
+        redTint.style.opacity = '0';
+        redTint.style.display = 'none';
+    }
+
+    const t = translations[currentLang] || translations['ru'];
+    showPlayerDialogue(t.ch3RestMonologue || ["Фух, моя работа сделана, теперь нужно отдохнуть."], () => {
+        currentChapter3Task = "youtube_search_rest";
+        const widget = document.getElementById('task-widget');
+        if (widget) {
+            const text = t.ch3YoutubeTaskText || "Зайдите в Интернет и введите \"youtube\" в поиске.";
+            const content = document.getElementById('task-widget-text');
+            if (content) content.innerText = text;
+            widget.style.display = 'block';
+        }
+        if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+    });
+}
+
+function loadYouTubeSearchChaosPage() {
+    const t = translations[currentLang] || translations['ru'];
+    const urlInput = document.getElementById('browser-url-input');
+    if (urlInput) urlInput.value = "https://www.youtube.com/results?search_query=youtube";
+
+    const browserContent = document.getElementById('browser-content');
+    if (!browserContent) return;
+
+    const regionCode = currentLang === 'en' ? 'US' : (currentLang === 'ua' ? 'UA' : 'RU');
+    const initialChar = (playerName && playerName.charAt(0)) || (currentLang === 'en' ? 'P' : (currentLang === 'ua' ? 'Г' : 'И'));
+    const noticeText = t.ch3YoutubeSearchNotice || 'Результаты поиска по запросу "youtube":';
+    const r1Title = t.ch3YoutubeResult1Title || "Канал: RetroVibes • 1.2 млн просмотров";
+    const r1Desc = t.ch3YoutubeResult1Desc || "Лучшие хиты ретро-эпохи 90-х годов в цифровом качестве...";
+    const r2Title = t.ch3YoutubeResult2Title || "Канал: WebArchive • 450 тыс. просмотров";
+    const r2Desc = t.ch3YoutubeResult2Desc || "Смешные приколы с котами из самых ранних архивов видеохостингов.";
+
+    browserContent.innerHTML = `
+        <div id="youtube-page-container" style="width: 100%; height: 100%; background: #0f0f0f; color: #ffffff; font-family: Roboto, Arial, sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden; box-sizing: border-box;">
+            <!-- Header YouTube -->
+            <div style="height: 50px; background: #212121; border-bottom: 1px solid #383838; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; flex-shrink: 0;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="width: 32px; height: 22px; background: #ff0000; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 9px solid #ffffff; margin-left: 2px;"></div>
+                    </div>
+                    <span style="font-weight: bold; font-size: 16px; letter-spacing: -0.5px;">YouTube<sup>${regionCode}</sup></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; width: 50%; max-width: 450px;">
+                    <input type="text" value="youtube" readonly style="width: 100%; background: #121212; border: 1px solid #303030; color: #fff; padding: 6px 12px; border-radius: 2px; font-size: 14px;">
+                    <button style="background: #383838; border: 1px solid #303030; color: #fff; padding: 6px 16px; border-radius: 2px; cursor: pointer;">🔍</button>
+                </div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #ff0055; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px;">${initialChar}</div>
+            </div>
+
+            <!-- YouTube Video List -->
+            <div style="flex-grow: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px;">
+                <div style="font-size: 14px; color: #aaaaaa;">${noticeText}</div>
+                
+                <div style="display: flex; gap: 16px; background: #181818; padding: 12px; border-radius: 6px;">
+                    <div style="width: 160px; height: 90px; background: #282828; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #ff0055; font-size: 24px; flex-shrink: 0;">▶</div>
+                    <div>
+                        <div style="font-size: 16px; font-weight: bold; color: #3ea6ff; margin-bottom: 6px;">Retro Music Hits compilation 1995 [HQ]</div>
+                        <div style="font-size: 12px; color: #aaaaaa;">${r1Title}</div>
+                        <div style="font-size: 12px; color: #888888; margin-top: 6px;">${r1Desc}</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 16px; background: #181818; padding: 12px; border-radius: 6px;">
+                    <div style="width: 160px; height: 90px; background: #282828; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #00ff66; font-size: 24px; flex-shrink: 0;">🐱</div>
+                    <div>
+                        <div style="font-size: 16px; font-weight: bold; color: #3ea6ff; margin-bottom: 6px;">Funny Cats 1995 archive video</div>
+                        <div style="font-size: 12px; color: #aaaaaa;">${r2Title}</div>
+                        <div style="font-size: 12px; color: #888888; margin-top: 6px;">${r2Desc}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Запуск 5-секундного отсчёта до хаоса
+    setTimeout(() => {
+        triggerYouTubeChaosEvent();
+    }, 5000);
+}
+
+function triggerYouTubeChaosEvent() {
+    if (typeof blockAllInteractions === 'function') blockAllInteractions(99999);
+
+    const bWin = document.getElementById('browser-window');
+    if (!bWin) return;
+
+    // Этап 1 (0.5с): Треск 1
+    setTimeout(() => {
+        if (typeof audioEngine !== 'undefined') audioEngine.playError(0.5);
+        bWin.classList.add('shake-active');
+
+        let crackOverlay = bWin.querySelector('.browser-crack-layer');
+        if (!crackOverlay) {
+            crackOverlay = document.createElement('div');
+            crackOverlay.className = 'browser-crack-layer';
+            bWin.appendChild(crackOverlay);
+        }
+        crackOverlay.innerHTML += `
+            <svg viewBox="0 0 100 100" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+                <path d="M 0,20 L 35,45 L 60,30 L 100,50" stroke="#ff0033" stroke-width="3" fill="none" style="filter: drop-shadow(0 0 6px red);" />
+            </svg>
+        `;
+    }, 500);
+
+    // Этап 2 (1.8с): Треск 2 + сильная тряска
+    setTimeout(() => {
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+        const crackOverlay = bWin.querySelector('.browser-crack-layer');
+        if (crackOverlay) {
+            crackOverlay.innerHTML += `
+                <svg viewBox="0 0 100 100" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+                    <path d="M 50,0 L 45,40 L 75,70 L 100,90" stroke="#ff0033" stroke-width="4" fill="none" style="filter: drop-shadow(0 0 8px red);" />
+                    <path d="M 100,10 L 70,35 L 30,80 L 0,100" stroke="#ff0033" stroke-width="3" fill="none" style="filter: drop-shadow(0 0 8px red);" />
+                </svg>
+            `;
+        }
+    }, 1800);
+
+    // Этап 3 (3.0с): Треск 3 + огромный кратер
+    setTimeout(() => {
+        if (typeof audioEngine !== 'undefined') audioEngine.playError(0.8);
+
+        const desktop = document.getElementById('desktop');
+        if (desktop) desktop.classList.add('shake-active');
+
+        const ytContainer = document.getElementById('youtube-page-container');
+        if (ytContainer) {
+            const crater = document.createElement('div');
+            crater.id = 'youtube-crater-hole';
+            ytContainer.appendChild(crater);
+        }
+    }, 3000);
+
+    // Этап 4 (4.2с): Огромный глаз Бога сайтов появляется из кратера
+    setTimeout(() => {
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+        const crater = document.getElementById('youtube-crater-hole');
+        if (crater) {
+            crater.innerHTML = `
+                <svg viewBox="0 0 200 200" style="width:100%; height:100%; filter: drop-shadow(0 0 45px #ff0033) drop-shadow(0 0 80px #aa0000); animation: pulseGlitch 0.2s infinite;">
+                    <circle cx="100" cy="100" r="75" fill="#100005" stroke="#ff0033" stroke-width="5"/>
+                    <path d="M 10 100 Q 100 15 190 100 Q 100 185 10 100 Z" fill="#250007" stroke="#ff2255" stroke-width="4"/>
+                    <circle cx="100" cy="100" r="32" fill="#ff0000"/>
+                    <ellipse cx="100" cy="100" rx="8" ry="24" fill="#000000"/>
+                </svg>
+            `;
+        }
+    }, 4200);
+
+    // Этап 5 (5.4с): Щупальцы охватывают вкладку
+    setTimeout(() => {
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+        const crackOverlay = bWin.querySelector('.browser-crack-layer');
+        if (crackOverlay) {
+            crackOverlay.innerHTML += `
+                <svg viewBox="0 0 500 400" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+                    <path d="M 0,0 Q 150,150 0,300" stroke="#880000" stroke-width="35" fill="none"/>
+                    <path d="M 500,0 Q 350,150 500,300" stroke="#880000" stroke-width="35" fill="none"/>
+                </svg>
+            `;
+        }
+    }, 5400);
+
+    // Этап 6 (6.6с): Закрытие браузера и переход на Рабочий стол
+    setTimeout(() => {
+        if (typeof closeBrowser === 'function') closeBrowser();
+        const crack = bWin.querySelector('.browser-crack-layer');
+        if (crack) crack.remove();
+
+        showCh3FinalDesktopBoss();
+    }, 6600);
+}
+
+function showCh3FinalDesktopBoss() {
+    const desktop = document.getElementById('desktop');
+    if (desktop) desktop.style.display = 'block';
+
+    const falseCloneOverlay = document.getElementById('ch3-false-clone-boss-overlay');
+    if (falseCloneOverlay) falseCloneOverlay.style.display = 'none';
+
+    const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (desktopOverlay) {
+        desktopOverlay.style.display = 'block';
+        desktopOverlay.style.zIndex = '99990';
+    }
+
+    const bossSvg = document.getElementById('ch3-desktop-boss-svg') || document.getElementById('ch3-god-of-sites-svg');
+    if (bossSvg) bossSvg.style.display = 'block';
+
+    const bossCenter = document.getElementById('ch3-desktop-boss-center');
+    if (bossCenter) {
+        bossCenter.style.top = '50%';
+        bossCenter.style.left = '50%';
+        bossCenter.style.transform = 'translate(-50%, -50%) scale(2.8)';
+    }
+
+    ch3DialoguePhase = "final_pre_boss";
+    startCh3BossDialogue();
+}
+
+let ch3BossIsTired = false;
+let ch3BossStepTimer = null;
+let ch3FinalPlayerStunned = false;
+let ch3SpeechBubbleTimer = null;
+
+function startCh3FinalBoss() {
+    ch3BossIsTired = false;
+    ch3FinalPlayerStunned = false;
+    if (ch3BossStepTimer) clearTimeout(ch3BossStepTimer);
+    if (ch3SpeechBubbleTimer) clearTimeout(ch3SpeechBubbleTimer);
+
+    const bubble = document.getElementById('ch3-boss-speech-bubble');
+    if (bubble) bubble.style.display = 'none';
+
+    const trap = document.getElementById('ch3-player-tentacle-trap');
+    if (trap) trap.style.display = 'none';
+
+    const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+    if (desktopOverlay) desktopOverlay.style.display = 'none';
+
+    const bossSvg = document.getElementById('ch3-desktop-boss-svg') || document.getElementById('ch3-god-of-sites-svg');
+    if (bossSvg) bossSvg.style.display = 'none';
+
+    if (typeof closeAllDesktopWindows === 'function') closeAllDesktopWindows();
+    if (typeof closeBrowser === 'function') closeBrowser();
+
+    if (typeof unblockAllInteractions === 'function') unblockAllInteractions();
+    if (typeof audioEngine !== 'undefined') {
+        audioEngine.stopDrone();
+        audioEngine.playBossMusic();
+    }
+
+    ch3FinalBossHP = 500;
+    ch3FinalPlayerHP = 100;
+    ch3FinalPlayerX = window.innerWidth * 0.5;
+    ch3FinalPlayerY = window.innerHeight * 0.5;
+    ch3FinalBossActive = true;
+    ch3FinalIsCharging = false;
+    ch3QTEActive = false;
+
+    const overlay = document.getElementById('ch3-final-boss-overlay');
+    if (overlay) overlay.style.display = 'block';
+
+    const pDot = document.getElementById('ch3-final-player-dot');
+    if (pDot) {
+        pDot.style.left = ch3FinalPlayerX + 'px';
+        pDot.style.top = ch3FinalPlayerY + 'px';
+    }
+
+    updateCh3FinalHPBars();
+
+    // Слушатели клавиш движения
+    window.onkeydown = (e) => {
+        const k = e.key.toLowerCase();
+        ch3FinalKeys[k] = true;
+        if (k === ' ' || k === 'spacebar') {
+            if (ch3QTEActive) handleCh3QTEPress();
+        }
+    };
+    window.onkeyup = (e) => {
+        ch3FinalKeys[e.key.toLowerCase()] = false;
+    };
+
+    // Слушатели атаки (ЛКМ)
+    window.onmousedown = (e) => {
+        if (e.button === 0 && ch3FinalBossActive && !ch3QTEActive && !ch3FinalPlayerStunned) {
+            ch3FinalIsLMBDown = true;
+        }
+    };
+    window.onmouseup = (e) => {
+        if (e.button === 0 && ch3FinalBossActive) {
+            ch3FinalIsLMBDown = false;
+            executeCh3FinalPlayerAttack();
+        }
+    };
+
+    // Слушатель движения мыши для зрачка
+    window.onmousemove = (e) => {
+        trackCh3FinalPupil(e.clientX, e.clientY);
+    };
+
+    // Цикл обновления кадров и цикла атак
+    startCh3FinalCombatLoop();
+}
+
+function trackCh3FinalPupil(targetX, targetY) {
+    const pupil = document.getElementById('ch3-final-boss-pupil');
+    if (!pupil) return;
+
+    const eyeCenterX = window.innerWidth * 0.5;
+    const eyeCenterY = window.innerHeight * 0.5;
+    const dx = targetX - eyeCenterX;
+    const dy = targetY - eyeCenterY;
+    const angle = Math.atan2(dy, dx);
+    const dist = Math.min(22, Math.hypot(dx, dy) / 25);
+
+    const px = 100 + Math.cos(angle) * dist;
+    const py = 100 + Math.sin(angle) * dist;
+
+    pupil.setAttribute('cx', px);
+    pupil.setAttribute('cy', py);
+}
+
+function updateCh3FinalHPBars() {
+    const t = translations[currentLang] || translations['ru'];
+
+    const pNameEl = document.getElementById('ch3-final-player-name');
+    if (pNameEl) pNameEl.innerText = (playerName && playerName !== 'Пользователь' && playerName !== 'User' && playerName !== 'Користувач') ? playerName : (t.ch3FinalPlayerName || 'Игрок');
+
+    const bossTitleEl = document.getElementById('ch3-final-boss-title');
+    if (bossTitleEl) bossTitleEl.innerText = t.ch3FinalBossTitle || 'БОГ САЙТОВ';
+
+    const playerHPText = document.getElementById('ch3-final-player-hp-text');
+    const playerHPFill = document.getElementById('ch3-final-player-hp-fill');
+    if (playerHPText) playerHPText.innerText = Math.max(0, ch3FinalPlayerHP);
+    if (playerHPFill) playerHPFill.style.width = Math.max(0, (ch3FinalPlayerHP / 100) * 100) + '%';
+
+    const bossHPText = document.getElementById('ch3-final-boss-hp-text');
+    const bossHPFill = document.getElementById('ch3-final-boss-hp-fill');
+    if (bossHPText) bossHPText.innerText = Math.max(0, ch3FinalBossHP);
+    if (bossHPFill) bossHPFill.style.width = Math.max(0, (ch3FinalBossHP / 500) * 100) + '%';
+}
+
+function executeCh3FinalPlayerAttack() {
+    if (!ch3FinalBossActive || ch3QTEActive || ch3FinalPlayerStunned) return;
+
+    const now = Date.now();
+    if (ch3FinalIsCharging && now - ch3FinalChargeStartTime >= 900) {
+        triggerFinalPlayerExplosion(ch3FinalPlayerX, ch3FinalPlayerY);
+
+        if (ch3BossIsTired) {
+            // УЯЗВИМ: Наносим урон во время фазы усталости!
+            ch3FinalBossHP -= 50;
+            updateCh3FinalHPBars();
+
+            if (typeof audioEngine !== 'undefined') audioEngine.playError(0.6);
+
+            const bossEye = document.getElementById('ch3-final-boss-eye-container');
+            if (bossEye) {
+                bossEye.style.filter = 'drop-shadow(0 0 60px #ffffff) brightness(2)';
+                setTimeout(() => {
+                    if (bossEye && ch3BossIsTired) {
+                        bossEye.style.filter = 'drop-shadow(0 0 25px #00aaff) brightness(0.7)';
+                    }
+                }, 300);
+            }
+
+            if (ch3FinalBossHP <= 0) {
+                ch3FinalBossActive = false;
+                triggerCh3FinalVictory();
+            }
+        } else {
+            // НЕУЯЗВИМ: Бог Сайтов отбивает атаку, игрок отброшен и застывает на 1 секунду
+            ch3FinalPlayerStunned = true;
+
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            let angle = Math.atan2(ch3FinalPlayerY - centerY, ch3FinalPlayerX - centerX);
+            if (Math.hypot(ch3FinalPlayerY - centerY, ch3FinalPlayerX - centerX) < 10) {
+                angle = -Math.PI / 2;
+            }
+            const pushDist = 140;
+            ch3FinalPlayerX = Math.max(30, Math.min(window.innerWidth - 30, ch3FinalPlayerX + Math.cos(angle) * pushDist));
+            ch3FinalPlayerY = Math.max(30, Math.min(window.innerHeight - 30, ch3FinalPlayerY + Math.sin(angle) * pushDist));
+
+            const pDot = document.getElementById('ch3-final-player-dot');
+            if (pDot) {
+                pDot.style.left = ch3FinalPlayerX + 'px';
+                pDot.style.top = ch3FinalPlayerY + 'px';
+                pDot.style.background = '#ff0033';
+                pDot.style.boxShadow = '0 0 25px #ff0055, 0 0 45px #ff0000';
+            }
+
+            if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+            const bubble = document.getElementById('ch3-boss-speech-bubble');
+            if (bubble) {
+                const t = translations[currentLang] || translations['ru'];
+                bubble.innerText = t.ch3BossInvulnerableMsg || "ХА-ХА. ГЛУПЕЦ. Я НЕУЯЗВИМ!";
+                bubble.style.display = 'block';
+
+                if (ch3SpeechBubbleTimer) clearTimeout(ch3SpeechBubbleTimer);
+                ch3SpeechBubbleTimer = setTimeout(() => {
+                    if (bubble) bubble.style.display = 'none';
+                }, 1800);
+            }
+
+            // Застывание на 1 секунду
+            setTimeout(() => {
+                ch3FinalPlayerStunned = false;
+                if (pDot) {
+                    pDot.style.background = '#ffffff';
+                    pDot.style.boxShadow = '0 0 15px #ffffff, 0 0 25px #ffeb3b';
+                }
+            }, 1000);
+        }
+    }
+    ch3FinalIsCharging = false;
+    const aura = document.getElementById('ch3-final-player-charge-aura');
+    if (aura) aura.style.display = 'none';
+}
+
+function triggerFinalPlayerExplosion(x, y) {
+    const overlay = document.getElementById('ch3-final-boss-overlay');
+    if (!overlay) return;
+
+    const exp = document.createElement('div');
+    exp.style.cssText = `
+        position: absolute; left: ${x}px; top: ${y}px;
+        width: 10px; height: 10px; border-radius: 50%;
+        background: radial-gradient(circle, #ffffff 0%, #ffcc00 50%, #ff0033 100%);
+        border: 4px solid #ffffff; box-shadow: 0 0 40px #ff0055, 0 0 80px #ffffff;
+        transform: translate(-50%, -50%); z-index: 50025; pointer-events: none;
+        transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out; opacity: 1;
+    `;
+    overlay.appendChild(exp);
+
+    requestAnimationFrame(() => {
+        exp.style.width = '200px';
+        exp.style.height = '200px';
+        exp.style.opacity = '0';
+    });
+
+    setTimeout(() => exp.remove(), 450);
+}
+
+function runCh3NextAttackStep(stepNumber) {
+    if (!ch3FinalBossActive) return;
+
+    if (stepNumber === 1) {
+        ch3BossIsTired = false;
+        launchSpikesAttackPattern(() => {
+            if (ch3FinalBossActive) runCh3NextAttackStep(2);
+        });
+    } else if (stepNumber === 2) {
+        launchTopBottomSpikesPattern(() => {
+            if (ch3FinalBossActive) runCh3NextAttackStep(3);
+        });
+    } else if (stepNumber === 3) {
+        launchTentacleQTEPattern(() => {
+            if (ch3FinalBossActive) runCh3NextAttackStep("tired");
+        });
+    } else if (stepNumber === "tired") {
+        triggerCh3BossFatigueSequence();
+    }
+}
+
+function triggerCh3BossFatigueSequence() {
+    if (!ch3FinalBossActive) return;
+
+    ch3BossIsTired = true;
+
+    const banner = document.getElementById('ch3-final-tired-banner');
+    if (banner) {
+        const t = translations[currentLang] || translations['ru'];
+        banner.innerText = t.ch3BossTiredBanner || "⚡ БОСС УСТАЛ! АТАКУЙ! ⚡";
+        banner.style.display = 'block';
+    }
+
+    const bossContainer = document.getElementById('ch3-final-boss-eye-container');
+    const pupil = document.getElementById('ch3-final-boss-pupil');
+
+    if (bossContainer) {
+        bossContainer.style.filter = 'drop-shadow(0 0 25px #00aaff) brightness(0.7)';
+        bossContainer.style.transform = 'translate(-50%, -50%) scale(1.2)';
+        bossContainer.style.animation = 'none';
+    }
+
+    if (pupil) {
+        pupil.setAttribute('rx', '14');
+        pupil.setAttribute('ry', '18');
+    }
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playHover();
+
+    // Ровно 4 секунды усталости (все атаки остановлены)
+    if (ch3BossStepTimer) clearTimeout(ch3BossStepTimer);
+    ch3BossStepTimer = setTimeout(() => {
+        if (!ch3FinalBossActive) return;
+
+        // Фаза 2: Анимация тряски и озлобления (2 секунды)
+        ch3BossIsTired = false;
+        if (banner) banner.style.display = 'none';
+
+        if (bossContainer) {
+            bossContainer.style.animation = 'shake 0.1s infinite';
+            bossContainer.style.filter = 'drop-shadow(0 0 60px #ff0000) drop-shadow(0 0 90px #ff0033) brightness(1.6)';
+            bossContainer.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        }
+
+        if (pupil) {
+            pupil.setAttribute('rx', '3');
+            pupil.setAttribute('ry', '30');
+        }
+
+        if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+        // 2 секунды тряски и озлобления перед возвратом к Атаке 1
+        ch3BossStepTimer = setTimeout(() => {
+            if (!ch3FinalBossActive) return;
+
+            if (bossContainer) {
+                bossContainer.style.animation = 'none';
+                bossContainer.style.filter = 'drop-shadow(0 0 35px #ff0033) drop-shadow(0 0 60px #aa0000)';
+                bossContainer.style.transform = 'translate(-50%, -50%) scale(1.4)';
+            }
+
+            if (pupil) {
+                pupil.setAttribute('rx', '8');
+                pupil.setAttribute('ry', '24');
+            }
+
+            // Переход к 1-й атаке
+            runCh3NextAttackStep(1);
+        }, 2000);
+
+    }, 4000);
+}
+
+function startCh3FinalCombatLoop() {
+    if (!ch3FinalBossActive) return;
+
+    if (ch3FinalAttackInterval) clearInterval(ch3FinalAttackInterval);
+    runCh3NextAttackStep(1);
+
+    function updateFrame() {
+        if (!ch3FinalBossActive) return;
+
+        // Движение игрока (если не QTE и не оглушен)
+        if (!ch3QTEActive && !ch3FinalPlayerStunned) {
+            if (ch3FinalKeys['w'] || ch3FinalKeys['arrowup']) ch3FinalPlayerY -= ch3FinalPlayerSpeed;
+            if (ch3FinalKeys['s'] || ch3FinalKeys['arrowdown']) ch3FinalPlayerY += ch3FinalPlayerSpeed;
+            if (ch3FinalKeys['a'] || ch3FinalKeys['arrowleft']) ch3FinalPlayerX -= ch3FinalPlayerSpeed;
+            if (ch3FinalKeys['d'] || ch3FinalKeys['arrowright']) ch3FinalPlayerX += ch3FinalPlayerSpeed;
+
+            ch3FinalPlayerX = Math.max(20, Math.min(window.innerWidth - 20, ch3FinalPlayerX));
+            ch3FinalPlayerY = Math.max(20, Math.min(window.innerHeight - 20, ch3FinalPlayerY));
+
+            const pDot = document.getElementById('ch3-final-player-dot');
+            if (pDot) {
+                pDot.style.left = ch3FinalPlayerX + 'px';
+                pDot.style.top = ch3FinalPlayerY + 'px';
+            }
+
+            const trap = document.getElementById('ch3-player-tentacle-trap');
+            if (trap) {
+                trap.style.left = ch3FinalPlayerX + 'px';
+                trap.style.top = ch3FinalPlayerY + 'px';
+            }
+
+            // Зрачок следит за белой точкой игрока
+            trackCh3FinalPupil(ch3FinalPlayerX, ch3FinalPlayerY);
+
+            // Зарядка взрыва
+            if (ch3FinalIsLMBDown) {
+                const now = Date.now();
+                if (!ch3FinalIsCharging) {
+                    ch3FinalIsCharging = true;
+                    ch3FinalChargeStartTime = now;
+                }
+                const progress = Math.min(1, (now - ch3FinalChargeStartTime) / 1000);
+                const aura = document.getElementById('ch3-final-player-charge-aura');
+                if (aura) {
+                    aura.style.display = 'block';
+                    aura.style.left = ch3FinalPlayerX + 'px';
+                    aura.style.top = ch3FinalPlayerY + 'px';
+                    const size = 20 + progress * 70;
+                    aura.style.width = size + 'px';
+                    aura.style.height = size + 'px';
+                    aura.style.background = `rgba(255, 255, 255, ${0.4 + progress * 0.5})`;
+                    aura.style.boxShadow = `0 0 ${15 + progress * 30}px #ff0055`;
+                }
+            }
+        }
+
+        ch3FinalLoopFrame = requestAnimationFrame(updateFrame);
+    }
+    updateFrame();
+}
+
+// Атака 1: Много красных шипов (10 шипов, по 0.5с)
+function launchSpikesAttackPattern(onComplete) {
+    let spikeCount = 0;
+    const spikeTimer = setInterval(() => {
+        if (!ch3FinalBossActive || spikeCount >= 10) {
+            clearInterval(spikeTimer);
+            if (ch3FinalBossActive && typeof onComplete === 'function') {
+                setTimeout(onComplete, 1000);
+            }
+            return;
+        }
+        spikeCount++;
+
+        const targetX = ch3FinalPlayerX;
+        const targetY = ch3FinalPlayerY;
+
+        // Выбираем случайную внешнюю точку старта
+        const edge = Math.floor(Math.random() * 4);
+        let startX = 0, startY = 0;
+        if (edge === 0) { startX = Math.random() * window.innerWidth; startY = -40; }
+        else if (edge === 1) { startX = window.innerWidth + 40; startY = Math.random() * window.innerHeight; }
+        else if (edge === 2) { startX = Math.random() * window.innerWidth; startY = window.innerHeight + 40; }
+        else { startX = -40; startY = Math.random() * window.innerHeight; }
+
+        const angle = Math.atan2(targetY - startY, targetX - startX);
+
+        // Линия предупреждения
+        const container = document.getElementById('ch3-final-attacks-container');
+        if (!container) return;
+
+        const line = document.createElement('div');
+        line.style.cssText = `
+            position: absolute; left: ${startX}px; top: ${startY}px;
+            width: 1600px; height: 2px; background: repeating-linear-gradient(90deg, #ff0033, #ff0033 10px, transparent 10px, transparent 20px);
+            transform-origin: 0 0; transform: rotate(${angle}rad);
+            opacity: 0.6; pointer-events: none; transition: opacity 0.3s;
+        `;
+        container.appendChild(line);
+
+        setTimeout(() => {
+            line.remove();
+            if (!ch3FinalBossActive) return;
+
+            // Вылет шипа
+            const spike = document.createElement('div');
+            spike.style.cssText = `
+                position: absolute; left: ${startX}px; top: ${startY}px;
+                width: 30px; height: 12px; background: #ff0033;
+                clip-path: polygon(100% 50%, 0 0, 20% 50%, 0 100%);
+                box-shadow: 0 0 12px #ff0000; transform-origin: 0 50%;
+                transform: rotate(${angle}rad); pointer-events: none; z-index: 50016;
+            `;
+            container.appendChild(spike);
+
+            let currX = startX;
+            let currY = startY;
+            const speed = 14;
+
+            const flyInterval = setInterval(() => {
+                if (!ch3FinalBossActive) {
+                    clearInterval(flyInterval);
+                    spike.remove();
+                    return;
+                }
+                currX += Math.cos(angle) * speed;
+                currY += Math.sin(angle) * speed;
+                spike.style.left = currX + 'px';
+                spike.style.top = currY + 'px';
+
+                // Проверка попадания в игрока (урон 5)
+                const dist = Math.hypot(currX - ch3FinalPlayerX, currY - ch3FinalPlayerY);
+                if (dist < 22) {
+                    clearInterval(flyInterval);
+                    spike.remove();
+                    damageCh3FinalPlayer(5);
+                }
+
+                if (currX < -100 || currX > window.innerWidth + 100 || currY < -100 || currY > window.innerHeight + 100) {
+                    clearInterval(flyInterval);
+                    spike.remove();
+                }
+            }, 16);
+        }, 300);
+
+    }, 500);
+}
+
+// Атака 2: Шипы сверху и снизу (6 атак по очереди 3:3)
+function launchTopBottomSpikesPattern(onComplete) {
+    let waveCount = 0;
+    const waveTimer = setInterval(() => {
+        if (!ch3FinalBossActive || waveCount >= 6) {
+            clearInterval(waveTimer);
+            if (ch3FinalBossActive && typeof onComplete === 'function') {
+                setTimeout(onComplete, 1200);
+            }
+            return;
+        }
+        waveCount++;
+        const isTop = waveCount % 2 === 1;
+
+        const warnEl = document.getElementById(isTop ? 'ch3-final-top-warning' : 'ch3-final-bottom-warning');
+        if (warnEl) {
+            const t = translations[currentLang] || translations['ru'];
+            const warnTextEl = document.getElementById(isTop ? 'ch3-final-top-warning-text' : 'ch3-final-bottom-warning-text');
+            if (warnTextEl) {
+                warnTextEl.innerText = isTop ? (t.ch3Attack2DangerTop || '⚠️ ОПАСНОСТЬ СВЕРХУ! ⚠️') : (t.ch3Attack2DangerBottom || '⚠️ ОПАСНОСТЬ СНИЗУ! ⚠️');
+            }
+
+            const trianglesRow = warnEl.querySelector('.warning-triangles-row');
+            if (trianglesRow && trianglesRow.children.length === 0) {
+                for (let i = 0; i < 16; i++) {
+                    const tri = document.createElement('div');
+                    tri.className = 'warning-triangle-icon';
+                    trianglesRow.appendChild(tri);
+                }
+            }
+            warnEl.classList.remove('attack-phase');
+            warnEl.classList.add('warning-phase');
+            warnEl.style.display = 'flex';
+        }
+
+        if (typeof audioEngine !== 'undefined') audioEngine.playError(0.3);
+
+        // Фаза 1: Предупреждение (полупрозрачные красные шипы) ровно 1.0 секунду (1000мс)
+        setTimeout(() => {
+            if (!ch3FinalBossActive || !warnEl) return;
+
+            // Фаза 2: Атака (ярко-красные опасные шипы) ровно 1.0 секунду (1000мс)
+            warnEl.classList.remove('warning-phase');
+            warnEl.classList.add('attack-phase');
+            if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+            let damagedThisWave = false;
+            const zoneHeight = 200;
+
+            const attackCheckInterval = setInterval(() => {
+                if (!ch3FinalBossActive) {
+                    clearInterval(attackCheckInterval);
+                    return;
+                }
+                const inZone = isTop ? (ch3FinalPlayerY <= zoneHeight) : (ch3FinalPlayerY >= window.innerHeight - zoneHeight);
+                if (inZone && !damagedThisWave) {
+                    damagedThisWave = true;
+                    damageCh3FinalPlayer(25);
+                }
+            }, 40);
+
+            // Окончание фазы атаки ровно через 1000мс
+            setTimeout(() => {
+                clearInterval(attackCheckInterval);
+                if (warnEl) {
+                    warnEl.style.display = 'none';
+                    warnEl.classList.remove('attack-phase', 'warning-phase');
+                }
+            }, 1000);
+
+        }, 1000);
+
+    }, 2400);
+}
+
+// Атака 3: Щупальцы (QTE Захват)
+function launchTentacleQTEPattern(onComplete) {
+    if (!ch3FinalBossActive || ch3QTEActive) return;
+    ch3QTEActive = true;
+    ch3QTEProgress = 0;
+    ch3QTETimerSeconds = 3.0;
+
+    const qteOverlay = document.getElementById('ch3-qte-overlay');
+    if (qteOverlay) {
+        const t = translations[currentLang] || translations['ru'];
+        const qteTitle = document.getElementById('ch3-qte-title');
+        if (qteTitle) qteTitle.innerText = t.ch3QteTitle || "⚠️ ЩУПАЛЬЦЫ СХВАТИЛИ ТЕБЯ! ⚠️";
+
+        const qteInstr = document.getElementById('ch3-qte-instr');
+        if (qteInstr) qteInstr.innerHTML = t.ch3QteInstr || "БЫСТРО НАЖИМАЙТЕ <span style=\"color: #ffeb3b; background: #330011; padding: 3px 10px; border: 1px solid #ffeb3b; border-radius: 4px;\">ПРОБЕЛ</span> ДЛЯ ОСВОБОЖДЕНИЯ!";
+
+        const timerLabel = document.getElementById('ch3-qte-timer-label');
+        if (timerLabel) timerLabel.innerText = t.ch3QteTimerLabel || "Осталось времени:";
+
+        const timerUnit = document.getElementById('ch3-qte-timer-unit');
+        if (timerUnit) timerUnit.innerText = t.ch3QteTimerUnit || "сек";
+
+        qteOverlay.style.display = 'flex';
+    }
+    const trap = document.getElementById('ch3-player-tentacle-trap');
+    if (trap) {
+        trap.style.left = ch3FinalPlayerX + 'px';
+        trap.style.top = ch3FinalPlayerY + 'px';
+        trap.style.display = 'block';
+    }
+    updateCh3QTEUI();
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playGlitchSound();
+
+    function finishQTE() {
+        if (ch3QTEInterval) clearInterval(ch3QTEInterval);
+        ch3QTEActive = false;
+        if (qteOverlay) qteOverlay.style.display = 'none';
+        if (trap) trap.style.display = 'none';
+        if (ch3FinalBossActive && typeof onComplete === 'function') {
+            setTimeout(onComplete, 800);
+        }
+    }
+
+    if (ch3QTEInterval) clearInterval(ch3QTEInterval);
+    ch3QTEInterval = setInterval(() => {
+        if (!ch3QTEActive) {
+            clearInterval(ch3QTEInterval);
+            return;
+        }
+
+        ch3QTETimerSeconds -= 0.1;
+        ch3QTEProgress = Math.max(0, ch3QTEProgress - 1.8);
+        updateCh3QTEUI();
+
+        if (ch3QTEProgress >= 100) {
+            // Игрок успел выбраться!
+            finishQTE();
+            return;
+        }
+
+        if (ch3QTETimerSeconds <= 0) {
+            // Игрок не успел — 30 урона
+            damageCh3FinalPlayer(30);
+            finishQTE();
+        }
+    }, 100);
+}
+
+function handleCh3QTEPress() {
+    if (!ch3QTEActive) return;
+    ch3QTEProgress += 14;
+    updateCh3QTEUI();
+    if (typeof audioEngine !== 'undefined') audioEngine.playClick();
+}
+
+function updateCh3QTEUI() {
+    const fill = document.getElementById('ch3-qte-bar-fill');
+    if (fill) fill.style.width = Math.min(100, Math.max(0, ch3QTEProgress)) + '%';
+    const timerTxt = document.getElementById('ch3-qte-timer-text');
+    if (timerTxt) timerTxt.innerText = Math.max(0, ch3QTETimerSeconds).toFixed(1);
+}
+
+function damageCh3FinalPlayer(amount) {
+    if (!ch3FinalBossActive) return;
+    ch3FinalPlayerHP -= amount;
+    updateCh3FinalHPBars();
+
+    if (typeof audioEngine !== 'undefined') audioEngine.playError(0.7);
+    const pDot = document.getElementById('ch3-final-player-dot');
+    if (pDot) {
+        pDot.style.background = '#ff0033';
+        setTimeout(() => { if (pDot) pDot.style.background = '#ffffff'; }, 200);
+    }
+
+    if (ch3FinalPlayerHP <= 0) {
+        ch3FinalBossActive = false;
+        triggerCh3FinalDefeat();
+    }
+}
+
+function triggerCh3FinalDefeat() {
+    ch3FinalBossActive = false;
+    ch3BossIsTired = false;
+    ch3FinalPlayerStunned = false;
+    if (ch3BossStepTimer) clearTimeout(ch3BossStepTimer);
+    if (ch3SpeechBubbleTimer) clearTimeout(ch3SpeechBubbleTimer);
+    if (ch3FinalAttackInterval) clearInterval(ch3FinalAttackInterval);
+    if (ch3FinalLoopFrame) cancelAnimationFrame(ch3FinalLoopFrame);
+
+    const banner = document.getElementById('ch3-final-tired-banner');
+    if (banner) banner.style.display = 'none';
+    const bubble = document.getElementById('ch3-boss-speech-bubble');
+    if (bubble) bubble.style.display = 'none';
+    const trap = document.getElementById('ch3-player-tentacle-trap');
+    if (trap) trap.style.display = 'none';
+
+    ch3DialoguePhase = "final_defeat";
+    startCh3BossDialogue();
+}
+
+function showCh3DefeatScreen() {
+    const t = translations[currentLang] || translations['ru'];
+    showGameAlert(t.ch3FinalDefeatDiag ? t.ch3FinalDefeatDiag[0] : "ТВОЙ КОНЕЦ!", () => {
+        restartCh3FinalBoss();
+    }, { title: "GAME OVER", icon: "💀" });
+}
+
+function restartCh3FinalBoss() {
+    document.body.classList.remove('screen-lag-glitch');
+    startCh3FinalBoss();
+}
+
+function triggerCh3FinalVictory() {
+    ch3FinalBossActive = false;
+    ch3BossIsTired = false;
+    ch3FinalPlayerStunned = false;
+    if (ch3BossStepTimer) clearTimeout(ch3BossStepTimer);
+    if (ch3SpeechBubbleTimer) clearTimeout(ch3SpeechBubbleTimer);
+    if (ch3FinalAttackInterval) clearInterval(ch3FinalAttackInterval);
+    if (ch3FinalLoopFrame) cancelAnimationFrame(ch3FinalLoopFrame);
+
+    const banner = document.getElementById('ch3-final-tired-banner');
+    if (banner) banner.style.display = 'none';
+    const bubble = document.getElementById('ch3-boss-speech-bubble');
+    if (bubble) bubble.style.display = 'none';
+    const trap = document.getElementById('ch3-player-tentacle-trap');
+    if (trap) trap.style.display = 'none';
+
+    if (typeof audioEngine !== 'undefined') {
+        audioEngine.stopBossMusic();
+    }
+
+    const attacksContainer = document.getElementById('ch3-final-attacks-container');
+    if (attacksContainer) attacksContainer.innerHTML = '';
+
+    ch3DialoguePhase = "final_victory";
+    startCh3BossDialogue();
+}
+
+let ch3CracksInterval = null;
+let ch3CracksCount = 0;
+
+const ch3WhiteCrackPaths = [
+    "M 100 100 L 80 70 L 60 65 L 45 40 M 80 70 L 85 55",
+    "M 100 100 L 120 125 L 140 130 L 165 155 M 120 125 L 130 140",
+    "M 100 100 L 75 120 L 55 135 L 30 145 M 75 120 L 60 110",
+    "M 100 100 L 130 75 L 155 60 L 175 45 M 130 75 L 140 85",
+    "M 100 100 L 95 50 L 105 30 L 90 15 M 95 50 L 80 40",
+    "M 100 100 L 105 150 L 90 170 L 100 185 M 105 150 L 120 160",
+    "M 100 100 L 60 95 L 40 105 L 20 90 M 60 95 L 50 115",
+    "M 100 100 L 145 105 L 165 95 L 185 110 M 145 105 L 155 120",
+    "M 80 70 L 65 85 L 50 75 M 65 85 L 45 95",
+    "M 120 125 L 135 110 L 150 120 M 135 110 L 155 100"
+];
+
+function startCh3BossCrackingSequence() {
+    if (ch3CracksInterval) clearInterval(ch3CracksInterval);
+    ch3CracksCount = 0;
+
+    const cracksGroup = document.getElementById('ch3-boss-cracks-group');
+    if (cracksGroup) cracksGroup.innerHTML = '';
+
+    const defeatContainer = document.getElementById('ch3-defeat-boss-container');
+    if (defeatContainer) defeatContainer.style.display = 'flex';
+
+    ch3CracksInterval = setInterval(() => {
+        if (ch3CracksCount >= 10) {
+            clearInterval(ch3CracksInterval);
+            ch3CracksInterval = null;
+            return;
+        }
+
+        const pathData = ch3WhiteCrackPaths[ch3CracksCount];
+        if (pathData && cracksGroup) {
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', pathData);
+            path.setAttribute('stroke', '#ffffff');
+            path.setAttribute('stroke-width', '2.5');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('stroke-linecap', 'round');
+            path.setAttribute('stroke-linejoin', 'round');
+            path.setAttribute('style', 'filter: drop-shadow(0 0 6px #ffffff) drop-shadow(0 0 10px #00ffff);');
+            cracksGroup.appendChild(path);
+
+            if (typeof audioEngine !== 'undefined') {
+                audioEngine.playTone('sawtooth', 200 + ch3CracksCount * 40, 20, 0.03, 0.04);
+            }
+        }
+        ch3CracksCount++;
+    }, 1000);
+}
+
+function triggerISpyRestoration() {
+    if (ch3CracksInterval) {
+        clearInterval(ch3CracksInterval);
+        ch3CracksInterval = null;
+    }
+
+    const restoreBtn = document.getElementById('ch3-restore-btn');
+    if (restoreBtn) restoreBtn.style.display = 'none';
+
+    const defeatContainer = document.getElementById('ch3-defeat-boss-container');
+    if (defeatContainer) defeatContainer.style.display = 'none';
+
+    const flash = document.getElementById('ch3-blinding-flash');
+    if (flash) flash.style.opacity = '1';
+
+    setTimeout(() => {
+        // Очищаем рабочий стол от вирусов и окраса
+        const desktopOverlay = document.getElementById('ch3-desktop-boss-overlay');
+        if (desktopOverlay) desktopOverlay.style.display = 'none';
+        const bossOverlay = document.getElementById('ch3-final-boss-overlay');
+        if (bossOverlay) bossOverlay.style.display = 'none';
+
+        document.body.classList.remove('chapter-3-theme', 'screen-lag-glitch');
+        document.body.style.backgroundColor = 'var(--win-bg)';
+
+        const freedContainer = document.getElementById('ch3-freed-ispy-container');
+        if (freedContainer) freedContainer.style.display = 'flex';
+
+        if (flash) flash.style.opacity = '0';
+
+        // Диалог освобождённого ISpy
+        setTimeout(() => {
+            ch3DialoguePhase = "ispy_freed";
+            startCh3BossDialogue();
+        }, 1000);
+    }, 1200);
+}
+
+function showCh3Credits() {
+    const t = translations[currentLang] || translations['ru'];
+
+    const subEl = document.getElementById('ch3-credits-subtitle');
+    if (subEl) subEl.innerText = t.ch3CreditsFinale || "— ФИНАЛ —";
+
+    const authorTitle = document.getElementById('ch3-credits-author-title');
+    if (authorTitle) authorTitle.innerText = t.ch3CreditsAuthorTitle || "АВТОР И ДИЗАЙНЕР ИГРЫ";
+
+    const authorName = document.getElementById('ch3-credits-author-name');
+    if (authorName) authorName.innerText = t.ch3CreditsAuthorName || "Игорь";
+
+    const storyTitle = document.getElementById('ch3-credits-story-title');
+    if (storyTitle) storyTitle.innerText = t.ch3CreditsStoryTitle || "СЮЖЕТ И ИДЕИ";
+
+    const storyName = document.getElementById('ch3-credits-story-name');
+    if (storyName) storyName.innerText = t.ch3CreditsStoryName || "Игорь";
+
+    const progTitle = document.getElementById('ch3-credits-prog-title');
+    if (progTitle) progTitle.innerText = t.ch3CreditsProgTitle || "ПРОГРАММИРОВАНИЕ И ИИ-ВОПЛОЩЕНИЕ";
+
+    const progName = document.getElementById('ch3-credits-prog-name');
+    if (progName) progName.innerText = t.ch3CreditsProgName || "Google DeepMind — Gemini AI (Antigravity Agent)";
+
+    const musicTitle = document.getElementById('ch3-credits-music-title');
+    if (musicTitle) musicTitle.innerText = t.ch3CreditsMusicTitle || "МУЗЫКА И ЗВУКИ";
+
+    const thanksTitle = document.getElementById('ch3-credits-thanks-title');
+    if (thanksTitle) thanksTitle.innerText = t.ch3CreditsThanksTitle || "СПАСИБО ЗА ИГРУ!";
+
+    const thanksSub = document.getElementById('ch3-credits-thanks-sub');
+    if (thanksSub) thanksSub.innerText = t.ch3CreditsThanksSub || "Вы спасли систему и освободили ISpy!";
+
+    const menuBtn = document.getElementById('ch3-credits-menu-btn');
+    if (menuBtn) menuBtn.innerText = t.ch3CreditsMenuBtn || "В главное меню";
+
+    const creditsOverlay = document.getElementById('ch3-credits-overlay');
+    const scrollContainer = document.getElementById('ch3-credits-scroll-container');
+
+    if (creditsOverlay) creditsOverlay.style.display = 'block';
+
+    if (typeof audioEngine !== 'undefined') {
+        audioEngine.stopBossMusic();
+        audioEngine.playCreditsMusic();
+    }
+
+    if (scrollContainer && menuBtn) {
+        scrollContainer.style.transition = 'none';
+        scrollContainer.style.top = '100vh';
+
+        requestAnimationFrame(() => {
+            const btnRect = menuBtn.getBoundingClientRect();
+            const containerRect = scrollContainer.getBoundingClientRect();
+            const btnOffsetInContainer = btnRect.top - containerRect.top + (btnRect.height / 2);
+            const targetTop = (window.innerHeight / 2) - btnOffsetInContainer;
+
+            scrollContainer.style.transition = 'top 30s linear';
+            scrollContainer.style.top = targetTop + 'px';
+        });
+    }
+}
+
+function returnToMenuFromCh3Credits() {
+    if (typeof audioEngine !== 'undefined') {
+        audioEngine.stopCreditsMusic();
+    }
+    const creditsOverlay = document.getElementById('ch3-credits-overlay');
+    if (creditsOverlay) creditsOverlay.style.display = 'none';
+
+    returnToMainMenuFromPause();
+}
+
+window.loadYouTubeSearchChaosPage = loadYouTubeSearchChaosPage;
+window.triggerYouTubeChaosEvent = triggerYouTubeChaosEvent;
+window.triggerISpyRestoration = triggerISpyRestoration;
+window.returnToMenuFromCh3Credits = returnToMenuFromCh3Credits;
+window.startChapter3 = startChapter3;
 
 

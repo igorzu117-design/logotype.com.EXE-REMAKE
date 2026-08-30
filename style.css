@@ -26,6 +26,10 @@
             cursor: default;
         }
 
+        body.chapter-3-theme {
+            background-color: #004848 !important;
+        }
+
         /* Рабочий стол и иконки */
         #desktop {
             padding: 10px;
@@ -1644,5 +1648,267 @@
         }
 
 
+@keyframes shakeGlitch {
+    0% { transform: translate(0, 0) scale(1.05) rotate(0deg); }
+    20% { transform: translate(-5px, 3px) scale(0.95) rotate(-3deg); }
+    40% { transform: translate(4px, -4px) scale(1.1) rotate(4deg); }
+    60% { transform: translate(-3px, -2px) scale(0.98) rotate(-2deg); }
+    80% { transform: translate(5px, 2px) scale(1.04) rotate(3deg); }
+    100% { transform: translate(0, 0) scale(1.05) rotate(0deg); }
+}
 
+/* --- Chapter 3 Sequence 4-6 Overlay & Prison Styles --- */
+#red-screen-tint {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, rgba(255, 0, 0, 0.4) 0%, rgba(140, 0, 0, 0.8) 100%);
+    pointer-events: none;
+    z-index: 15000;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    box-shadow: inset 0 0 100px #ff0000;
+}
 
+.regedit-burned-shattered {
+    animation: crumbleAsh 1.2s forwards ease-in-out !important;
+    pointer-events: none !important;
+}
+
+@keyframes crumbleAsh {
+    0% { transform: scale(1) rotate(0deg); opacity: 1; filter: drop-shadow(0 0 10px red); }
+    30% { transform: scale(1.2) rotate(-10deg) skewX(15deg); filter: contrast(4) brightness(2) drop-shadow(0 0 25px #ff0000); }
+    60% { transform: scale(0.8) rotate(12deg) translate(3px, 10px); opacity: 0.7; filter: grayscale(1) contrast(6) brightness(0.2); }
+    100% { transform: scale(0.4) translate(0, 20px); opacity: 0.25; filter: grayscale(1) brightness(0.08); }
+}
+
+#ch3-screen-tentacles-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 17500;
+    display: none;
+}
+
+#ch3-tentacle-prison {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 240px;
+    border: 3px solid #ff0033;
+    background: rgba(15, 0, 0, 0.88);
+    box-shadow: 0 0 35px #ff0000, inset 0 0 25px #990000;
+    z-index: 18000;
+    border-radius: 8px;
+    display: none;
+    overflow: hidden;
+}
+
+#ch3-prison-player-dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #ffffff, 0 0 24px #ff3366;
+    border: 2px solid #ff0055;
+    z-index: 18005;
+    top: 111px;
+    left: 111px;
+    transform: translate(-50%, -50%);
+}
+
+.screen-lag-glitch {
+    animation: gentle-shake 0.1s infinite alternate;
+    filter: hue-rotate(180deg) saturate(2);
+}
+
+/* ==========================================================================
+   ГЛАВА 3 — ХАОС В YOUTUBE, ТРЕЩИНЫ, КРАТЕР И ФИНАЛЬНЫЙ БОСС
+   ========================================================================== */
+
+/* Оверлей трещин браузера */
+.browser-crack-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.browser-crack-line {
+    position: absolute;
+    background: #ff0033;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ffffff;
+    opacity: 0.95;
+}
+
+/* Кратер посреди вкладки YouTube */
+#youtube-crater-hole {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #000000 0%, #1a0005 50%, #660011 85%, transparent 100%);
+    border: 4px solid #ff0033;
+    box-shadow: 0 0 50px #ff0000, inset 0 0 60px #000000;
+    z-index: 1050;
+    animation: craterGrow 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    overflow: visible;
+}
+
+@keyframes craterGrow {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+}
+
+/* Предупреждения рядов шипов сверху/снизу */
+.ch3-spike-row-warning {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 50012;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.ch3-spike-row-warning.warning-phase {
+    opacity: 0.45;
+}
+
+.ch3-spike-row-warning.attack-phase {
+    opacity: 1;
+}
+
+.ch3-spike-row-warning.top-warning {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 0, 51, 0.5), transparent);
+    border-bottom: 3px dashed #ff0033;
+}
+
+.ch3-spike-row-warning.bottom-warning {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 0, 51, 0.5), transparent);
+    border-top: 3px dashed #ff0033;
+}
+
+.ch3-spike-row-warning.attack-phase.top-warning {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.85), rgba(255, 0, 51, 0.3));
+    border-bottom: 4px solid #ff0000;
+    box-shadow: 0 5px 25px rgba(255, 0, 0, 0.8);
+}
+
+.ch3-spike-row-warning.attack-phase.bottom-warning {
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.85), rgba(255, 0, 51, 0.3));
+    border-top: 4px solid #ff0000;
+    box-shadow: 0 -5px 25px rgba(255, 0, 0, 0.8);
+}
+
+.ch3-spike-row-warning .warning-text {
+    color: #ffff00;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    animation: warningFlash 0.25s infinite alternate;
+}
+
+.ch3-spike-row-warning.attack-phase .warning-text {
+    color: #ffffff;
+    font-size: 22px;
+    text-shadow: 0 0 15px #ff0000, 0 0 30px #ffffff;
+}
+
+@keyframes warningFlash {
+    0% { opacity: 0.3; transform: scale(0.98); }
+    100% { opacity: 1; transform: scale(1.04); }
+}
+
+.warning-triangles-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.warning-triangle-icon {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    transition: filter 0.2s, opacity 0.2s;
+}
+
+.warning-phase .warning-triangle-icon {
+    opacity: 0.5;
+}
+
+.attack-phase .warning-triangle-icon {
+    opacity: 1;
+    filter: drop-shadow(0 0 15px #ff0000) drop-shadow(0 0 30px #ffffff);
+    animation: attackSpikePulse 0.1s infinite alternate;
+}
+
+@keyframes attackSpikePulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.25); }
+}
+
+.top-row .warning-triangle-icon {
+    border-top: 45px solid #ff0033;
+}
+
+.bottom-row .warning-triangle-icon {
+    border-bottom: 45px solid #ff0033;
+}
+
+/* Анимация махания крыльев ISpy */
+@keyframes floatWings {
+    0% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-12px) scale(1.03); }
+    100% { transform: translateY(0px) scale(1); }
+}
+
+.ispy-left-wing {
+    transform-origin: 100px 100px;
+    animation: flapLeftWing 1.8s ease-in-out infinite alternate;
+}
+
+.ispy-right-wing {
+    transform-origin: 200px 100px;
+    animation: flapRightWing 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes flapLeftWing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-14deg); }
+}
+
+@keyframes flapRightWing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(14deg); }
+}
+
+@keyframes rotateTentacles {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.08); }
+    100% { transform: rotate(360deg) scale(1); }
+}

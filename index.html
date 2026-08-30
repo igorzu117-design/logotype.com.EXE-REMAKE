@@ -29,7 +29,7 @@
 
             <div style="background: #110000; border: 1px solid #440000; border-radius: 4px; padding: 22px 26px; line-height: 1.85; font-size: 0.97rem; color: #c8c8c8;">
                 <p id="disclaimer-p1" style="margin: 0 0 14px;">This game is <b style="color:#ff4444;">not hand-made</b>, but created using <b style="color:#ff4444;">Artificial Intelligence</b>.</p>
-                <p id="disclaimer-p2" style="margin: 0 0 14px;">If you are interested in this game — do not expect high quality, since AI can make mistakes, but the developer monitors it and regularly updates it. Also, AI can make mistakes, so you may encounter bugs in this game. If you find them, feel free to contact the developer.</p>
+                <p id="disclaimer-p2" style="margin: 0 0 14px;">Если вас заинтересовала эта игра — не ждите большого качества, так как ИИ может делать ошибки, но разработчик следит за ней и регулярно обновляет. Также, ИИ может делать ошибки, потому вы можете встретить баги в этой игре. Если вы их нашли, то не стесняйтесь, обращайтесь к разработчику.<br><br><span style="color:#ffaa00;">(P.S: Если вы нашли баг, то вам нужно связаться с главный разработчиком, и указать скриншот, и обьяснить ситуацию, без этого ваш запрос скорее всего не будет рассматриваться)</span></p>
                 <p id="disclaimer-p3" style="margin: 0 0 14px;"><b style="color:#ff4444;">This game is NOT recommended for the faint of heart and epileptics</b>, as it contains:</p>
                 <ul style="margin: 0 0 14px; padding-left: 22px; color: #ff8888;">
                     <li id="disclaimer-li1">Loud sounds</li>
@@ -319,9 +319,9 @@
                     Chapter 2
                     <span id="chapter-2-sub" class="btn-sub">The Forgotten Assistant</span>
                 </button>
-                <button id="chapter-3-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px; opacity: 0.4; cursor: not-allowed;" disabled>
+                <button id="chapter-3-btn" class="menu-btn" style="font-size: 2rem; padding: 14px 50px 14px 24px; min-width: 320px;" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onclick="if(typeof audioEngine !== 'undefined') audioEngine.playClick(); activeChapter = 3; if(typeof updateSavesUI==='function') updateSavesUI(); toggleSubmenu('saves-menu', true)">
                     Chapter 3
-                    <span id="chapter-3-sub" class="btn-sub">Soon</span>
+                    <span id="chapter-3-sub" class="btn-sub">End of Suffering</span>
                 </button>
             </div>
             <button id="chapters-back-btn" class="menu-btn" style="font-size: 1.6rem; margin-top: 24px; padding: 10px 40px 10px 22px; min-width: 200px;"
@@ -453,7 +453,7 @@
         </div>
 
         <!-- Иконка Registry Editor -->
-        <div class="icon-container" tabindex="0" ondblclick="openRegistryEditor()" style="top: 410px; left: 10px;">
+        <div class="icon-container" id="desktop-regedit-icon" tabindex="0" onclick="if(typeof activeChapter !== 'undefined' && activeChapter === 3 && (currentChapter3Task === 5 || currentChapter3Task === '5')) openRegistryEditor()" ondblclick="openRegistryEditor()" style="top: 410px; left: 10px;">
             <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="4" width="10" height="10" fill="#ffcc00" stroke="black" stroke-width="1.5"/>
                 <rect x="18" y="4" width="10" height="10" fill="#3399ff" stroke="black" stroke-width="1.5"/>
@@ -481,6 +481,16 @@
             </svg>
             <span id="desktop-hint-text" class="icon-text" style="color: #ff3333; font-weight: bold; text-shadow: 0 0 4px #000;">cipher.txt</span>
         </div>
+
+        <!-- Иконка Терминала (только в 3 главе) -->
+        <div class="icon-container" id="desktop-terminal-container" tabindex="0" ondblclick="openTerminalApp()" style="top: 490px; left: 10px; display: none;">
+            <svg class="icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="28" height="24" fill="#051005" stroke="#00ff66" stroke-width="2"/>
+                <path d="M6 10 L10 14 L6 18" stroke="#00ff66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="11" y1="18" x2="17" y2="18" stroke="#00ff66" stroke-width="2"/>
+            </svg>
+            <span id="desktop-terminal-text" class="icon-text" style="color: #00ff66; font-weight: bold; text-shadow: 0 0 4px #000;">Terminal</span>
+        </div>
     </div>
 
     <!-- Окно Браузера -->
@@ -503,6 +513,27 @@
             <div style="padding: 20px; font-family: 'Times New Roman', serif;">
                 <h2>Welcome to Internet</h2>
                 <p>Type an address in the bar above to begin surfing the web.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Окно Терминала -->
+    <div id="terminal-window" class="window" style="width: 520px; height: 360px; display: none; top: 120px; left: 240px; background: #000; border: 3px outset #00ff66; z-index: 250;">
+        <div class="title-bar active" id="terminal-title-bar" style="background: linear-gradient(90deg, #003300, #006600); color: #00ff66; font-weight: bold; font-family: monospace;">
+            <span id="terminal-window-title">Terminal - ISpy Core Tracer</span>
+            <div style="display: flex; gap: 2px;">
+                <div class="window-btn" onclick="closeTerminalApp()" style="color:#00ff66; background:#002200; border:1px solid #00ff66;">X</div>
+            </div>
+        </div>
+        <div class="window-content" style="height: calc(100% - 35px); background: #051005; color: #00ff66; font-family: 'Courier New', monospace; padding: 15px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #004400;">
+            <div id="terminal-console-output" style="line-height: 1.6; font-size: 14px; white-space: pre-wrap; overflow-y: auto; text-shadow: 0 0 3px #00ff66;">SYSTEM READY v3.0
+========================================
+> Target: God of Sites (Core Signal)
+> Status: Waiting for code execution...</div>
+            <div style="text-align: center; margin-top: 10px;">
+                <button id="terminal-write-code-btn" class="go-btn" style="background: #002200; color: #00ff66; border: 2px solid #00ff66; font-weight: bold; font-family: 'Courier New', monospace; font-size: 15px; padding: 10px 24px; cursor: pointer; text-shadow: 0 0 5px #00ff66; box-shadow: 0 0 8px rgba(0,255,102,0.4);" onclick="executeCh3TerminalCode()" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()">
+                    Написать код
+                </button>
             </div>
         </div>
     </div>
@@ -718,7 +749,7 @@
 
     <!-- Контекстное меню Диспетчера задач -->
     <div id="taskmgr-context-menu" style="display: none; position: fixed; background: #c0c0c0; border: 2px outset #fff; z-index: 10001; padding: 2px; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
-        <div style="padding: 5px 15px; cursor: pointer; font-family: 'MS Sans Serif', Tahoma, sans-serif;" onmouseenter="this.style.background='#000080'; this.style.color='white'" onmouseleave="this.style.background='transparent'; this.style.color='black'" onclick="endInternetTask()">End Task</div>
+        <div style="padding: 5px 15px; cursor: pointer; font-family: 'MS Sans Serif', Tahoma, sans-serif;" onmouseenter="this.style.background='#000080'; this.style.color='white'" onmouseleave="this.style.background='transparent'; this.style.color='black'" onclick="endSelectedTask()">End Task</div>
     </div>
 
     <!-- Оверлей для корпоративных вспышек (Reality Bleed) -->
@@ -753,6 +784,381 @@
             <button id="solo-ending-menu-btn" class="menu-btn ch1-credits-btn" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onclick="returnFromCh1CreditsToMenu()">
                 <span id="solo-ending-menu-text">В главное меню</span>
             </button>
+        </div>
+    </div>
+
+    <!-- Оверлей Бога сайтов (Глава 3, Задание 3.5) -->
+    <div id="ch3-false-clone-boss-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 16000;">
+        <div id="ch3-false-clone-boss-center" style="position: absolute; top: 30%; left: 40%; transform: translate(-50%, -50%) scale(1.4); width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; pointer-events: auto; cursor: pointer;">
+            <div id="ch3-false-clone-alert-mark" style="display: none;">!</div>
+            
+            <!-- Главный образ Бога сайтов (выполнен цветными фигурами SVG) для 3.5 задания -->
+            <svg id="ch3-false-clone-boss-img" viewBox="0 0 200 200" style="width: 240px; height: 240px; filter: drop-shadow(0 0 25px #ff0055) drop-shadow(0 0 50px #aa0033); animation: pulseGlitch 0.4s infinite; display: block; transition: transform 0.3s ease;">
+                <defs>
+                    <radialGradient id="godEyeBgGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#660011" />
+                        <stop offset="70%" stop-color="#2a0008" />
+                        <stop offset="100%" stop-color="#0a0003" />
+                    </radialGradient>
+                    <radialGradient id="godIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffff00" />
+                        <stop offset="40%" stop-color="#ff3300" />
+                        <stop offset="85%" stop-color="#990000" />
+                        <stop offset="100%" stop-color="#330000" />
+                    </radialGradient>
+                    <filter id="godGlow">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Внешние шипы из цветных полигонов -->
+                <polygon points="100,5 110,40 90,40" fill="#ff0033" opacity="0.8"/>
+                <polygon points="100,195 110,160 90,160" fill="#ff0033" opacity="0.8"/>
+                <polygon points="5,100 40,90 40,110" fill="#ff0033" opacity="0.8"/>
+                <polygon points="195,100 160,90 160,110" fill="#ff0033" opacity="0.8"/>
+                
+                <polygon points="30,30 60,50 45,65" fill="#cc0044" opacity="0.7"/>
+                <polygon points="170,30 140,50 155,65" fill="#cc0044" opacity="0.7"/>
+                <polygon points="30,170 60,150 45,135" fill="#cc0044" opacity="0.7"/>
+                <polygon points="170,170 140,150 155,135" fill="#cc0044" opacity="0.7"/>
+
+                <!-- Изогнутые щупальца / дуги из цветных линий -->
+                <path d="M 20 100 Q 0 40 50 20" fill="none" stroke="#ff0055" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 180 100 Q 200 40 150 20" fill="none" stroke="#ff0055" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 20 100 Q 0 160 50 180" fill="none" stroke="#ff0055" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 180 100 Q 200 160 150 180" fill="none" stroke="#ff0055" stroke-width="4" stroke-linecap="round"/>
+
+                <!-- Внешний контур глаза (миндалевидная фигура) -->
+                <path d="M 15 100 Q 100 15 185 100 Q 100 185 15 100 Z" fill="url(#godEyeBgGrad)" stroke="#ff0033" stroke-width="5" filter="url(#godGlow)"/>
+
+                <!-- Внутренние кольца и цветные круги глаза -->
+                <ellipse cx="100" cy="100" rx="60" ry="45" fill="none" stroke="#ff0055" stroke-width="2" stroke-dasharray="6,4"/>
+                <circle cx="100" cy="100" r="38" fill="url(#godIrisGrad)" stroke="#ff0000" stroke-width="3"/>
+                
+                <!-- Зрачок: ромб + овалы + круги -->
+                <polygon points="100,68 114,100 100,132 86,100" fill="#110005" stroke="#ff0033" stroke-width="2"/>
+                <ellipse cx="100" cy="100" rx="8" ry="24" fill="#000000"/>
+                <ellipse cx="100" cy="100" rx="4" ry="14" fill="#ff2200"/>
+                <circle cx="100" cy="100" r="3" fill="#ffffff" filter="url(#godGlow)"/>
+
+                <!-- Декоративные глитч-квадраты по бокам -->
+                <rect x="25" y="85" width="8" height="8" fill="#ff0055" opacity="0.9"/>
+                <rect x="167" y="105" width="8" height="8" fill="#ffff00" opacity="0.9"/>
+                <rect x="85" y="25" width="6" height="6" fill="#ff0000" opacity="0.8"/>
+                <rect x="108" y="168" width="7" height="7" fill="#ff0055" opacity="0.8"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Оверлей Бога сайтов на Рабочем столе (Глава 3) -->
+    <div id="ch3-desktop-boss-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 16000;">
+        <div id="ch3-desktop-boss-center" style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; pointer-events: auto;">
+            <div id="ch3-desktop-alert-mark" style="position: absolute; top: -10px; right: 10px; font-size: 60px; font-weight: bold; color: #ff0000; text-shadow: 0 0 25px #ff0000, 0 0 10px #ffffff; animation: pulseGlitch 0.3s infinite; display: none; z-index: 10;">!</div>
+            
+            <svg id="ch3-desktop-boss-svg" viewBox="0 0 200 200" style="width: 260px; height: 260px; filter: drop-shadow(0 0 35px #ff0033) drop-shadow(0 0 60px #aa0000); overflow: visible; transition: all 0.5s ease; display: block;">
+                <defs>
+                    <marker id="desktop-tentacle-tip" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#aa0000" />
+                    </marker>
+                    <radialGradient id="ch3DesktopIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff1100"/>
+                        <stop offset="50%" stop-color="#aa0000"/>
+                        <stop offset="100%" stop-color="#330000"/>
+                    </radialGradient>
+                    <filter id="desktopEyeGlow">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Группа щупалец сзади глаза -->
+                <g id="ch3-desktop-tentacles-group"></g>
+
+                <!-- Главный глаз Бога сайтов (в центре 100, 100) — соответствие финальному боссу -->
+                <circle cx="100" cy="100" r="75" fill="#100005" stroke="#ff0033" stroke-width="5" filter="url(#desktopEyeGlow)"/>
+                <path d="M 10 100 Q 100 15 190 100 Q 100 185 10 100 Z" fill="#250007" stroke="#ff2255" stroke-width="4"/>
+                
+                <circle id="ch3-pupil-outer-desktop" cx="100" cy="100" r="32" fill="url(#ch3DesktopIrisGrad)" style="transition: all 0.8s ease-in-out;"/>
+                <ellipse id="ch3-pupil-inner-desktop" cx="100" cy="100" rx="8" ry="24" fill="#000000" style="transition: all 0.8s ease-in-out;"/>
+                <ellipse cx="106" cy="90" rx="3.5" ry="6" fill="rgba(255,255,255,0.6)" transform="rotate(-15,106,90)"/>
+            </svg>
+        </div>
+
+        <div id="ch3-desktop-dialogue-box" style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 480px; background: rgba(10,0,15,0.95); border: 2px solid #ff0055; border-radius: 6px; padding: 12px 16px; box-sizing: border-box; min-height: 90px; display: none; flex-direction: column; justify-content: space-between; box-shadow: 0 0 20px rgba(255,0,85,0.6); pointer-events: auto; z-index: 17000;">
+            <div id="ch3-desktop-dialogue-header" style="font-size: 12px; font-weight: bold; color: #ff0055; margin-bottom: 4px; letter-spacing: 1px; font-family: monospace;">
+                [ SYSTEM MESSAGING ]
+            </div>
+            <div id="ch3-desktop-dialogue-text" style="font-size: 14px; color: #ff99bb; min-height: 38px; line-height: 1.4; white-space: pre-wrap; font-family: monospace;">...</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
+                <button id="ch3-desktop-dialogue-skip-btn" style="background: rgba(255,0,85,0.2); border: 1px solid #ff0055; color: #fff; padding: 3px 8px; font-family: monospace; font-size: 11px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 6px; user-select: none; outline: none;" title="Нажмите Z для пропуска" onclick="skipCh3DialogueLine()">
+                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: #ff0055; border-radius: 3px; font-weight: bold; font-family: monospace; font-size: 12px; color: #ffffff;">Z</span>
+                    <span id="ch3-desktop-skip-label">Пропуск</span>
+                </button>
+                <button id="ch3-desktop-dialogue-next-btn" style="background: #ff0055; color: #fff; border: none; padding: 5px 16px; font-family: monospace; font-weight: bold; cursor: pointer; display: none;" onclick="advanceCh3BossDialogue()">
+                    NEXT ►
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Красный экранный оверлей (Глава 3) -->
+    <div id="red-screen-tint"></div>
+
+    <!-- Оверлей тентаклей на всём экране (Глава 3) -->
+    <svg id="ch3-screen-tentacles-overlay" viewBox="0 0 1000 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,0 Q 200,300 0,600 Q 150,800 0,1000" stroke="#880000" stroke-width="60" fill="none" opacity="0.8"/>
+        <path d="M 1000,0 Q 800,300 1000,600 Q 850,800 1000,1000" stroke="#880000" stroke-width="60" fill="none" opacity="0.8"/>
+        <path d="M 0,0 Q 300,200 600,0 Q 800,150 1000,0" stroke="#880000" stroke-width="60" fill="none" opacity="0.8"/>
+        <path d="M 0,1000 Q 300,800 600,1000 Q 800,850 1000,1000" stroke="#880000" stroke-width="60" fill="none" opacity="0.8"/>
+    </svg>
+
+    <!-- Тюрьма тентаклей (Глава 3) -->
+    <div id="ch3-tentacle-prison">
+        <div id="ch3-prison-player-dot"></div>
+        <svg viewBox="0 0 240 240" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+            <path d="M 10,10 L 230,10 L 230,230 L 10,230 Z" stroke="#cc0000" stroke-width="8" fill="none" stroke-dasharray="10,5"/>
+        </svg>
+    </div>
+
+    <!-- Оверлей Финального Босс-файта 3 Главы -->
+    <div id="ch3-final-boss-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(8, 0, 4, 0.88); z-index: 99995; overflow: hidden; font-family: 'W95FA', 'Courier New', monospace; user-select: none;">
+        <!-- Игрок HP -->
+        <div style="position: absolute; top: 20px; left: 30px; width: 280px; z-index: 50010;">
+            <div style="color: #ffffff; font-weight: bold; font-size: 14px; margin-bottom: 4px; text-shadow: 0 0 6px #000;">
+                <span id="ch3-final-player-name">Игрок</span> HP: <span id="ch3-final-player-hp-text">100</span> / 100
+            </div>
+            <div style="width: 100%; height: 16px; background: #220000; border: 2px solid #00ff66; border-radius: 4px; overflow: hidden;">
+                <div id="ch3-final-player-hp-fill" style="width: 100%; height: 100%; background: linear-gradient(to right, #00ff66, #00cc44); transition: width 0.2s;"></div>
+            </div>
+        </div>
+
+        <!-- Бог сайтов HP -->
+        <div style="position: absolute; top: 20px; right: 30px; width: 360px; z-index: 50010; text-align: right;">
+            <div style="color: #ff3333; font-weight: bold; font-size: 14px; margin-bottom: 4px; text-shadow: 0 0 8px #ff0000;">
+                <span id="ch3-final-boss-title">БОГ САЙТОВ</span> HP: <span id="ch3-final-boss-hp-text">500</span> / 500
+            </div>
+            <div style="width: 100%; height: 20px; background: #220000; border: 2px solid #ff0033; border-radius: 4px; overflow: hidden; box-shadow: 0 0 15px rgba(255,0,0,0.6);">
+                <div id="ch3-final-boss-hp-fill" style="width: 100%; height: 100%; background: linear-gradient(to right, #990000, #ff0033, #ff6600); transition: width 0.2s;"></div>
+            </div>
+        </div>
+
+        <!-- Баннер усталости босса -->
+        <div id="ch3-final-tired-banner" style="display: none; position: absolute; top: 16%; left: 50%; transform: translateX(-50%); font-family: 'W95FA', 'Courier New', monospace; font-size: 22px; font-weight: bold; color: #00ffff; text-shadow: 0 0 15px #00ffff, 0 0 30px #0088ff; z-index: 50030; animation: blink 0.8s infinite; letter-spacing: 2px;">
+            ⚡ БОСС УСТАЛ! АТАКУЙ! ⚡
+        </div>
+
+        <!-- Облако речи Бога Сайтов (Неуязвимость) -->
+        <div id="ch3-boss-speech-bubble" style="display: none; position: absolute; top: 26%; left: 50%; transform: translateX(-50%); background: rgba(15, 0, 5, 0.95); border: 2px solid #ff0033; box-shadow: 0 0 25px #ff0033; padding: 12px 25px; border-radius: 8px; font-family: 'W95FA', 'Courier New', monospace; font-size: 18px; font-weight: bold; color: #ff3366; text-shadow: 0 0 10px #ff0033; z-index: 50035; letter-spacing: 2px; text-align: center;">
+            ХА-ХА. ГЛУПЕЦ. Я НЕУЯЗВИМ!
+        </div>
+
+        <!-- Аура зарядки взрыва игрока -->
+        <div id="ch3-final-player-charge-aura" style="display: none; position: absolute; width: 20px; height: 20px; border-radius: 50%; transform: translate(-50%, -50%); z-index: 50019; pointer-events: none; transition: width 0.1s, height 0.1s;"></div>
+
+        <!-- Белая точка игрока -->
+        <div id="ch3-final-player-dot" style="position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ffffff; border: 2px solid #000000; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffeb3b; z-index: 50020; transform: translate(-50%, -50%); left: 50%; top: 50%;"></div>
+
+        <!-- Ловушка из щупалец вокруг игрока при QTE -->
+        <div id="ch3-player-tentacle-trap" style="display: none; position: absolute; width: 160px; height: 160px; transform: translate(-50%, -50%); z-index: 50021; pointer-events: none;">
+            <svg viewBox="0 0 160 160" style="width: 100%; height: 100%; filter: drop-shadow(0 0 15px #ff0055);">
+                <defs>
+                    <radialGradient id="tentacleGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff0055"/>
+                        <stop offset="70%" stop-color="#880022"/>
+                        <stop offset="100%" stop-color="#220005"/>
+                    </radialGradient>
+                </defs>
+                <g style="transform-origin: 80px 80px; animation: rotateTentacles 3s linear infinite;">
+                    <path d="M 10,80 Q 40,40 70,75 C 75,78 78,78 80,80" stroke="url(#tentacleGrad)" stroke-width="7" fill="none" stroke-linecap="round"/>
+                    <path d="M 150,80 Q 120,120 90,85 C 85,82 82,82 80,80" stroke="url(#tentacleGrad)" stroke-width="7" fill="none" stroke-linecap="round"/>
+                    <path d="M 80,10 Q 120,40 85,70 C 82,75 82,78 80,80" stroke="url(#tentacleGrad)" stroke-width="7" fill="none" stroke-linecap="round"/>
+                    <path d="M 80,150 Q 40,120 75,90 C 78,85 78,82 80,80" stroke="url(#tentacleGrad)" stroke-width="7" fill="none" stroke-linecap="round"/>
+                    <path d="M 25,25 Q 60,30 75,65 C 78,72 79,76 80,80" stroke="url(#tentacleGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+                    <path d="M 135,135 Q 100,130 85,95 C 82,88 81,84 80,80" stroke="url(#tentacleGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Огромный Бог сайтов в центре -->
+        <div id="ch3-final-boss-eye-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1.4); width: 320px; height: 320px; z-index: 50002; transition: transform 0.5s ease, filter 0.3s ease;">
+            <svg id="ch3-final-boss-svg" viewBox="0 0 200 200" style="width: 100%; height: 100%; filter: drop-shadow(0 0 35px #ff0033) drop-shadow(0 0 60px #aa0000); overflow: visible;">
+                <defs>
+                    <radialGradient id="ch3FinalIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff1100"/>
+                        <stop offset="50%" stop-color="#aa0000"/>
+                        <stop offset="100%" stop-color="#330000"/>
+                    </radialGradient>
+                    <filter id="ch3FinalEyeGlow">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <circle cx="100" cy="100" r="75" fill="#100005" stroke="#ff0033" stroke-width="5" filter="url(#ch3FinalEyeGlow)"/>
+                <path d="M 10 100 Q 100 15 190 100 Q 100 185 10 100 Z" fill="#250007" stroke="#ff2255" stroke-width="4"/>
+                
+                <!-- Ирис и Зрачок -->
+                <circle id="ch3-final-boss-iris" cx="100" cy="100" r="32" fill="url(#ch3FinalIrisGrad)"/>
+                <ellipse id="ch3-final-boss-pupil" cx="100" cy="100" rx="8" ry="24" fill="#000000"/>
+                <ellipse cx="106" cy="90" rx="3.5" ry="6" fill="rgba(255,255,255,0.6)" transform="rotate(-15,106,90)"/>
+            </svg>
+        </div>
+
+        <!-- Контейнер атак босса (шипы) -->
+        <div id="ch3-final-attacks-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 50015; pointer-events: none;"></div>
+
+        <!-- Предупреждения об атаках сверху/снизу -->
+        <div id="ch3-final-top-warning" class="ch3-spike-row-warning top-warning" style="display: none;">
+            <div id="ch3-final-top-warning-text" class="warning-text">⚠️ ОПАСНОСТЬ СВЕРХУ! ⚠️</div>
+            <div class="warning-triangles-row top-row"></div>
+        </div>
+        <div id="ch3-final-bottom-warning" class="ch3-spike-row-warning bottom-warning" style="display: none;">
+            <div id="ch3-final-bottom-warning-text" class="warning-text">⚠️ ОПАСНОСТЬ СНИЗУ! ⚠️</div>
+            <div class="warning-triangles-row bottom-row"></div>
+        </div>
+    </div>
+
+    <!-- QTE Оверлей захвата щупальцами (Глава 3) -->
+    <div id="ch3-qte-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(30, 0, 5, 0.45); z-index: 99998; align-items: center; justify-content: flex-start; padding-top: 40px; flex-direction: column; font-family: 'W95FA', 'Courier New', monospace; user-select: none;">
+        <div style="background: rgba(15, 0, 5, 0.95); border: 3px solid #ff0055; box-shadow: 0 0 35px #ff0055; padding: 20px 35px; border-radius: 8px; text-align: center; max-width: 520px; width: 90%;">
+            <div id="ch3-qte-title" style="color: #ff3366; font-size: 22px; font-weight: bold; margin-bottom: 10px; text-shadow: 0 0 10px #ff0055; letter-spacing: 2px;">
+                ⚠️ ЩУПАЛЬЦЫ СХВАТИЛИ ТЕБЯ! ⚠️
+            </div>
+            <div id="ch3-qte-instr" style="color: #ffffff; font-size: 16px; margin-bottom: 18px; font-weight: bold;">
+                БЫСТРО НАЖИМАЙТЕ <span style="color: #ffeb3b; background: #330011; padding: 3px 10px; border: 1px solid #ffeb3b; border-radius: 4px;">ПРОБЕЛ</span> ДЛЯ ОСВОБОЖДЕНИЯ!
+            </div>
+            
+            <div style="width: 100%; height: 24px; background: #20000a; border: 2px solid #ff0055; border-radius: 6px; overflow: hidden; margin-bottom: 15px; box-shadow: inset 0 0 10px #000;">
+                <div id="ch3-qte-bar-fill" style="width: 0%; height: 100%; background: linear-gradient(to right, #ff0055, #ffcc00, #00ff66); transition: width 0.05s ease-out;"></div>
+            </div>
+
+            <div style="color: #ffaaaa; font-size: 14px;">
+                <span id="ch3-qte-timer-label">Осталось времени:</span> <span id="ch3-qte-timer-text" style="color: #ffffff; font-weight: bold; font-size: 18px;">3.0</span> <span id="ch3-qte-timer-unit">сек</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Оверлей Восстановления ISpy (Глава 3 Победил) -->
+    <div id="ch3-restore-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 100000; background: rgba(8, 0, 4, 0.92); overflow: hidden; user-select: none;">
+        <!-- Ослепительная белая вспышка -->
+        <div id="ch3-blinding-flash" style="position: absolute; top:0; left:0; width:100%; height:100%; background: #ffffff; opacity: 0; pointer-events: none; transition: opacity 1s ease; z-index: 100005;"></div>
+
+        <!-- Трясущийся и трескающийся поверженный Бог Сайтов -->
+        <div id="ch3-defeat-boss-container" style="display: none; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(2.2); width: 320px; height: 320px; align-items: center; justify-content: center; z-index: 100008; animation: shake 0.15s infinite;">
+            <svg viewBox="0 0 200 200" style="width: 100%; height: 100%; filter: drop-shadow(0 0 35px #ff0033) drop-shadow(0 0 60px #aa0000); overflow: visible;">
+                <defs>
+                    <radialGradient id="ch3DefeatIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff1100"/>
+                        <stop offset="50%" stop-color="#aa0000"/>
+                        <stop offset="100%" stop-color="#330000"/>
+                    </radialGradient>
+                    <filter id="ch3DefeatEyeGlow">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <circle cx="100" cy="100" r="75" fill="#100005" stroke="#ff0033" stroke-width="5" filter="url(#ch3DefeatEyeGlow)"/>
+                <path d="M 10 100 Q 100 15 190 100 Q 100 185 10 100 Z" fill="#250007" stroke="#ff2255" stroke-width="4"/>
+                <circle cx="100" cy="100" r="32" fill="url(#ch3DefeatIrisGrad)"/>
+                <ellipse cx="100" cy="100" rx="8" ry="24" fill="#000000"/>
+                <ellipse cx="106" cy="90" rx="3.5" ry="6" fill="rgba(255,255,255,0.6)" transform="rotate(-15,106,90)"/>
+
+                <!-- SVG группа для белых трещин -->
+                <g id="ch3-boss-cracks-group"></g>
+            </svg>
+        </div>
+
+        <!-- Освобождённый синий глаз с крыльями ISpy -->
+        <div id="ch3-freed-ispy-container" style="display: none; position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%); flex-direction: column; align-items: center; justify-content: center; z-index: 100010; transition: all 1s ease;">
+            <svg id="ch3-freed-ispy-svg" viewBox="0 0 300 200" style="width: 280px; height: 200px; filter: drop-shadow(0 0 25px #00ccff) drop-shadow(0 0 45px rgba(0, 150, 255, 0.6)); animation: floatWings 3s ease-in-out infinite;">
+                <defs>
+                    <linearGradient id="ispyWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00ffff"/>
+                        <stop offset="100%" stop-color="#0055ff"/>
+                    </linearGradient>
+                    <radialGradient id="ispyIrisGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#00ffff"/>
+                        <stop offset="60%" stop-color="#0088ff"/>
+                        <stop offset="100%" stop-color="#002288"/>
+                    </radialGradient>
+                    <filter id="blueGlow">
+                        <feGaussianBlur stdDeviation="3" result="blur"/>
+                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Левое крыло -->
+                <path class="ispy-left-wing" d="M 100 100 C 60 40, 10 30, 5 70 C 0 110, 60 120, 100 100 Z" fill="url(#ispyWingGrad)" opacity="0.9"/>
+                <path class="ispy-left-wing" d="M 95 105 C 50 60, 20 60, 15 90 C 10 120, 65 125, 95 105 Z" fill="#00d4ff" opacity="0.6"/>
+
+                <!-- Правое крыло -->
+                <path class="ispy-right-wing" d="M 200 100 C 240 40, 290 30, 295 70 C 300 110, 240 120, 200 100 Z" fill="url(#ispyWingGrad)" opacity="0.9"/>
+                <path class="ispy-right-wing" d="M 205 105 C 250 60, 280 60, 285 90 C 290 120, 235 125, 205 105 Z" fill="#00d4ff" opacity="0.6"/>
+
+                <!-- Безобидное тело-глаз -->
+                <ellipse cx="150" cy="100" rx="55" ry="42" fill="#ffffff" stroke="#00aaff" stroke-width="4" filter="url(#blueGlow)"/>
+                <circle cx="150" cy="94" r="24" fill="url(#ispyIrisGrad)"/>
+                <circle cx="150" cy="92" r="10" fill="#001133"/>
+                <!-- Блики и добрый взгляд вверх -->
+                <ellipse cx="156" cy="86" rx="5" ry="7" fill="#ffffff" transform="rotate(-15,156,86)"/>
+                <circle cx="144" cy="98" r="2.5" fill="#ffffff"/>
+            </svg>
+            <div id="ch3-freed-ispy-label" style="color: #00ffff; font-family: monospace; font-size: 16px; font-weight: bold; letter-spacing: 2px; text-shadow: 0 0 10px #00ffff; margin-top: 10px;">
+                ISpy
+            </div>
+        </div>
+
+        <!-- Кнопка "Восстановить" -->
+        <button id="ch3-restore-btn" style="display: none; position: absolute; top: 82%; left: 50%; transform: translateX(-50%); padding: 14px 45px; font-family: 'W95FA', 'Courier New', monospace; font-size: 20px; font-weight: bold; color: #ffffff; background: linear-gradient(135deg, #0088ff, #0033aa); border: 2px solid #00ffff; border-radius: 6px; box-shadow: 0 0 25px #0088ff, 0 0 45px rgba(0,255,255,0.5); cursor: pointer; z-index: 100012; letter-spacing: 2px;" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onclick="triggerISpyRestoration()">
+            ↻ ВОССТАНОВИТЬ
+        </button>
+    </div>
+
+    <!-- Оверлей Финальных Титров Игры -->
+    <div id="ch3-credits-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #020005; z-index: 100020; overflow: hidden; font-family: 'W95FA', 'Courier New', monospace; color: #ffffff; user-select: none;">
+        <div class="ch1-credits-scanlines"></div>
+        <div id="ch3-credits-scroll-container" style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 90%; max-width: 650px; text-align: center; transition: top 35s linear;">
+            <h1 style="color: #00ffff; font-family: 'Rubik Glitch', 'Courier New', monospace; font-size: 2.8rem; margin-bottom: 10px; text-shadow: 0 0 20px #00ffff;">LOGOTYPE.COM.EXE</h1>
+            <h2 id="ch3-credits-subtitle" style="color: #ff3366; font-weight: bold; font-size: 1.5rem; margin-top: 0; margin-bottom: 40px; letter-spacing: 3px;">— ФИНАЛ —</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 30px; font-size: 1.1rem; line-height: 1.8; color: #d0d0d0;">
+                <div>
+                    <h3 id="ch3-credits-author-title" style="color: #ffcc00; font-size: 1.3rem; margin-bottom: 8px;">АВТОР И ДИЗАЙНЕР ИГРЫ</h3>
+                    <p id="ch3-credits-author-name" style="color: #ffffff; font-weight: bold; margin: 0;">Игорь</p>
+                </div>
+
+                <div>
+                    <h3 id="ch3-credits-story-title" style="color: #ffcc00; font-size: 1.3rem; margin-bottom: 8px;">СЮЖЕТ И ИДЕИ</h3>
+                    <p id="ch3-credits-story-name" style="color: #ffffff; font-weight: bold; margin: 0;">Игорь</p>
+                </div>
+
+                <div>
+                    <h3 id="ch3-credits-prog-title" style="color: #ffcc00; font-size: 1.3rem; margin-bottom: 8px;">ПРОГРАММИРОВАНИЕ И ИИ-ВОПЛОЩЕНИЕ</h3>
+                    <p id="ch3-credits-prog-name" style="color: #ffffff; font-weight: bold; margin: 0;">Google DeepMind — Gemini AI (Antigravity Agent)</p>
+                </div>
+
+                <div>
+                    <h3 id="ch3-credits-music-title" style="color: #ffcc00; font-size: 1.3rem; margin-bottom: 8px;">МУЗЫКА И ЗВУКИ</h3>
+                    <p style="color: #ffffff; margin: 0;">After the Credits Roll</p>
+                    <p style="color: #ffffff; margin: 0;">Save File Corrupted</p>
+                    <p style="color: #ffffff; margin: 0;">Eye Boss</p>
+                    <p style="color: #ffffff; margin: 0;">Web Audio API Synthesizer</p>
+                </div>
+
+                <div style="margin-top: 30px; border-top: 1px dashed #444; padding-top: 30px;">
+                    <p id="ch3-credits-thanks-title" style="color: #00ff66; font-size: 1.2rem; font-weight: bold;">СПАСИБО ЗА ИГРУ!</p>
+                    <p id="ch3-credits-thanks-sub" style="color: #aaaaaa; font-size: 0.95rem;">Вы спасли систему и освободили ISpy!</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; margin-bottom: 100px;">
+                <button id="ch3-credits-menu-btn" class="menu-btn" style="font-size: 1.3rem; padding: 12px 40px;" onmouseenter="if(typeof audioEngine !== 'undefined') audioEngine.playHover()" onclick="returnToMenuFromCh3Credits()">
+                    В главное меню
+                </button>
+            </div>
         </div>
     </div>
 
